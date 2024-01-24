@@ -83,10 +83,7 @@ class C06249860459C8E5A {
     if (A3_2 == null) {
       A3_2 = 1;
     }
-    var L9_2 = 1 << 1;
-    var L10_2 = 1 << 6;
-    var L8_2 = L9_2 | L10_2;
-    return GetShapeRotation(A0_2, A1_2, A2_2, L8_2, A3_2);
+    return GetShapeRotation(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
   }
 
   @:native("SB5650EB38CCD091A")
@@ -223,19 +220,8 @@ class C06249860459C8E5A {
   @:native("SF725F7C11C979360")
   public static function WaterCapsuleCast(A0_2, A1_2, A2_2, A3_2) {
     local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-    if nil == A3_2 then
-      A3_2 = 1
-    end
-    L4_2 = C06249860459C8E5A
-    L4_2 = L4_2.S9E7F9F1C6EB5BBB9
-    L5_2 = A0_2
-    L6_2 = A1_2
-    L7_2 = A2_2
-    L9_2 = 1
-    L10_2 = 2
-    L8_2 = _hx_bit_raw.alshift(L9_2, L10_2)
-    L9_2 = A3_2
-    return L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
+    if (A3_2 == null) A3_2 = 1;
+    return C06249860459C8E5A.S9E7F9F1C6EB5BBB9(A0_2, A1_2, A2_2, 1 << 2, A3_2)
   }
 
   @:native("S9E7F9F1C6EB5BBB9")
@@ -252,8 +238,7 @@ class C06249860459C8E5A {
     if 0 ~= L7_2 then
       L6_2 = 0
     end
-    L7_2 = Array.new
-    L7_2 = L7_2()
+    L7_2 = Array.new()
     L8_2 = A2_2[1]
     L9_2 = A1_2[1]
     L8_2 = L8_2 - L9_2
