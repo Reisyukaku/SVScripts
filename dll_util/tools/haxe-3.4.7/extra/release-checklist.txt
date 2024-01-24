@@ -1,0 +1,35 @@
+# Preparing related projects
+
+- Check that haxelib is working
+- Make sure to update the haxelib submodule
+- Check that the run-time haxelibs are ready for release: hxcpp, hxjava, hxcs
+
+# Building the binaries and installers
+
+- Make sure CHANGES.txt has a proper date set!
+- Make sure `version` in globals.ml has the correct value.
+- Update README.md:
+  - Version compatibility: add/update the Haxe/Neko version
+- Merge development branch into master.
+- Wait for Travis to greenlight master.
+- Tag master as MAJOR.MINOR.PATCH.
+- Wait for builds.haxe.org to build master.
+- Get https://github.com/waneck/hxbuilds/tree/master/release-helper
+- Run it with the fileName corresponding to the latest master file name on builds.haxe.org.
+
+# Making the release
+
+- Regenerate API documentation (check --title and -D version values).
+- Make a GitHub release in https://github.com/HaxeFoundation/haxe/releases with
+  - the generated binaries and installers
+  - the API documentation
+- Update haxe.org
+  - Copy relevant changelog part to downloads/$version/CHANGES.md.
+  - Write announcement post in downloads/$version/RELEASE.md.
+  - Update downloads/versions.json.
+  - Push to staging, check https://staging.haxe.org/.
+  - Merge staging to master, check https://haxe.org/.
+
+# Announcing the release
+
+- Post announcement post to haxelang.

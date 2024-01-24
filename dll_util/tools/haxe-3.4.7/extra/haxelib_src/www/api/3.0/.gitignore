@@ -1,0 +1,2 @@
+# No need to ignore index.n since the .gitignore in project root ignored *.n
+# This file, however, still should present such that git will track this folder.
