@@ -1,4 +1,4 @@
-import cppbindings.CCE8E2D0A;
+import cppbindings.*;
 import externals.Matrix;
 
 class C83B8A16667A05285 {

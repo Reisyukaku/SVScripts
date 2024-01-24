@@ -1,16 +1,16 @@
 class C06249860459C8E5A {
-  static var SE1FF0FCD73C7D0BC = 1;
-  static var SBEECF1DD2B9DFB1E = 2;
-  static var S93E1062E6DDDB25E = 4;
-  static var S42DCF09450C02265 = 6;
-  static var SC8BF65C975FB4CF0 = 12;
-  static var S96314C522A76154A = (1 << (SE1FF0FCD73C7D0BC - 1));
-  static var SCB8D721D47E94D84 = (1 << (SBEECF1DD2B9DFB1E - 1));
-  static var S5323CBCB07E5B8A8 = 0.05;
-  static var S469DB55DA92DD3BC = cE19B10CC.f101D811F();
+  @:native("SE1FF0FCD73C7D0BC") static var GROUND_LAYER = 1;
+  @:native("SBEECF1DD2B9DFB1E") static var WATER_LAYER = 2;
+  @:native("S93E1062E6DDDB25E") static var NPC_LAYER = 4;
+  @:native("S42DCF09450C02265") static var m_messageCloseCoroutine = 6;
+  @:native("SC8BF65C975FB4CF0") static var SCROLL_INDEX_TAIL = 12;
+  @:native("S96314C522A76154A") static var GROUND_BITFIELD = (1 << (GROUND_LAYER - 1));
+  @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = (1 << (WATER_LAYER - 1));
+  @:native("S5323CBCB07E5B8A8") static var S5323CBCB07E5B8A8 = 0.05;
+  @:native("S469DB55DA92DD3BC") static var rayOpt = cE19B10CC.f101D811F();
 
-  // SetShapeRotation
-  public static function S37EC4DF80C23CC2A(A0_2:Dynamic, A1_2:Dynamic):Dynamic {
+  @:native("S37EC4DF80C23CC2A")
+  public static function SetShapeRotation(A0_2:Dynamic, A1_2:Dynamic):Dynamic {
       var L2_2:Dynamic, L3_2:Dynamic, L4_2:Dynamic, L5_2:Dynamic, L6_2:Dynamic, L7_2:Dynamic;
       L2_2 = A0_2.f53D9EAAE(A0_2);
       if (1 == L2_2) {
@@ -34,9 +34,8 @@ class C06249860459C8E5A {
       }
   }
 
-
-  //GetShapeRotation
-  public static function SF9BE40653D086746(A0_2:Dynamic):Dynamic {
+  @:native("SF9BE40653D086746")
+  public static function GetShapeRotation(A0_2:Dynamic):Dynamic {
       var L1_2 = A0_2.f53D9EAAE(A0_2);
       if (L1_2 == 1) {
           A0_2.fFB6EE94F(A0_2);
@@ -55,50 +54,50 @@ class C06249860459C8E5A {
       }
   }
 
-  //WaterRayCast
-  public static function SFEBBEE8D9284A00B(A0_2:Dynamic, A1_2:Dynamic, A2_2:Dynamic = 0, A3_2:Dynamic = 1):Dynamic {
+  @:native("SFEBBEE8D9284A00B")
+  public static function WaterRayCast(A0_2:Dynamic, A1_2:Dynamic, A2_2:Dynamic = 0, A3_2:Dynamic = 1):Dynamic {
       var unk0:Int32 = 2;
-      return C06249860459C8E5A.SB5650EB38CCD091A(A0_2, A1_2, 1 << unk0, A3_2, A2_2);
+      return GetShapeRotation(A0_2, A1_2, 1 << unk0, A3_2, A2_2);
   }
 
-  
-  //LandRayCast
-  public static function SE97248E46ABB5CA7(A0_2:Int32, A1_2:Int32, ?A2_2:Int32, ?A3_2:Int32):Int32 {
+  @:native("SE97248E46ABB5CA7")
+  public static function LandRayCast(A0_2:Int32, A1_2:Int32, ?A2_2:Int32, ?A3_2:Int32):Int32 {
       if (A3_2 == null) A3_2 = 1;
       if (A2_2 == null) A2_2 = 0;
       
-      return C06249860459C8E5A.SB5650EB38CCD091A(A0_2, A1_2, 1 | (1 << 1) | (1 << 6), A3_2, A2_2);
+      return GetShapeRotation(A0_2, A1_2, 1 | (1 << 1) | (1 << 6), A3_2, A2_2);
   }
   
-  // LandShapeCast
-  public static function S1110B18BD2FEF032(A0_2:Int32, A1_2:Int32, A2_2:Int32 = 1):Int32 {
-      return C06249860459C8E5A.S34504A5C8F8B4FCF(A0_2, A1_2, (1 << 1) | (1 << 6), A2_2);
+  @:native("S1110B18BD2FEF032")
+  public static function LandShapeCast(A0_2:Int32, A1_2:Int32, A2_2:Int32 = 1):Int32 {
+      return GetShapeRotation(A0_2, A1_2, (1 << 1) | (1 << 6), A2_2);
   }
   
+  @:native("S2757B69498F389AE")
   public static function S2757B69498F389AE(A0_2:Int32, A1_2:Int32, A2_2:Int32 = 1):Int32 {
-      return C06249860459C8E5A.S34504A5C8F8B4FCF(A0_2, A1_2, 1 << 2, A2_2);
+      return GetShapeRotation(A0_2, A1_2, 1 << 2, A2_2);
   }
 
-  //LandCapsuleCast
-  public static function S2B5898695BCB23F4(A0_2, A1_2, A2_2, A3_2){
+  @:native("S2B5898695BCB23F4")
+  public static function LandCapsuleCast(A0_2, A1_2, A2_2, A3_2){
     if (A3_2 == null) {
       A3_2 = 1;
     }
     var L9_2 = 1 << 1;
     var L10_2 = 1 << 6;
     var L8_2 = L9_2 | L10_2;
-    return C06249860459C8E5A.S9E7F9F1C6EB5BBB9(A0_2, A1_2, A2_2, L8_2, A3_2);
+    return GetShapeRotation(A0_2, A1_2, A2_2, L8_2, A3_2);
   }
 
-  //LayeredRayCast
-  public static function SB5650EB38CCD091A(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2){
+  @:native("SB5650EB38CCD091A")
+  public static function LayeredRayCast(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2){
     local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
     L8_2 = 0 ~= _hx_bit_raw.band(A4_2, 1)
-    C06249860459C8E5A.S469DB55DA92DD3BC.fCF1931BB(C06249860459C8E5A.S469DB55DA92DD3BC, L8_2)
+    rayOpt.fCF1931BB(rayOpt, L8_2)
     L8_2 = 0 ~= _hx_bit_raw.band(A4_2, 2)
-    C06249860459C8E5A.S469DB55DA92DD3BC.f973490B9(C06249860459C8E5A.S469DB55DA92DD3BC, L8_2)
+    rayOpt.f973490B9(rayOpt, L8_2)
     L8_2 = 0 ~= _hx_bit_raw.band(A4_2, 4)
-    C06249860459C8E5A.S469DB55DA92DD3BC.f2C469077(C06249860459C8E5A.S469DB55DA92DD3BC, L8_2)
+    rayOpt.f2C469077(rayOpt, L8_2)
     L6_2 = 1
     if 0 ~= _hx_bit_raw.band(A4_2, 8) then
       L6_2 = 0
@@ -112,7 +111,7 @@ class C06249860459C8E5A {
     L12_2 = A1_2[1]
     L13_2 = A1_2[2]
     L14_2 = A1_2[3]
-    L18_2 = C06249860459C8E5A.S469DB55DA92DD3BC
+    L18_2 = rayOpt
     L7_2 = L7_2.f586A3930(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, A2_2, A3_2, L6_2, L18_2)
     L8_2 = C60B2EB370A8B68F0.new()
     L9_2 = nil
@@ -221,8 +220,8 @@ class C06249860459C8E5A {
     return L8_2
   }
 
-  //WaterCapsuleCast
-  public static function SF725F7C11C979360(A0_2, A1_2, A2_2, A3_2) {
+  @:native("SF725F7C11C979360")
+  public static function WaterCapsuleCast(A0_2, A1_2, A2_2, A3_2) {
     local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
     if nil == A3_2 then
       A3_2 = 1
@@ -239,8 +238,8 @@ class C06249860459C8E5A {
     return L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
   }
 
-  //LayeredCapsuleCast
-  public static function S9E7F9F1C6EB5BBB9(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2) {
+  @:native("S9E7F9F1C6EB5BBB9")
+  public static function LayeredCapsuleCast(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2) {
     local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2
     if nil == A5_2 then
       A5_2 = 0
@@ -369,8 +368,8 @@ class C06249860459C8E5A {
     return L7_2
   }
 
-  //LandPencilCast
-  public static function S557EE6B53E7A494A(A0_2, A1_2, A2_2, A3_2){
+  @:native("S557EE6B53E7A494A")
+  public static function LandPencilCast(A0_2, A1_2, A2_2, A3_2){
     local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
     if nil == A3_2 then
       A3_2 = 1
@@ -394,8 +393,8 @@ class C06249860459C8E5A {
     return L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
   }
 
-  //WaterPencilCast
-  public static function S8A78048732E361AE(A0_2, A1_2, A2_2, A3_2){
+  @:native("S8A78048732E361AE")
+  public static function WaterPencilCast(A0_2, A1_2, A2_2, A3_2){
     local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
     if nil == A3_2 then
       A3_2 = 1
@@ -413,8 +412,8 @@ class C06249860459C8E5A {
     return L4_2(L5_2, L6_2, L7_2, L8_2, L9_2)
   }
 
-  //LayeredPencilCast
-  public static function SA614A0FD7D5BC105 = function(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2){
+  @:native("SA614A0FD7D5BC105")
+  public static function LayeredPencilCast = function(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2){
     local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2
     if nil == A5_2 then
       A5_2 = 0
@@ -545,8 +544,8 @@ class C06249860459C8E5A {
     return L7_2
   }
 
-  //LayeredShapeCast
-  public static function S34504A5C8F8B4FCF(A0_2, A1_2, A2_2, A3_2, A4_2){
+  @:native("S34504A5C8F8B4FCF")
+  public static function LayeredShapeCast(A0_2, A1_2, A2_2, A3_2, A4_2){
     local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
     if nil == A4_2 then
       A4_2 = 0
@@ -647,8 +646,8 @@ class C06249860459C8E5A {
     return L6_2
   }
 
-  //GetShapeTranslation
-  public static function SB494EE63A7D94CD3(A0_2){
+  @:native("SB494EE63A7D94CD3")
+  public static function GetShapeTranslation(A0_2){
     local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
     L2_2 = A0_2
     L1_2 = A0_2.f53D9EAAE
@@ -725,8 +724,8 @@ class C06249860459C8E5A {
     end
   }
 
-  //SetShapeTranslation
-  public static function S243B903AC29CB977(A0_2, A1_2){
+  @:native("S243B903AC29CB977")
+  public static function SetShapeTranslation(A0_2, A1_2){
     local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
     L2_2 = A0_2.f53D9EAAE(A0_2)
     if 1 == L2_2 then

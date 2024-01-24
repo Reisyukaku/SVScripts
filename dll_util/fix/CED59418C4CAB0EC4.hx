@@ -1,6 +1,6 @@
 class CED59418C4CAB0EC4 {
-  //Clamp
-  public static function clamp(value:Float, min:Float, max:Float):Float {
+  @:native("05B90B9B5A6DE6BC")
+  public static function Clamp(value:Float, min:Float, max:Float):Float {
       if (value < min) {
           value = min;
       }
@@ -10,13 +10,13 @@ class CED59418C4CAB0EC4 {
       return value;
   }
   
-  //DegreeToRadian
-  public static function SF5188CAE4725F031(A0_2:Float):Float {
+  @:native("SF5188CAE4725F031")
+  public static function DegreeToRadian(A0_2:Float):Float {
       return A0_2 / 360.0 * 2 * Math.PI;
   }
 
-  //DegreeToRadianVec3
-  public static function S0F3397CD4738809E(v:Array<Float>):Array<Float> {
+  @:native("S0F3397CD4738809E")
+  public static function DegreeToRadianVec3(v:Array<Float>):Array<Float> {
       return [
           SF5188CAE4725F031(v[0]),
           SF5188CAE4725F031(v[1]),
@@ -24,13 +24,13 @@ class CED59418C4CAB0EC4 {
       ];
   }
   
-  //RadianToDegree
-  public static function S3BAEFE1C86362AED(rad:Float):Float {
+  @:native("S3BAEFE1C86362AED")
+  public static function RadianToDegree(rad:Float):Float {
       return (rad / (2 * Math.PI)) * 360.0;
   }
   
-  //RadianToDegreeVec3
-  public static function SFD01AA20E8E36D4A(rads:Array<Float>):Array<Float> {
+  @:native("SFD01AA20E8E36D4A")
+  public static function RadianToDegreeVec3(rads:Array<Float>):Array<Float> {
       return [
           S3BAEFE1C86362AED(rads[0]),
           S3BAEFE1C86362AED(rads[1]),
@@ -38,8 +38,8 @@ class CED59418C4CAB0EC4 {
       ];
   }
   
-  //GetVectorAngle
-  public static function S83677FF4EE3F1CBF(v1:Array<Float>, v2:Array<Float>):Float {
+  @:native("S83677FF4EE3F1CBF")
+  public static function GetVectorAngle(v1:Array<Float>, v2:Array<Float>):Float {
       var dotProduct = c7A48E3FC.f04EE1F22(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
       dotProduct = Math.max(-1, Math.min(dotProduct, 1));
 
@@ -117,41 +117,10 @@ class CED59418C4CAB0EC4 {
 
   //SlerpVector
   public static function S9487238A2BCBB744(A0_2, A1_2, A2_2){
-    local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-    L3_2 = CED59418C4CAB0EC4
-    L3_2 = L3_2.S27BA7C7323C27960
-    L4_2 = A0_2
-    L5_2 = A1_2
-    L6_2 = {}
-    L7_2 = 0
-    L8_2 = 1
-    L9_2 = 0
-    L6_2[1] = L7_2
-    L6_2[2] = L8_2
-    L6_2[3] = L9_2
-    L3_2 = L3_2(L4_2, L5_2, L6_2)
-    L4_2 = cD5675BA5
-    L4_2 = L4_2.fBE61A5F8
-    L5_2 = cD5675BA5
-    L5_2 = L5_2.f0151A26E
-    L5_2 = L5_2()
-    L6_2 = L3_2
-    L7_2 = A2_2
-    L4_2 = L4_2(L5_2, L6_2, L7_2)
-    L5_2 = L4_2
-    L4_2 = L4_2.fCA247E7A
-    L6_2 = A0_2[1]
-    L7_2 = A0_2[2]
-    L8_2 = A0_2[3]
-    L4_2, L5_2, L6_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
-    L7_2 = {}
-    L8_2 = L4_2
-    L9_2 = L5_2
-    L10_2 = L6_2
-    L7_2[1] = L8_2
-    L7_2[2] = L9_2
-    L7_2[3] = L10_2
-    return L7_2
+    var L3_2 = CED59418C4CAB0EC4.S27BA7C7323C27960(A0_2, A1_2, [0,1,0]);
+    var L5_2 = cD5675BA5.f0151A26E();
+    var L4_2 = cD5675BA5.fBE61A5F8(L5_2, L3_2, A2_2);
+    return L4_2.fCA247E7A(this, A0_2[1], A0_2[2], A0_2[3]); //array of 3
   }
 
   //
