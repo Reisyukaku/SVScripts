@@ -1,36 +1,38 @@
 import lua.NativeStringTools;
+import externals.*;
 
 class CB87925D1C1B918F9 {
-    //Format
-    public static function S042B860498E558B2(fmt:String, val1:Float, ?val2:Float, ?val3:Float, ?val4:Float):String {
+
+    @:native("S042B860498E558B2")
+    public static function Format(fmt:String, val1:Float, ?val2:Float, ?val3:Float, ?val4:Float):String {
         return NativeStringTools.format(fmt, val1, val2, val3, val4);
     }
     
-    //FormatVec2
-    public static function S8CED42592045F03E(vec:Array<Float>, numFmt:String = "%4.3f"):String {
+    @:native("FormatVec2")
+    public static function FormatVec2(vec:Array<Float>, numFmt:String = "%4.3f"):String {
         var fmt: String = '$numFmt, $numFmt';
-        return CB87925D1C1B918F9.S042B860498E558B2(fmt, vec[0], vec[1]);
+        return CB87925D1C1B918F9.Format(fmt, vec[0], vec[1]);
     }
     
-    //FormatVec3
-    public static function S8CED43592045F1F1(vec:Array<Float>, numFmt:String = "%4.3f"):String {
+    @:native("S8CED43592045F1F1")
+    public static function FormatVec3(vec:Array<Float>, numFmt:String = "%4.3f"):String {
         var fmt: String = '$numFmt, $numFmt, $numFmt';
-        return CB87925D1C1B918F9.S042B860498E558B2(fmt, vec[0], vec[1], vec[2]);
+        return CB87925D1C1B918F9.Format(fmt, vec[0], vec[1], vec[2]);
     }
     
-    //FormatVec4
-    public static function S8CED44592045F3A4(vec:Array<Float>, numFmt:String = "%4.3f"):String {
+    @:native("S8CED44592045F3A4")
+    public static function FormatVec4(vec:Array<Float>, numFmt:String = "%4.3f"):String {
         var fmt: String = '$numFmt, $numFmt, $numFmt, $numFmt';
-        return CB87925D1C1B918F9.S042B860498E558B2(fmt, vec[0], vec[1], vec[2], vec[3]);
+        return CB87925D1C1B918F9.Format(fmt, vec[0], vec[1], vec[2], vec[3]);
     }
     
-    //FormatQuat
-    public static function SEBF89A530DC44FF1(quat:Array<Float>, numFmt:String = "%4.3f"):String {
+    @:native("SEBF89A530DC44FF1")
+    public static function FormatQuat(quat:Quaternion, numFmt:String = "%4.3f"):String {
         var fmt: String = '$numFmt, $numFmt, $numFmt, $numFmt';
-        var x:Float = untyped __lua__("quat.fCCBD9548(quat)");
-        var y:Float = untyped __lua__("quat.fBBBAA5DE(quat)");
-        var z:Float = untyped __lua__("quat.f22B3F464(quat)");
-        var w:Float = untyped __lua__("quat.f5C0288D9(quat)");
-        return CB87925D1C1B918F9.S042B860498E558B2(fmt, x, y, z, w);
+        var x:Float = quat.fCCBD9548();
+        var y:Float = quat.fBBBAA5DE();
+        var z:Float = quat.f22B3F464();
+        var w:Float = quat.f5C0288D9();
+        return CB87925D1C1B918F9.Format(fmt, x, y, z, w);
     }
 }
