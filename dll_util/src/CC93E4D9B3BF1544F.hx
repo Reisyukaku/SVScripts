@@ -33,8 +33,8 @@ class CC93E4D9B3BF1544F {
         if (IsSkip) {
             return;
         }
-        var arr:Array<Any> = CCE8E2D0A.f94CF9F47(A2_2, A2_2, A2_2, A1_2, A0_2[1], A0_2[2], A0_2[3]);
-        CFAFACFDC.fA09CD2D4(arr[0], arr[1], arr[2], arr[3], arr[4], arr[5], arr[6], arr[7]);
+        var arr:Array<Any> = CCE8E2D0A.f94CF9F47(A2_2, A2_2, A2_2, A1_2, A0_2);
+        CFAFACFDC.fA09CD2D4(arr);
     }
     
     @:native("SDA679AF432B220C4")

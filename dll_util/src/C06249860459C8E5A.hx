@@ -13,61 +13,58 @@ class C06249860459C8E5A {
     
     @:native("S37EC4DF80C23CC2A")
     public static function SetShapeRotation(A0_2:Dynamic, A1_2:Dynamic):Dynamic {
-        var L2_2 = A0_2.f53D9EAAE(A0_2);
         var L3_2;
         var L4_2;
-        if (1 == L2_2) {
-            return CD5675BA5.f0151A26E();
-        } else if (2 == L2_2) {
-            L3_2 = A0_2.fDEC84709(A0_2);
-            L4_2 = L3_2.fF82425D3(L3_2);
-            L3_2.f6063655E(L3_2, A1_2);
-            A0_2.fC0E7F040(A0_2, L3_2);
-            return L4_2;
-        } else if (3 == L2_2) {
-            L3_2 = A0_2.f4D570596(A0_2);
-            L4_2 = L3_2.fF82425D3(L3_2);
-            L3_2.f6063655E(L3_2, A1_2);
-            A0_2.f8349FFBA(A0_2, L3_2);
-            return L4_2;
-        } else if (7 == L2_2) {
-            return CD5675BA5.f0151A26E();
-        } else {
-            return CD5675BA5.f0151A26E();
+        switch(A0_2.f53D9EAAE(A0_2)) {
+            case 1:
+                return CD5675BA5.f0151A26E();
+            case 2:
+                L3_2 = A0_2.fDEC84709(A0_2);
+                L4_2 = L3_2.fF82425D3(L3_2);
+                L3_2.f6063655E(L3_2, A1_2);
+                A0_2.fC0E7F040(A0_2, L3_2);
+                return L4_2;
+            case 3:
+                L3_2 = A0_2.f4D570596(A0_2);
+                L4_2 = L3_2.fF82425D3(L3_2);
+                L3_2.f6063655E(L3_2, A1_2);
+                A0_2.f8349FFBA(A0_2, L3_2);
+                return L4_2;
+            case 7:
+                return CD5675BA5.f0151A26E();
+            default:
+                return CD5675BA5.f0151A26E();
         }
     }
     
     @:native("SF9BE40653D086746")
     public static function GetShapeRotation(A0_2:Dynamic):Dynamic {
         var L1_2 = A0_2.f53D9EAAE(A0_2);
-        if (L1_2 == 1) {
-            A0_2.fFB6EE94F(A0_2);
-            return CD5675BA5.f0151A26E();
-        } else if (L1_2 == 2) {
-            var L2_2 = A0_2.fDEC84709(A0_2);
-            return L2_2.fF82425D3(L2_2);
-        } else if (L1_2 == 3) {
-            var L2_2 = A0_2.f4D570596(A0_2);
-            return L2_2.fF82425D3(L2_2);
-        } else if (L1_2 == 7) {
-            A0_2.f54A82C13(A0_2);
-            return CD5675BA5.f0151A26E();
-        } else {
-            return CD5675BA5.f0151A26E();
+        switch(A0_2.f53D9EAAE(A0_2)) {
+            case 1:
+                A0_2.fFB6EE94F(A0_2);
+                return CD5675BA5.f0151A26E();
+            case 2:
+                var L2_2 = A0_2.fDEC84709(A0_2);
+                return L2_2.fF82425D3(L2_2);
+            case 3:
+                var L2_2 = A0_2.f4D570596(A0_2);
+                return L2_2.fF82425D3(L2_2);
+            case 7:
+                A0_2.f54A82C13(A0_2);
+                return CD5675BA5.f0151A26E();
+            default:
+                return CD5675BA5.f0151A26E();
         }
     }
     
     @:native("SFEBBEE8D9284A00B")
     public static function WaterRayCast(A0_2:Dynamic, A1_2:Dynamic, A2_2:Dynamic = 0, A3_2:Dynamic = 1):Dynamic {
-        var unk0:Int = 2;
-        return LayeredRayCast(A0_2, A1_2, 1 << unk0, A3_2, A2_2);
+        return LayeredRayCast(A0_2, A1_2, 1 << 2, A3_2, A2_2);
     }
     
     @:native("SE97248E46ABB5CA7")
-    public static function LandRayCast(A0_2:Int, A1_2:Int, ?A2_2:Int, ?A3_2:Int):Int {
-        if (A3_2 == null) A3_2 = 1;
-        if (A2_2 == null) A2_2 = 0;
-        
+    public static function LandRayCast(A0_2:Int, A1_2:Int, ?A2_2:Int = 0, ?A3_2:Int = 1):Int {
         return LayeredRayCast(A0_2, A1_2, 1 | (1 << 1) | (1 << 6), A3_2, A2_2);
     }
     
@@ -82,10 +79,7 @@ class C06249860459C8E5A {
     }
     
     @:native("S2B5898695BCB23F4")
-    public static function LandCapsuleCast(A0_2, A1_2, A2_2, A3_2){
-        if (A3_2 == null) {
-            A3_2 = 1;
-        }
+    public static function LandCapsuleCast(A0_2, A1_2, A2_2, ?A3_2 = 1){
         return LayeredRayCast(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
     }
     
