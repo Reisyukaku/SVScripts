@@ -61,11 +61,8 @@ class CED59418C4CAB0EC4 {
   }
   
   //FromVectorRotation
-  public static function S27BA7C7323C27960(v1:Array<Float>, v2:Array<Float>, v3:Array<Float>):Array<Float> {
+  public static function S27BA7C7323C27960(v1:Array<Float>, v2:Array<Float>, ?v3:Array<Float> = [1, 0, 0]):Array<Float> {
       var angle = CED59418C4CAB0EC4.S83677FF4EE3F1CBF(v1, v2);
-      if (v3 == null) {
-          v3 = [1, 0, 0];
-      }
       return cD5675BA5.fC1785368(v3[0], v3[1], v3[2], angle); 
   }
   

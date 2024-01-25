@@ -19,9 +19,8 @@ class CC93E4D9B3BF1544F {
         if (IsSkip) {
             return;
         }
-        if (A2_2 == null) {
+        if (A2_2 == null)
             A2_2 = C97B74412253C3332.Blue;
-        }
 
         CFAFACFDC.f68DE7298(A2_2[0], A2_2[1], A2_2[2], A2_2[3]);
         CFAFACFDC.f1B4F55DF(3);
@@ -30,12 +29,7 @@ class CC93E4D9B3BF1544F {
     }
     
     @:native("SDCC1BF613ED6BE86")
-    public static function Arrow(A0_2:Array<Int>, A1_2:Int, A2_2:Int) {
-
-        if (A2_2 == null) {
-            A2_2 = 1;
-        }
-
+    public static function Arrow(A0_2:Array<Int>, A1_2:Int, ?A2_2:Int = 0) {
         if (IsSkip) {
             return;
         }
@@ -44,13 +38,13 @@ class CC93E4D9B3BF1544F {
     }
     
     @:native("SDA679AF432B220C4")
-    public static function Shere(A0_2:Array<Int>, A1_2:Int, A2_2:Array<Float>, A3_2:Int, A4_2:Int) {
-        A4_2 = A4_2 == null ? 5 : A4_2;
-        A1_2 = A1_2 == null ? 1 : A1_2;
+    public static function Shere(A0_2:Array<Int>, ?A1_2:Int = 1, ?A2_2:Array<Float>, ?A3_2:Int, ?A4_2:Int = 5) {
         if (IsSkip) {
             return;
         }
-        A2_2 = A2_2 == null ? C97B74412253C3332.Blue : A2_2;
+        if(A2_2 == null)
+            A2_2 = C97B74412253C3332.Blue;
+
         CFAFACFDC.f68DE7298(A2_2[0], A2_2[1], A2_2[2], A2_2[3]);
         CFAFACFDC.f1B4F55DF(3);
         var L5_2 = CD5675BA5.f1C9D9E00(A3_2, null);
@@ -73,7 +67,7 @@ class CC93E4D9B3BF1544F {
     }
 
     @:native("SD0ABEE268FD3CD32")
-    public static function Box(A0_2:Array<Dynamic>, A1_2:Int = 1, A2_2:Array<Float>) {
+    public static function Box(A0_2:Array<Dynamic>, ?A1_2:Int = 1, ?A2_2:Array<Float>) {
         if (IsSkip) {
             return;
         }
