@@ -14,7 +14,7 @@ compile:
 	$(HAXE) build.hxml
 
 luac:
-	$(LUAC) -o $(TARGET).blua $(BUILD_DIR)/*.lua
+	$(LUAC) -s -o $(TARGET).blua $(BUILD_DIR)/*.lua
 
 clean:
 	rm -rf $(BUILD_DIR) $(TARGET).blua

@@ -3,7 +3,7 @@
 ### dll_util progress:
 - C60B2EB370A8B68F0
   - Rewrite: ![](https://geps.dev/progress/100)
-  - Verify: ![](https://geps.dev/progress/100)
+  - Verify: ![](https://geps.dev/progress/90)
 - C97B74412253C3332
   - Rewrite: ![](https://geps.dev/progress/100)
   - Verify: ![](https://geps.dev/progress/100)
@@ -15,7 +15,7 @@
   - Verify: ![](https://geps.dev/progress/100)
 - CB87925D1C1B918F9
   - Rewrite: ![](https://geps.dev/progress/100)
-  - Verify: ![](https://geps.dev/progress/10)
+  - Verify: ![](https://geps.dev/progress/50)
 - CC93E4D9B3BF1544F
   - Rewrite: ![](https://geps.dev/progress/100)
   - Verify: ![](https://geps.dev/progress/10)
