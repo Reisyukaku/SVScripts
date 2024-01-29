@@ -213,13 +213,13 @@ public static function SF667ED15F51B1B8F(A0_2, A1_2, A2_2, A3_2){
 }
 
   //ClampMagnitude
-  public static function S60329B020EE3A79A(A0_2:Array<Float>, A1_2){
+  public static function S60329B020EE3A79A(A0_2:Array<Float>, A1_2):Array<Float>{
     L3_2 = c7A48E3FC.f92852F73(A0_2)
-    var L2_2;
+    var L2_2:Array<Float>; //Vec3
     if (A1_2 < L3_2) {
       L2_2:Array<Float> = c7A48E3FC.fD9D3C136(A0_2);
       c7A48E3FC.fBD92E0EC(L2_2);
-      return [L2_2[1] * A1_2, L2_2[2] * A1_2, L2_2[3] * A1_2];
+      return L2_2 * A1_2;
     }
     return L2_2;
   }
