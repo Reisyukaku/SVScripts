@@ -1,4 +1,5 @@
 import cppbindings.*;
+import externals.RayOption;
 
 class C06249860459C8E5A {
     @:native("SE1FF0FCD73C7D0BC") static var GROUND_LAYER = 1;
@@ -9,7 +10,7 @@ class C06249860459C8E5A {
     @:native("S96314C522A76154A") static var GROUND_BITFIELD = (1 << (GROUND_LAYER - 1));
     @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = (1 << (WATER_LAYER - 1));
     @:native("S5323CBCB07E5B8A8") static var S5323CBCB07E5B8A8 = 0.05;
-    @:native("S469DB55DA92DD3BC") static var rayOpt = CE19B10CC.f101D811F();
+    @:native("S469DB55DA92DD3BC") static var rayOpt:RayOption = CE19B10CC.f101D811F();
     
     @:native("S37EC4DF80C23CC2A")
     public static function SetShapeRotation(A0_2:Dynamic, A1_2:Dynamic):Dynamic {
@@ -86,11 +87,11 @@ class C06249860459C8E5A {
     @:native("SB5650EB38CCD091A")
     public static function LayeredRayCast(A0_2, A1_2, A2_2, A3_2, A4_2, ?A5_2){
         var L8_2 = (A4_2 & 1) != 0;
-        rayOpt.fCF1931BB(rayOpt, L8_2);
+        rayOpt.fCF1931BB(L8_2);
         L8_2 = (A4_2 & 2) != 0;
-        rayOpt.f973490B9(rayOpt, L8_2);
+        rayOpt.f973490B9(L8_2);
         L8_2 = (A4_2 & 4) != 0;
-        rayOpt.f2C469077(rayOpt, L8_2);
+        rayOpt.f2C469077(L8_2);
         var L6_2 = 1;
         if ((A4_2 & 8) != 0){
             L6_2 = 0;

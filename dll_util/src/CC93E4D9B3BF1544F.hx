@@ -29,11 +29,11 @@ class CC93E4D9B3BF1544F {
     }
     
     @:native("SDCC1BF613ED6BE86")
-    public static function Arrow(A0_2:Array<Int>, A1_2:Int, ?A2_2:Int = 0) {
+    public static function Arrow(A0_2:Array<Float>, A1_2:Int, ?A2_2:Int = 0) {
         if (IsSkip) {
             return;
         }
-        var arr:Array<Any> = CCE8E2D0A.f94CF9F47(A2_2, A2_2, A2_2, A1_2, A0_2);
+        var arr:Array<Float> = CCE8E2D0A.f94CF9F47(A2_2, A2_2, A2_2, A1_2, A0_2);
         CFAFACFDC.fA09CD2D4(arr);
     }
     
