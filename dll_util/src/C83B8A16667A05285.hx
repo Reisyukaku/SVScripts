@@ -20,7 +20,7 @@ class C83B8A16667A05285 {
     
     @:native("S1C88E0DAE5E1E973")
     public static function ConvertUiToScreen(uiCoord:Array<Float>, screenSize:Array<Float>):Array<Float> {
-        var screenCoord:Array<Float> = [];
+        var screenCoord = [];
         screenCoord[0] = (screenSize[0] / 2.0) + uiCoord[0];
         screenCoord[1] = (screenSize[1] / 2.0) - uiCoord[1];
         return screenCoord;
@@ -28,7 +28,7 @@ class C83B8A16667A05285 {
     
     @:native("S2679403848D5049B")
     public static function ConvertScreenToUi(screenCoord:Array<Float>, screenSize:Array<Float>):Array<Float> {
-        var uiCoord:Array<Float> = [];
+        var uiCoord = [];
         uiCoord[0] = screenCoord[0] - screenSize[0] / 2;
         uiCoord[1] = screenSize[1] / 2 - screenCoord[1];
         return uiCoord;
