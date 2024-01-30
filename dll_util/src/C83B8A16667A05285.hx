@@ -1,11 +1,10 @@
 import cppbindings.*;
-import externals.Matrix;
 
 class C83B8A16667A05285 {
     
     @:native("SD79F00DEB5032D7D")
-    public static function CalcWorldToScreen(worldPos:Array<Float>, A1:Array<Float>, A2:Matrix, A3:Matrix):Array<Float> {
-        var matrix:Matrix = CCE8E2D0A.f0151A26E();
+    public static function CalcWorldToScreen(worldPos:Array<Float>, A1:Array<Float>, A2:CCE8E2D0A, A3:CCE8E2D0A):Array<Float> {
+        var matrix:CCE8E2D0A = CCE8E2D0A.f0151A26E();
         matrix.f56310C93(
             A1[0] / 2.0,    0,               0,        0, 
             0,              -A1[1] / 2.0,    0,        0, 

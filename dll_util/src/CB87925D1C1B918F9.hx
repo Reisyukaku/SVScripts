@@ -1,5 +1,5 @@
 import lua.NativeStringTools;
-import externals.*;
+import cppbindings.*;
 
 class CB87925D1C1B918F9 {
 
@@ -27,7 +27,7 @@ class CB87925D1C1B918F9 {
     }
     
     @:native("SEBF89A530DC44FF1")
-    public static function FormatQuat(quat:Quaternion, numFmt:String = "%4.3f"):String {
+    public static function FormatQuat(quat:CD5675BA5, numFmt:String = "%4.3f"):String {
         var fmt: String = '$numFmt, $numFmt, $numFmt, $numFmt';
         var x:Float = quat.fCCBD9548();
         var y:Float = quat.fBBBAA5DE();

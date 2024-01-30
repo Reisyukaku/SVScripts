@@ -1,5 +1,4 @@
 import cppbindings.*;
-import externals.RayOption;
 
 class C06249860459C8E5A {
     @:native("SE1FF0FCD73C7D0BC") static var GROUND_LAYER = 1;

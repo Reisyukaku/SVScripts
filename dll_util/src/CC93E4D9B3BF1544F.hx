@@ -1,5 +1,4 @@
 import cppbindings.*;
-import externals.Matrix;
 
 class CC93E4D9B3BF1544F {
     @:native("SDA721D99DBE3AB52") public static var IsSkip:Bool = true;
@@ -54,7 +53,7 @@ class CC93E4D9B3BF1544F {
         var L6_2 = A1_2;
         var L7_2 = A4_2;
         var L8_2 = A4_2;
-        var L9_2:Matrix = null;
+        var L9_2:CCE8E2D0A = null;
         L8_2 = L8_2 == null ? 10 : L8_2;
         L7_2 = L7_2 == null ? 10 : L7_2;
         L6_2 = L6_2 == null ? 1 : L6_2;
