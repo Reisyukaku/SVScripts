@@ -220,10 +220,10 @@ class CED59418C4CAB0EC4 {
 
     @:native("S60329B020EE3A79A")
     public static function ClampMagnitude(A0_2:Array<Float>, A1_2):Array<Float>{
-        L3_2 = c7A48E3FC.f92852F73(A0_2)
+        var L3_2 = c7A48E3FC.f92852F73(A0_2[0], A0_2[1], A0_2[2])
         var L2_2:Array<Float>; //Vec3
         if (A1_2 < L3_2) {
-        L2_2:Array<Float> = c7A48E3FC.fD9D3C136(A0_2);
+        L2_2:Array<Float> = c7A48E3FC.fD9D3C136(A0_2[0], A0_2[1], A0_2[2]);
         c7A48E3FC.fBD92E0EC(L2_2);
         return L2_2 * A1_2;
         }
