@@ -1,11 +1,11 @@
 TARGET=dll_util
 
-HAXE=./tools/haxe-3.4.7/haxe
-LUAC=./tools/lua-5.4.3/src/luac
+HAXE=../tools/haxe-3.4.7/haxe
+LUAC=../tools/lua-5.4.3/src/luac
 BUILD_DIR=build
 SRC_DIR=src
 
-export HAXE_STD_PATH=./tools/haxe-3.4.7/std
+export HAXE_STD_PATH=../tools/haxe-3.4.7/std
 
 all: compile luac
 

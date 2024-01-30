@@ -1,2 +1,13 @@
 dll_util/build/*
 dll_util/*.blua
+dll_danbattle/build/*
+dll_danbattle/*.blua
+dll_picnic/build/*
+dll_picnic/*.blua
+dll_stadium/build/*
+dll_stadium/*.blua
+main/build/*
+main/*.blua
+main_dynamic/build/*
+main_dynamic/*.blua
+*.blua
