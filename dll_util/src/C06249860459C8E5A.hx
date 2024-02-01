@@ -9,26 +9,26 @@ class C06249860459C8E5A {
     @:native("S96314C522A76154A") static var GROUND_BITFIELD = (1 << (GROUND_LAYER - 1));
     @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = (1 << (WATER_LAYER - 1));
     @:native("S5323CBCB07E5B8A8") static var S5323CBCB07E5B8A8 = 0.05;
-    @:native("S469DB55DA92DD3BC") static var rayOpt:RayOption = CE19B10CC.f101D811F();
+    @:native("S469DB55DA92DD3BC") static var rayOpt:CE19B10CC = CE19B10CC.f101D811F();
     
     @:native("S37EC4DF80C23CC2A")
-    public static function SetShapeRotation(A0_2:Dynamic, A1_2:Dynamic):Dynamic {
+    public static function SetShapeRotation(A0_2:C85FE83D4, A1_2:Dynamic):Dynamic {
         var L3_2;
         var L4_2;
-        switch(A0_2.f53D9EAAE(A0_2)) {
+        switch(A0_2.f53D9EAAE()) {
             case 1:
                 return CD5675BA5.f0151A26E();
             case 2:
-                L3_2 = A0_2.fDEC84709(A0_2);
-                L4_2 = L3_2.fF82425D3(L3_2);
-                L3_2.f6063655E(L3_2, A1_2);
-                A0_2.fC0E7F040(A0_2, L3_2);
+                L3_2 = A0_2.fDEC84709();
+                L4_2 = L3_2.fF82425D3();
+                L3_2.f6063655E(A1_2);
+                A0_2.fC0E7F040(L3_2);
                 return L4_2;
             case 3:
-                L3_2 = A0_2.f4D570596(A0_2);
-                L4_2 = L3_2.fF82425D3(L3_2);
-                L3_2.f6063655E(L3_2, A1_2);
-                A0_2.f8349FFBA(A0_2, L3_2);
+                L3_2 = A0_2.f4D570596();
+                L4_2 = L3_2.fF82425D3();
+                L3_2.f6063655E(A1_2);
+                A0_2.f8349FFBA(L3_2);
                 return L4_2;
             case 7:
                 return CD5675BA5.f0151A26E();
@@ -39,19 +39,19 @@ class C06249860459C8E5A {
     
     @:native("SF9BE40653D086746")
     public static function GetShapeRotation(A0_2:Dynamic):Dynamic {
-        var L1_2 = A0_2.f53D9EAAE(A0_2);
-        switch(A0_2.f53D9EAAE(A0_2)) {
+        var L1_2 = A0_2.f53D9EAAE();
+        switch(A0_2.f53D9EAAE()) {
             case 1:
-                A0_2.fFB6EE94F(A0_2);
+                A0_2.fFB6EE94F();
                 return CD5675BA5.f0151A26E();
             case 2:
-                var L2_2 = A0_2.fDEC84709(A0_2);
-                return L2_2.fF82425D3(L2_2);
+                var L2_2 = A0_2.fDEC84709();
+                return L2_2.fF82425D3();
             case 3:
-                var L2_2 = A0_2.f4D570596(A0_2);
-                return L2_2.fF82425D3(L2_2);
+                var L2_2 = A0_2.f4D570596();
+                return L2_2.fF82425D3();
             case 7:
-                A0_2.f54A82C13(A0_2);
+                A0_2.f54A82C13();
                 return CD5675BA5.f0151A26E();
             default:
                 return CD5675BA5.f0151A26E();
@@ -96,13 +96,13 @@ class C06249860459C8E5A {
             L6_2 = 0;
         }
         var L7_2 = C95DC25DB.f544F902B();
-        L7_2 = L7_2.f5E1D7445(L7_2);
-        L7_2 = L7_2.f586A3930(L7_2, A0_2[1], A0_2[2], A0_2[3], A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L6_2, rayOpt);
+        L7_2 = L7_2.f5E1D7445();
+        L7_2 = L7_2.f586A3930(A0_2[1], A0_2[2], A0_2[3], A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L6_2, rayOpt);
         var tbl = new C60B2EB370A8B68F0();
         var L9_2 = null;
         var L10_2;
         if (A5_2 == null){
-            L10_2 = L7_2.fD5B33F22(L7_2);
+            L10_2 = L7_2.fD5B33F22();
             var L11_2 = L10_2 < 0;
             function L12_2(){
                 var L0_3 = null;
@@ -116,12 +116,12 @@ class C06249860459C8E5A {
             }
             var unkFunk = L12_2();
             if (unkFunk)
-                L9_2 = L7_2.fCB2FEF1E(L7_2, 0);
+                L9_2 = L7_2.fCB2FEF1E(0);
         }else{
-            var L11_2 = L7_2.fD5B33F22(L7_2);
+            var L11_2 = L7_2.fD5B33F22();
             while (0 < L11_2) {
                 L10_2 = L10_2 + 1;
-                L12_2 = L7_2.fCB2FEF1E(L7_2, L10_2 - 1);
+                var L12_2 = L7_2.fCB2FEF1E(L10_2 - 1);
                 var L13_2 = A5_2(L12_2);
                 if (L13_2){
                     L9_2 = L12_2;
@@ -129,22 +129,22 @@ class C06249860459C8E5A {
                 }
             }
         }
-        var L11_2 = cA877D16F.f7289F1DA(L9_2, null);
+        var L11_2 = CA877D16F.f7289F1DA(L9_2, null);
         if (L11_2) {
             tbl.unkBool_0 = true;
-            tbl.unkArray_2 = L9_2.f689A04F6(L9_2);
-            tbl.unkArray_1 = L9_2.f1B877572(L9_2);
+            tbl.unkArray_2 = L9_2.f689A04F6();
+            tbl.unkArray_1 = L9_2.f1B877572();
             
-            L17_2 = L9_2.fD34C0BB0(L9_2);
-            tbl.unkObj_3 = L17_2.fE87F9A08(L17_2);
+            var L17_2 = L9_2.fD34C0BB0();
+            tbl.unkObj_3 = L17_2.fE87F9A08();
 
-            var L17_2:Array<Float> = L9_2.f1B877572(L9_2);
+            var L17_2:Array<Float> = L9_2.f1B877572();
             tbl.unkInt_4 = C7A48E3FC.f92852F73(L17_2[0] - A0_2[0], L17_2[1] - A0_2[1], L17_2[2] - A0_2[2]);
-            tbl.unkInt_5 = L9_2.f6F8C88BD(L9_2);
+            tbl.unkInt_5 = L9_2.f6F8C88BD();
 
-            var L21_2:Array<Float> = L9_2.fC12793A5(L9_2);
+            var L21_2:Array<Float> = L9_2.fC12793A5();
             tbl.unkObj_6 = C04846604.f1A30C15B(L21_2);
-            tbl.unkInt_7 = L9_2.f97CD3602(L9_2);
+            tbl.unkInt_7 = L9_2.f97CD3602();
         }
         return tbl;
     }
@@ -174,17 +174,17 @@ class C06249860459C8E5A {
 
             var tbl = new C60B2EB370A8B68F0();
             tbl.unkBool_0 = true;
-            tbl.unkArray_2 = L20_2.f689A04F6(L20_2);
-            tbl.unkArray_1 = L20_2.f1B877572(L20_2);
+            tbl.unkArray_2 = L20_2.f689A04F6();
+            tbl.unkArray_1 = L20_2.f1B877572();
  
-            var L28_2 = L20_2.fD34C0BB0(L20_2);
-            tbl.unkObj_3 = L28_2.fE87F9A08(L28_2);
-            tbl.unkInt_4 = L20_2.f39CFB448(L20_2);
-            tbl.unkInt_5 = L20_2.f6F8C88BD(L20_2);
+            var L28_2 = L20_2.fD34C0BB0();
+            tbl.unkObj_3 = L28_2.fE87F9A08();
+            tbl.unkInt_4 = L20_2.f39CFB448();
+            tbl.unkInt_5 = L20_2.f6F8C88BD();
 
-            var L29_2:Array<Float> = L20_2.fC12793A5(L20_2);
+            var L29_2:Array<Float> = L20_2.fC12793A5();
             tbl.unkObj_6 = C04846604.f1A30C15B(L29_2);
-            tbl.unkInt_7 = L20_2.f97CD3602(L20_2);
+            tbl.unkInt_7 = L20_2.f97CD3602();
             arr.push(tbl);
         }
         return arr;
@@ -229,7 +229,7 @@ class C06249860459C8E5A {
             tbl.unkBool_0 = true;
             var L25_2 = L20_2.f1B877572();
             tbl.unkArray_2 = L20_2.f689A04F6();
-            tbl.unkArray_1 = L25_2.fE87F9A08(L25_2);
+            tbl.unkArray_1 = L25_2.fE87F9A08();
             tbl.unkObj_3 = L20_2.f39CFB448();
             tbl.unkInt_4 = L20_2.f6F8C88BD();
             tbl.unkInt_5 = C04846604.f1A30C15B(L20_2.fC12793A5());
@@ -259,7 +259,7 @@ class C06249860459C8E5A {
             tbl.unkBool_0 = true;
             var L16_2 = L11_2.f1B877572();
             tbl.unkArray_2 = L11_2.f689A04F6();
-            tbl.unkArray_1 = L16_2.fE87F9A08(L16_2);
+            tbl.unkArray_1 = L16_2.fE87F9A08();
             tbl.unkObj_3 = L11_2.fD34C0BB0().fE87F9A08();
             tbl.unkInt_4 = L11_2.f39CFB448();
             tbl.unkInt_5 = L11_2.f6F8C88BD();
