@@ -1,3 +1,5 @@
+import cppbindings.*;
+
 class CED59418C4CAB0EC4 {
     @:native("SFB8A67CFE7F5605D") public static var EPSILON:Float = 1.0E-8;
 
@@ -42,20 +44,20 @@ class CED59418C4CAB0EC4 {
     
     @:native("S83677FF4EE3F1CBF")
     public static function GetVectorAngle(v1:Array<Float>, v2:Array<Float>):Float {
-        var dotProduct = c7A48E3FC.f04EE1F22(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
+        var dotProduct = C7A48E3FC.f04EE1F22(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
         dotProduct = Math.max(-1, Math.min(dotProduct, 1));
 
-        var crossProduct = c7A48E3FC.f3D88C322(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
-        var length = c7A48E3FC.fBD92E0EC(crossProduct[0], crossProduct[1], crossProduct[2]);
+        var crossProduct = C7A48E3FC.f3D88C322(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
+        var length = C7A48E3FC.fBD92E0EC(crossProduct[0], crossProduct[1], crossProduct[2]);
 
         var angle = 0.0;
         if (length < 1.0E-4) {
             if (dotProduct < 0) {
-                angle = Math.pi;
+                angle = Math.PI;
             }
         } else {
-            crossProduct = c7A48E3FC.fD9D3C136(crossProduct[0], crossProduct[1], crossProduct[2]);
-            length = c7A48E3FC.fBD92E0EC(crossProduct[0], crossProduct[1], crossProduct[2]);
+            crossProduct = C7A48E3FC.fD9D3C136(crossProduct[0], crossProduct[1], crossProduct[2]);
+            length = C7A48E3FC.fBD92E0EC(crossProduct[0], crossProduct[1], crossProduct[2]);
             angle = Math.acos(dotProduct);
         }
 
@@ -85,11 +87,11 @@ class CED59418C4CAB0EC4 {
         var L9_2 = A2_2[2] - A0_2[2];
         var L10_2 = A2_2[3] - A0_2[3];
 
-        var L7_2 = c7A48E3FC.f04EE1F22(L8_2, L9_2, L10_2, L4_2, L5_2, L6_2);
+        var L7_2 = C7A48E3FC.f04EE1F22(L8_2, L9_2, L10_2, L4_2, L5_2, L6_2);
         if (L7_2 <= 0) {
         L3_2 = 0;
         }else{
-        L8_2 = c7A48E3FC.f04EE1F22(L4_2, L5_2, L6_2, L4_2, L5_2, L6_2);
+        L8_2 = C7A48E3FC.f04EE1F22(L4_2, L5_2, L6_2, L4_2, L5_2, L6_2);
         if (L7_2 >= L8_2){
             L3_2 = 1;
         }else{
@@ -161,104 +163,85 @@ class CED59418C4CAB0EC4 {
 
     @:native("SE32A15096ACCF008")
     public static function LerpVec2(A0_2, A1_2, A2_2){
-    return [(A1_2[0] - A0_2[0]) * A2_2 + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1]]
+        return [(A1_2[0] - A0_2[0]) * A2_2 + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1]];
     }
 
     @:native("SE32A16096ACCF1BB")
     public static function LerpVec3(A0_2, A1_2, A2_2){
-    return [(A1_2[0] - A0_2[0]) * A2_2 + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2]]
+        return [(A1_2[0] - A0_2[0]) * A2_2 + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2]];
     }
 
     @:native("SE32A1B096ACCFA3A")
     public static function LerpVec4(A0_2, A1_2, A2_2){
-    return [(A1_2[0] - A0_2[0]) * A2_2 + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2], (A1_2[3] - A0_2[3]) * A2_2 + A0_2[3]]
+        return [(A1_2[0] - A0_2[0]) * A2_2 + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2], (A1_2[3] - A0_2[3]) * A2_2 + A0_2[3]];
     }
 
     //...
     @:native("S385945E59AB9CA09")
     public static function S385945E59AB9CA09(A0_2, A1_2, A2_2, A3_2){
-    var i = 0;
-    while (i < A3_2) {
-        i = i + 1;
-        A0_2 = ((A1_2 - A0_2) * A2_2) + A0_2;
-    }
-    return A0_2;
+        var i = 0;
+        while (i++ < A3_2)
+            A0_2 = ((A1_2 - A0_2) * A2_2) + A0_2;
+
+        return A0_2;
     }
 
     //...Vec2
     @:native("SF667EB15F51B1829")
     public static function SF667EB15F51B1829(A0_2, A1_2, A2_2, A3_2){
-    var i = 0;
-    while (i < A3_2) {
-        i = i + 1
-        A0_2 = [(A1_2[0] -  A0_2[0] * A2_2) + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1]]
-    }
-    return A0_2
+        var i = 0;
+        while (i++ < A3_2)
+            A0_2 = [(A1_2[0] -  A0_2[0] * A2_2) + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1]];
+
+        return A0_2;
     }
 
     //...Vec3
     @:native("SF667EA15F51B1676")
     public static function SF667EA15F51B1676(A0_2, A1_2, A2_2, A3_2){
-    var i = 0;
-    while (i < A3_2) {
-        i = i + 1
-        A0_2 = [(A1_2[0] -  A0_2[0] * A2_2) + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2]]
-    }
-    return A0_2
+        var i = 0;
+        while (i++ < A3_2) 
+            A0_2 = [(A1_2[0] -  A0_2[0] * A2_2) + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2]];
+
+        return A0_2;
     }
 
     //...Vec4
     @:native("SF667ED15F51B1B8F")
     public static function SF667ED15F51B1B8F(A0_2, A1_2, A2_2, A3_2){
     var i = 0;
-    while (i < A3_2) {
-        i++;
-        A0_2 = [(A1_2[0] -  A0_2[0] * A2_2) + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2], (A1_2[3] - A0_2[3]) * A2_2 + A0_2[3]]
-    }
-    return A0_2
+        while (i++ < A3_2) 
+            A0_2 = [(A1_2[0] -  A0_2[0] * A2_2) + A0_2[0], (A1_2[1] - A0_2[1]) * A2_2 + A0_2[1], (A1_2[2] - A0_2[2]) * A2_2 + A0_2[2], (A1_2[3] - A0_2[3]) * A2_2 + A0_2[3]];
+
+        return A0_2;
     }
 
     @:native("S60329B020EE3A79A")
     public static function ClampMagnitude(A0_2:Array<Float>, A1_2):Array<Float>{
-        var L3_2 = c7A48E3FC.f92852F73(A0_2[0], A0_2[1], A0_2[2])
+        var L3_2 = C7A48E3FC.f92852F73(A0_2[0], A0_2[1], A0_2[2]);
         var L2_2:Array<Float>; //Vec3
         if (A1_2 < L3_2) {
-        L2_2:Array<Float> = c7A48E3FC.fD9D3C136(A0_2[0], A0_2[1], A0_2[2]);
-        c7A48E3FC.fBD92E0EC(L2_2);
-        return L2_2 * A1_2;
+            L2_2 = C7A48E3FC.fD9D3C136(A0_2[0], A0_2[1], A0_2[2]);
+            C7A48E3FC.fBD92E0EC(L2_2);
+            return L2_2 * A1_2;
         }
         return L2_2;
     }
 
     @:native("SBA941559F53ECC9A")
     public static function InverseLerp(min, max, val){
-        return (val - min) / (max - min)
+        return (val - min) / (max - min);
     }
 
     @:native("S28102DAA82AC58FD")
     public static function Floor(A0_2, A1_2){
-        local L2_2, L3_2, L4_2
-        L2_2 = _G.math
-        L2_2 = L2_2.pow
-        L3_2 = 10
-        L4_2 = A1_2
-        L2_2 = L2_2(L3_2, L4_2)
-        A0_2 = L2_2 * A0_2
-        L2_2 = _G.math
-        L2_2 = L2_2.floor
-        L3_2 = A0_2
-        L2_2 = L2_2(L3_2)
-        A0_2 = L2_2
-        L2_2 = _G.math
-        L2_2 = L2_2.pow
-        L3_2 = 10
-        L4_2 = A1_2
-        L2_2 = L2_2(L3_2, L4_2)
-        A0_2 = A0_2 / L2_2
-        return A0_2
+        A0_2 = _G.math.pow(10, A1_2) * A0_2;
+        A0_2 = _G.math.floor(A0_2);
+        A0_2 = A0_2 / _G.math.pow(10, A1_2);
+        return A0_2;
     }
 
-    @:native("S6E889CF9C9368AC0")
+    /*@:native("S6E889CF9C9368AC0")
     public static function HermiteCurve(A0_2, A1_2, A2_2, A3_2, A4_2){
         local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
         L5_2 = {}
@@ -450,7 +433,7 @@ class CED59418C4CAB0EC4 {
         L5_2[2] = L7_2
         L5_2[3] = L8_2
         return L5_2
-    }
+    }*/
 
     @:native("SB705C912384302D1")
     public static function Catmull(p0:Float, p1:Float, p2:Float, p3:Float, t){
@@ -491,9 +474,8 @@ class CED59418C4CAB0EC4 {
 
     @:native("SF4E70B1E503D8CB2")
     public static function SF4E70B1E503D8CB2(A0_2, A1_2, len){
-        var i = 0
-        while (i < len){
-            i++;
+        var i = 0;
+        while (i++ < len){
             A0_2 *= A1_2;
         }
         return A0_2;
@@ -502,8 +484,7 @@ class CED59418C4CAB0EC4 {
     @:native("S947EBF49836B643E")
     public static function S947EBF49836B643E(A0_2:Array<Float>, A1_2, len){
         var i = 0;
-        while (i < len){
-            i++;
+        while (i++ < len){
             A0_2[0] *= A1_2;
             A0_2[1] *= A1_2;
         }
@@ -513,8 +494,7 @@ class CED59418C4CAB0EC4 {
     @:native("S947EC049836B65F1")
     public static function S947EC049836B65F1(A0_2, A1_2, len){
         var i = 0;
-        while (i < len){
-            i++;
+        while (i++ < len){
             A0_2[0] *= A1_2;
             A0_2[1] *= A1_2;
             A0_2[2] *= A1_2;
@@ -525,8 +505,7 @@ class CED59418C4CAB0EC4 {
     @:native("S947EC149836B67A4")
     public static function S947EC149836B67A4(A0_2, A1_2, len){
         var i = 0;
-        while (i < len){
-            i++;
+        while (i++ < len){
             A0_2[0] *= A1_2;
             A0_2[1] *= A1_2;
             A0_2[2] *= A1_2;
@@ -535,7 +514,7 @@ class CED59418C4CAB0EC4 {
         return A0_2;
     }
 
-    @:native("SF6B1543657D10AD3")
+    /*@:native("SF6B1543657D10AD3")
     public static function SF6B1543657D10AD3(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2){
         local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
         var L6_2 = [0, 0, 0];
@@ -678,5 +657,5 @@ class CED59418C4CAB0EC4 {
         A2_2[3] = (L11_2[3] - L11_2[3]) / A5_2
         end
         return L6_2
-    }
+    }*/
 }

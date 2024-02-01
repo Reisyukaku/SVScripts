@@ -7,13 +7,13 @@ extern class C7A48E3FC {
 	static function f09919F73(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
 	static function f6AC02D2F(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Float, p9:Float):Array<Float>;
 	static function f6DF16D39(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float, p8:Float, p9:Float):Array<Float>;
-	static function f6C6B9549(p1:Float, p2:Float, p3:Float):Array<Float>;
+	static function f6C6B9549(p1:Float, p2:Float, p3:Float):Array<Float>; //sqrt?
 	static function f497330ED(p1:Float, p2:Float, p3:Float):Array<Float>;
 	static function f9B4C1E89(p1:Float, p2:Float, p3:Float):Array<Float>;
 	static function f3D88C322(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
-	static function fDEC5A133(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
-	static function fE2C89E6A(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
-	static function f6B20D21C(p1:Float, p2:Float, p3:Float):Array<Float>;
+	static function fDEC5A133(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>; //max?
+	static function fE2C89E6A(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;	//min?
+	static function f6B20D21C(p1:Float, p2:Float, p3:Float):Array<Float>; //abs?
 	static function f78531D35(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float):Array<Float>;
 	static function f04EE1F22(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Float;
 	static function fBD92E0EC(p1:Float, p2:Float, p3:Float):Float;
