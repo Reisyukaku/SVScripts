@@ -2,10 +2,10 @@ package cppbindings;
 
 @:native("c85FE83D4")
 extern class C85FE83D4 {
-    function f5FC6903E():Any;
-	function f84705A38():Any;
-	function fC0E7F040(p1:Dynamic):Any;
-	function f8349FFBA(p1:Dynamic):Any;
+    function f5FC6903E():Void;
+	function f84705A38(p1:Dynamic):Void;
+	function fC0E7F040(p1:Dynamic):Void;
+	function f8349FFBA(p1:Dynamic):Void;
 	function f2BB69F64():Any;
 	function f53D9EAAE():Int;
 	function fFB6EE94F():Any;

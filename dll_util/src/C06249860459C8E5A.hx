@@ -59,32 +59,32 @@ class C06249860459C8E5A {
     }
     
     @:native("SFEBBEE8D9284A00B")
-    public static function WaterRayCast(A0_2:Dynamic, A1_2:Dynamic, A2_2:Dynamic = 0, A3_2:Dynamic = 1):Dynamic {
+    public static function WaterRayCast(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Dynamic = 0, A3_2:Int = 1):C60B2EB370A8B68F0 {
         return LayeredRayCast(A0_2, A1_2, 1 << 2, A3_2, A2_2);
     }
     
     @:native("SE97248E46ABB5CA7")
-    public static function LandRayCast(A0_2:Int, A1_2:Int, ?A2_2:Int = 0, ?A3_2:Int = 1):Int {
+    public static function LandRayCast(A0_2:Array<Float>, A1_2:Array<Float>, ?A2_2:Int = 0, ?A3_2:Int = 1):C60B2EB370A8B68F0 {
         return LayeredRayCast(A0_2, A1_2, 1 | (1 << 1) | (1 << 6), A3_2, A2_2);
     }
     
     @:native("S1110B18BD2FEF032")
-    public static function LandShapeCast(A0_2:Int, A1_2:Int, A2_2:Int = 1):Int {
-        return LayeredRayCast(A0_2, A1_2, (1 << 1) | (1 << 6), A2_2);
+    public static function LandShapeCast(A0_2:Int, A1_2:Array<Float>, A2_2:Int = 1):Array<C60B2EB370A8B68F0> {
+        return LayeredShapeCast(A0_2, A1_2, (1 << 1) | (1 << 6), A2_2);
     }
     
     @:native("S2757B69498F389AE")
-    public static function S2757B69498F389AE(A0_2:Int, A1_2:Int, A2_2:Int = 1):Int {
-        return LayeredRayCast(A0_2, A1_2, 1 << 2, A2_2);
+    public static function WaterShapeCast(A0_2:Int, A1_2:Array<Float>, A2_2:Int = 1):Array<C60B2EB370A8B68F0> {
+        return LayeredShapeCast(A0_2, A1_2, 1 << 2, A2_2);
     }
     
     @:native("S2B5898695BCB23F4")
-    public static function LandCapsuleCast(A0_2, A1_2, A2_2, ?A3_2 = 1){
-        return LayeredRayCast(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
+    public static function LandCapsuleCast(A0_2:Dynamic, A1_2:Array<Float>, A2_2:Array<Float>, ?A3_2:Int = 1):Array<C60B2EB370A8B68F0> {
+        return LayeredCapsuleCast(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
     }
     
     @:native("SB5650EB38CCD091A")
-    public static function LayeredRayCast(A0_2, A1_2, A2_2, A3_2, A4_2, ?A5_2){
+    public static function LayeredRayCast(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Int, A3_2:Int, A4_2:Int, ?A5_2:Dynamic):C60B2EB370A8B68F0 {
         var L8_2 = (A4_2 & 1) != 0;
         rayOpt.fCF1931BB(L8_2);
         L8_2 = (A4_2 & 2) != 0;
@@ -96,13 +96,13 @@ class C06249860459C8E5A {
             L6_2 = 0;
         }
         var L7_2 = C95DC25DB.f544F902B();
-        L7_2 = L7_2.f5E1D7445();
-        L7_2 = L7_2.f586A3930(A0_2[1], A0_2[2], A0_2[3], A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L6_2, rayOpt);
-        var tbl = new C60B2EB370A8B68F0();
-        var L9_2 = null;
-        var L10_2;
+        var unk = L7_2.f5E1D7445();
+        var unk2:C63DF0026 = unk.f586A3930(A0_2[1], A0_2[2], A0_2[3], A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L6_2, rayOpt);
+        var tbl:C60B2EB370A8B68F0 = new C60B2EB370A8B68F0();
+        var L9_2:C49951D04 = null;
+        var L10_2 = 0;
         if (A5_2 == null){
-            L10_2 = L7_2.fD5B33F22();
+            L10_2 = unk2.fD5B33F22();
             var L11_2 = L10_2 < 0;
             function L12_2(){
                 var L0_3 = null;
@@ -116,12 +116,12 @@ class C06249860459C8E5A {
             }
             var unkFunk = L12_2();
             if (unkFunk)
-                L9_2 = L7_2.fCB2FEF1E(0);
+                L9_2 = unk2.fCB2FEF1E(0);
         }else{
-            var L11_2 = L7_2.fD5B33F22();
+            var L11_2 = unk2.fD5B33F22();
             while (0 < L11_2) {
-                L10_2 = L10_2 + 1;
-                var L12_2 = L7_2.fCB2FEF1E(L10_2 - 1);
+                L10_2++;
+                var L12_2 = unk2.fCB2FEF1E(L10_2 - 1);
                 var L13_2 = A5_2(L12_2);
                 if (L13_2){
                     L9_2 = L12_2;
@@ -129,20 +129,20 @@ class C06249860459C8E5A {
                 }
             }
         }
-        var L11_2 = CA877D16F.f7289F1DA(L9_2, null);
+        var L11_2:Bool = CA877D16F.f7289F1DA(L9_2, null);
         if (L11_2) {
             tbl.unkBool_0 = true;
             tbl.unkArray_2 = L9_2.f689A04F6();
             tbl.unkArray_1 = L9_2.f1B877572();
             
-            var L17_2 = L9_2.fD34C0BB0();
-            tbl.unkObj_3 = L17_2.fE87F9A08();
+            var L17_2:C3B7F8D65 = L9_2.fD34C0BB0();
+            tbl.unkStr_3 = L17_2.fE87F9A08();
 
             var L17_2:Array<Float> = L9_2.f1B877572();
-            tbl.unkInt_4 = C7A48E3FC.f92852F73(L17_2[0] - A0_2[0], L17_2[1] - A0_2[1], L17_2[2] - A0_2[2]);
+            tbl.unkFloat_4 = C7A48E3FC.f92852F73(L17_2[0] - A0_2[0], L17_2[1] - A0_2[1], L17_2[2] - A0_2[2]);
             tbl.unkInt_5 = L9_2.f6F8C88BD();
 
-            var L21_2:Array<Float> = L9_2.fC12793A5();
+            var L21_2 = L9_2.fC12793A5();
             tbl.unkObj_6 = C04846604.f1A30C15B(L21_2);
             tbl.unkInt_7 = L9_2.f97CD3602();
         }
@@ -150,90 +150,83 @@ class C06249860459C8E5A {
     }
     
     @:native("SF725F7C11C979360")
-    public static function WaterCapsuleCast(A0_2, A1_2, A2_2, ?A3_2 = 1) {
+    public static function WaterCapsuleCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
         return LayeredCapsuleCast(A0_2, A1_2, A2_2, 1 << 2, A3_2);
     }
     
     @:native("S9E7F9F1C6EB5BBB9")
-    public static function LayeredCapsuleCast(A0_2, A1_2, A2_2, A3_2, A4_2, ?A5_2 = 0) {
+    public static function LayeredCapsuleCast(A0_2:Dynamic, A1_2:Array<Float>, A2_2:Array<Float>, A3_2:Int, A4_2:Int, ?A5_2:Int = 0):Array<C60B2EB370A8B68F0> {
         var L6_2 = 1;
         if ((A5_2 & 8) != 0){
             L6_2 = 0;
         }
-        var arr = new Array();
+        var arr = [];
         var L11_2:Array<Float> = C7A48E3FC.fD9D3C136(A2_2[1] - A1_2[1], A2_2[2] - A1_2[2], A2_2[3] - A1_2[3]);
 
         C7A48E3FC.fBD92E0EC(L11_2[0], L11_2[1], L11_2[2]);
-        var L17_2 = C95DC25DB.f544F902B();
-        L17_2 = L17_2.f5E1D7445(L1L17_28_2);
-        L17_2 = L17_2.f7CB96C6D(L17_2, A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2[1], A2_2[2], A2_2[3], A3_2, A4_2, L6_2);
+        var L17_2:C95DC25DB = C95DC25DB.f544F902B();
+        var unk = L17_2.f5E1D7445();
+        var unk2 = unk.f7CB96C6D(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2[1], A2_2[2], A2_2[3], A3_2, A4_2, L6_2);
         var i = 0;
-        while (i < L17_2.fD5B33F22(L17_2)){
+        while (i < unk2.fD5B33F22()){
             i = i + 1;
-            var L20_2 = L17_2.fCB2FEF1E(L17_2, i - 1);
+            var ctxt:C49951D04 = unk2.fCB2FEF1E(i - 1);
 
             var tbl = new C60B2EB370A8B68F0();
             tbl.unkBool_0 = true;
-            tbl.unkArray_2 = L20_2.f689A04F6();
-            tbl.unkArray_1 = L20_2.f1B877572();
- 
-            var L28_2 = L20_2.fD34C0BB0();
-            tbl.unkObj_3 = L28_2.fE87F9A08();
-            tbl.unkInt_4 = L20_2.f39CFB448();
-            tbl.unkInt_5 = L20_2.f6F8C88BD();
-
-            var L29_2:Array<Float> = L20_2.fC12793A5();
-            tbl.unkObj_6 = C04846604.f1A30C15B(L29_2);
-            tbl.unkInt_7 = L20_2.f97CD3602();
+            tbl.unkArray_2 = ctxt.f689A04F6();
+            tbl.unkArray_1 = ctxt.f1B877572();
+            tbl.unkStr_3 = ctxt.fD34C0BB0().fE87F9A08();
+            tbl.unkFloat_4 = ctxt.f39CFB448();
+            tbl.unkInt_5 = ctxt.f6F8C88BD();
+            tbl.unkObj_6 = C04846604.f1A30C15B(ctxt.fC12793A5());
+            tbl.unkInt_7 = ctxt.f97CD3602();
             arr.push(tbl);
         }
         return arr;
     }
     
     @:native("S557EE6B53E7A494A")
-    public static function LandPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1) {
+    public static function LandPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
         return LayeredPencilCast(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
     }
     
     @:native("S8A78048732E361AE")
-    public static function WaterPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1){
+    public static function WaterPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
         return LayeredPencilCast(A0_2, A1_2, A2_2, 1 << 2, A3_2);
     }
     
     @:native("SA614A0FD7D5BC105")
-    public static function LayeredPencilCast(A0_2, A1_2, A2_2, A3_2, A4_2, ?A5_2 = 0) {
+    public static function LayeredPencilCast(A0_2, A1_2, A2_2, A3_2, A4_2, ?A5_2 = 0):Array<C60B2EB370A8B68F0> {
         var L6_2 = 1;
         if ((A5_2 & 8) != 0) {
             L6_2 = 0;
         }
         
         var result = [];
-        var L8_2 = A2_2[1] - A1_2[1];
-        var L9_2 = A2_2[2] - A1_2[2];
-        var L10_2 = A2_2[3] - A1_2[3];
+        var L8_2 = A2_2[0] - A1_2[0];
+        var L9_2 = A2_2[1] - A1_2[1];
+        var L10_2 = A2_2[2] - A1_2[2];
         var L11_2 = C7A48E3FC.fD9D3C136(L8_2, L9_2, L10_2);
-        var L14_2 = L11_2[1];
-        var L15_2 = L11_2[2];
-        var L16_2 = L11_2[3];
-        L11_2 = C7A48E3FC.fBD92E0EC(L14_2, L15_2, L16_2);
+        C7A48E3FC.fBD92E0EC(L11_2[0], L11_2[1], L11_2[2]);
         
-        var L17_2 = C95DC25DB.f544F902B().f5E1D7445(L11_2).fBB974055(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2[1], A2_2[2], A2_2[3], A3_2, A4_2, L6_2);
+        var L17_2 = C95DC25DB.f544F902B().f5E1D7445().fBB974055(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2[1], A2_2[2], A2_2[3], A3_2, A4_2, L6_2);
         
         var L18_2 = 0;
         var L19_2 = L17_2.fD5B33F22();
         while (L18_2 < L19_2) {
             L18_2++;
-            var L20_2 = L17_2.fCB2FEF1E(L18_2 - 1);
+            var ctxt:C49951D04 = L17_2.fCB2FEF1E(L18_2 - 1);
 
             var tbl = new C60B2EB370A8B68F0();
             tbl.unkBool_0 = true;
-            var L25_2 = L20_2.f1B877572();
-            tbl.unkArray_2 = L20_2.f689A04F6();
-            tbl.unkArray_1 = L25_2.fE87F9A08();
-            tbl.unkObj_3 = L20_2.f39CFB448();
-            tbl.unkInt_4 = L20_2.f6F8C88BD();
-            tbl.unkInt_5 = C04846604.f1A30C15B(L20_2.fC12793A5());
-            tbl.unkObj_6 = L20_2.f97CD3602();
+            tbl.unkArray_2 = ctxt.f689A04F6();
+            tbl.unkArray_1 = ctxt.f1B877572();
+            tbl.unkStr_3 = ctxt.fD34C0BB0().fE87F9A08();
+            tbl.unkFloat_4 = ctxt.f39CFB448();
+            tbl.unkInt_5 = ctxt.f6F8C88BD();
+            tbl.unkObj_6 = C04846604.f1A30C15B(ctxt.fC12793A5());
+            tbl.unkInt_7 = ctxt.f97CD3602();
             result.push(tbl);
         }
         
@@ -242,29 +235,27 @@ class C06249860459C8E5A {
     
     
     @:native("S34504A5C8F8B4FCF")
-    public static function LayeredShapeCast(A0_2, A1_2, A2_2, A3_2, ?A4_2 = 0) {
+    public static function LayeredShapeCast(A0_2:Int, A1_2:Array<Float>, A2_2:Int, A3_2:Int, ?A4_2:Int = 0):Array<C60B2EB370A8B68F0> {
         var L5_2 = 1;
         if ((A4_2 & 8) != 0) {
             L5_2 = 0;
         }
         
         var result = [];
-        var L7_2 = C95DC25DB.f544F902B().f5E1D7445().fC72F2D3F(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L5_2);
-        var L8_2 = 0;
-        var L10_2 = L7_2.fD5B33F22();
-        while (L8_2 < L10_2) {
-            L8_2++;
-            var L11_2 = L7_2.fCB2FEF1E(L8_2 - 1);
+        var L7_2:C63DF0026 = C95DC25DB.f544F902B().f5E1D7445().fC72F2D3F(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L5_2);
+        var i = 0;
+        while (i < L7_2.fD5B33F22()) {
+            i++;
+            var ctxt:C49951D04 = L7_2.fCB2FEF1E(i - 1);
             var tbl = new C60B2EB370A8B68F0();
             tbl.unkBool_0 = true;
-            var L16_2 = L11_2.f1B877572();
-            tbl.unkArray_2 = L11_2.f689A04F6();
-            tbl.unkArray_1 = L16_2.fE87F9A08();
-            tbl.unkObj_3 = L11_2.fD34C0BB0().fE87F9A08();
-            tbl.unkInt_4 = L11_2.f39CFB448();
-            tbl.unkInt_5 = L11_2.f6F8C88BD();
-            tbl.unkObj_6 = C04846604.f1A30C15B(L11_2.fC12793A5());
-            tbl.unkInt_7 = L11_2.f97CD3602();
+            tbl.unkArray_2 = ctxt.f689A04F6();
+            tbl.unkArray_1 = ctxt.f1B877572();
+            tbl.unkStr_3 = ctxt.fD34C0BB0().fE87F9A08();
+            tbl.unkFloat_4 = ctxt.f39CFB448();
+            tbl.unkInt_5 = ctxt.f6F8C88BD();
+            tbl.unkObj_6 = C04846604.f1A30C15B(ctxt.fC12793A5());
+            tbl.unkInt_7 = ctxt.f97CD3602();
             result.push(tbl);
         }
         

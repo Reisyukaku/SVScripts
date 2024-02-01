@@ -1,7 +1,7 @@
 package cppbindings;
 
 @:native("c7A48E3FC")
-extern class c7A48E3FC {
+extern class C7A48E3FC {
     static function fE8628DFF(p1:Float, p2:Float, p3:Float):Bool;
 	static function fA86174A4(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
 	static function f09919F73(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
