@@ -1,3 +1,4 @@
+@:expose
 class CEC576A05F672A661 {
 
     @:native("SE2B033269A3AEF71")

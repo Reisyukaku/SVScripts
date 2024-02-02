@@ -1,5 +1,6 @@
 import cppbindings.*;
 
+@:expose
 class C06249860459C8E5A {
     @:native("SE1FF0FCD73C7D0BC") static var GROUND_LAYER = 1;
     @:native("SBEECF1DD2B9DFB1E") static var WATER_LAYER = 2;

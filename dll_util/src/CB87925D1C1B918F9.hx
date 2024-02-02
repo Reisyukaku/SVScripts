@@ -1,6 +1,7 @@
 import lua.NativeStringTools;
 import cppbindings.*;
 
+@:expose
 class CB87925D1C1B918F9 {
 
     @:native("S042B860498E558B2")

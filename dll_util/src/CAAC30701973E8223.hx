@@ -1,3 +1,4 @@
+@:expose
 class CAAC30701973E8223 {
     
     @:native("SF84EB735B798FBFB")

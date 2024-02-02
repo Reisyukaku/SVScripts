@@ -1,5 +1,6 @@
 import cppbindings.*;
 
+@:expose
 class CC93E4D9B3BF1544F {
     @:native("SDA721D99DBE3AB52") public static var IsSkip:Bool = true;
 

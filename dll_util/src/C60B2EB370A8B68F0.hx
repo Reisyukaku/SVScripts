@@ -1,5 +1,6 @@
 import cppbindings.*;
 
+@:expose
 @:publicFields
 class C60B2EB370A8B68F0 {
     var unkBool_0:Bool;

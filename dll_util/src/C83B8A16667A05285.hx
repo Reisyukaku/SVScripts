@@ -1,5 +1,6 @@
 import cppbindings.*;
 
+@:expose
 class C83B8A16667A05285 {
     
     @:native("SD79F00DEB5032D7D")

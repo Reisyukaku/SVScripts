@@ -1,3 +1,4 @@
+@:expose
 @:publicFields
 class C97B74412253C3332 {
     @:native("S002A2C8E8026A246") static var White:Array<Float> = [1., 1., 1., 1.];
