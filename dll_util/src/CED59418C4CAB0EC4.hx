@@ -20,11 +20,11 @@ class CED59418C4CAB0EC4 {
     }
 
     @:native("S0F3397CD4738809E")
-    public static function DegreeToRadianVec3(v:Array<Float>):Array<Float> {
+    public static function DegreeToRadianVec3(v:Vec3):Array<Float> {
         return [
-            DegreeToRadian(v[0]),
-            DegreeToRadian(v[1]),
-            DegreeToRadian(v[2])
+            DegreeToRadian(v.x),
+            DegreeToRadian(v.y),
+            DegreeToRadian(v.z)
         ];
     }
     
@@ -65,42 +65,44 @@ class CED59418C4CAB0EC4 {
     }
     
     @:native("S27BA7C7323C27960")
-    public static function FromVectorRotation(v1:Array<Float>, v2:Array<Float>, ?v3:Array<Float> = [1, 0, 0]):Array<Float> {
+    public static function FromVectorRotation(v1:Array<Float>, v2:Array<Float>, ?v3:Array<Float>):Any {
+        if(v3 == null)
+            v3 = [1, 0, 0];
         var angle = GetVectorAngle(v1, v2);
-        return cD5675BA5.fC1785368(v3[0], v3[1], v3[2], angle); 
+        return CD5675BA5.fC1785368(v3[0], v3[1], v3[2], angle); 
     }
     
     @:native("SC734992E23457948")
     public static function SlerpQuat(q1:Array<Float>, q2:Array<Float>, t:Float) {
-        return cD5675BA5.fBE61A5F8(q1, q2, t);
+        return CD5675BA5.fBE61A5F8(q1, q2, t);
     }
 
     @:native("SBDC8E35151EA22F3")
     public static function SBDC8E35151EA22F3(A0_2, A1_2, A2_2):Array<Any>{
-        var L3_2 = 0;
+        var L3_2:Float = 0;
 
-        var L4_2 = A1_2[1] - A0_2[1];
-        var L5_2 = A1_2[2] - A0_2[2];
-        var L6_2 = A1_2[3] - A0_2[3];
+        var L4_2 = A1_2[0] - A0_2[0];
+        var L5_2 = A1_2[1] - A0_2[1];
+        var L6_2 = A1_2[2] - A0_2[2];
 
-        var L8_2 = A2_2[1] - A0_2[1];
-        var L9_2 = A2_2[2] - A0_2[2];
-        var L10_2 = A2_2[3] - A0_2[3];
+        var L8_2:Float = A2_2[0] - A0_2[0];
+        var L9_2:Float = A2_2[1] - A0_2[1];
+        var L10_2:Float = A2_2[2] - A0_2[2];
 
-        var L7_2 = C7A48E3FC.f04EE1F22(L8_2, L9_2, L10_2, L4_2, L5_2, L6_2);
+        var L7_2:Float = C7A48E3FC.f04EE1F22(L8_2, L9_2, L10_2, L4_2, L5_2, L6_2);
         if (L7_2 <= 0) {
-        L3_2 = 0;
-        }else{
-        L8_2 = C7A48E3FC.f04EE1F22(L4_2, L5_2, L6_2, L4_2, L5_2, L6_2);
-        if (L7_2 >= L8_2){
-            L3_2 = 1;
-        }else{
-            L3_2 = L7_2 / L8_2;
+            L3_2 = 0;
+        } else {
+            L8_2 = C7A48E3FC.f04EE1F22(L4_2, L5_2, L6_2, L4_2, L5_2, L6_2);
+            if (L7_2 >= L8_2){
+                L3_2 = 1;
+            } else {
+                L3_2 = L7_2 / L8_2;
+            }
         }
-        }
-        L9_2 = A0_2[1] + ((A1_2[1] - A0_2[1]) * L3_2);
-        L10_2 = A0_2[2] + ((A1_2[2] - A0_2[2]) * L3_2);
-        var L11_2 = A0_2[3] + ((A1_2[3] - A0_2[3]) * L3_2);
+        L9_2 = A0_2[1] + ((A1_2[0] - A0_2[0]) * L3_2);
+        L10_2 = A0_2[2] + ((A1_2[1] - A0_2[1]) * L3_2);
+        var L11_2 = A0_2[3] + ((A1_2[2] - A0_2[2]) * L3_2);
 
         return [L9_2, L10_2, L11_2];
     }
@@ -111,24 +113,24 @@ class CED59418C4CAB0EC4 {
         var i = 0;
         while (i < A3_2){
         i = i + 1;
-        A0_2 = cD5675BA5.fBE61A5F8(A0_2, A1_2, A2_2);
+        A0_2 = CD5675BA5.fBE61A5F8(A0_2, A1_2, A2_2);
         }
         return A0_2;
     }
 
     @:native("S9487238A2BCBB744")
-    public static function SlerpVector(A0_2, A1_2, A2_2){
-        var L3_2 = CED59418C4CAB0EC4.FromVectorRotation(A0_2, A1_2, [0,1,0]);
-        var L5_2 = cD5675BA5.f0151A26E();
-        var L4_2 = cD5675BA5.fBE61A5F8(L5_2, L3_2, A2_2);
-        return L4_2.fCA247E7A(A0_2); //array of 3
+    public static function SlerpVector(A0_2, A1_2, A2_2):Any {
+        var L3_2 = FromVectorRotation(A0_2, A1_2, [0,1,0]);
+        var L5_2 = CD5675BA5.f0151A26E();
+        var L4_2 = CD5675BA5.fBE61A5F8(L5_2, L3_2, A2_2);
+        return L4_2.fCA247E7A(A0_2[0], A0_2[1], A0_2[2]); //array of 3
     }
 
     @:native("SCAD25230630F7BCB")
     public static function SCAD25230630F7BCB(A0_2, A1_2, A2_2, A3_2){
         var i = 0;
         while(i < A3_2) {
-        i = i + 1;
+        i++;
         A0_2 = SlerpVector(A0_2, A1_2, A2_2);
         }
         return A0_2;
@@ -136,17 +138,17 @@ class CED59418C4CAB0EC4 {
 
     @:native("S78B917E98167EB14")
     public static function Equals(A0_2, A1_2){
-        return _G.math.abs(A0_2 - A1_2) < CED59418C4CAB0EC4.EPSILON;
+        return Math.abs(A0_2 - A1_2) < EPSILON;
     }
 
     @:native("S69F5AAE71F5E3193")
     public static function IsZero(A0_2){
-        return _G.math.abs(A0_2) < CED59418C4CAB0EC4.EPSILON;
+        return Math.abs(A0_2) < EPSILON;
     }
 
     @:native("SEC5E960387714AA4")
     public static function Sign(A0_2){
-        if (_G.math.abs(A0_2) < CED59418C4CAB0EC4.EPSILON) {
+        if (Math.abs(A0_2) < EPSILON) {
             return 0.0;
         }
         if (A0_2 < 0) {
@@ -219,11 +221,11 @@ class CED59418C4CAB0EC4 {
     @:native("S60329B020EE3A79A")
     public static function ClampMagnitude(A0_2:Array<Float>, A1_2):Array<Float>{
         var L3_2 = C7A48E3FC.f92852F73(A0_2[0], A0_2[1], A0_2[2]);
-        var L2_2:Array<Float>; //Vec3
+        var L2_2 = []; //Vec3
         if (A1_2 < L3_2) {
             L2_2 = C7A48E3FC.fD9D3C136(A0_2[0], A0_2[1], A0_2[2]);
-            C7A48E3FC.fBD92E0EC(L2_2);
-            return L2_2 * A1_2;
+            C7A48E3FC.fBD92E0EC(L2_2[0], L2_2[1], L2_2[2]);
+            return [L2_2[0] * A1_2, L2_2[1] * A1_2, L2_2[2] * A1_2];
         }
         return L2_2;
     }
@@ -234,206 +236,28 @@ class CED59418C4CAB0EC4 {
     }
 
     @:native("S28102DAA82AC58FD")
-    public static function Floor(A0_2, A1_2){
-        A0_2 = _G.math.pow(10, A1_2) * A0_2;
-        A0_2 = _G.math.floor(A0_2);
-        A0_2 = A0_2 / _G.math.pow(10, A1_2);
+    public static function Floor(A0_2:Float, A1_2:Float){
+        A0_2 = Math.pow(10, A1_2) * A0_2;
+        A0_2 = Math.floor(A0_2);
+        A0_2 = A0_2 / Math.pow(10, A1_2);
         return A0_2;
     }
 
-    /*@:native("S6E889CF9C9368AC0")
-    public static function HermiteCurve(A0_2, A1_2, A2_2, A3_2, A4_2){
-        local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-        L5_2 = {}
-        L6_2 = A0_2[1]
-        L6_2 = L6_2 * 2.0
-        L7_2 = A1_2[1]
-        L7_2 = L7_2 * -2.0
-        L6_2 = L6_2 + L7_2
-        L7_2 = A2_2[1]
-        L6_2 = L6_2 + L7_2
-        L7_2 = A3_2[1]
-        L6_2 = L6_2 + L7_2
-        L6_2 = L6_2 * A4_2
-        L6_2 = L6_2 * A4_2
-        L6_2 = L6_2 * A4_2
-        L7_2 = A0_2[1]
-        L7_2 = L7_2 * -3.0
-        L8_2 = A1_2[1]
-        L8_2 = L8_2 * 3.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A2_2[1]
-        L8_2 = L8_2 * -2.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A3_2[1]
-        L7_2 = L7_2 - L8_2
-        L7_2 = L7_2 * A4_2
-        L7_2 = L7_2 * A4_2
-        L6_2 = L6_2 + L7_2
-        L7_2 = A2_2[1]
-        L7_2 = L7_2 * A4_2
-        L6_2 = L6_2 + L7_2
-        L7_2 = A0_2[1]
-        L6_2 = L6_2 + L7_2
-        L7_2 = A0_2[2]
-        L7_2 = L7_2 * 2.0
-        L8_2 = A1_2[2]
-        L8_2 = L8_2 * -2.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A2_2[2]
-        L7_2 = L7_2 + L8_2
-        L8_2 = A3_2[2]
-        L7_2 = L7_2 + L8_2
-        L7_2 = L7_2 * A4_2
-        L7_2 = L7_2 * A4_2
-        L7_2 = L7_2 * A4_2
-        L8_2 = A0_2[2]
-        L8_2 = L8_2 * -3.0
-        L9_2 = A1_2[2]
-        L9_2 = L9_2 * 3.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A2_2[2]
-        L9_2 = L9_2 * -2.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A3_2[2]
-        L8_2 = L8_2 - L9_2
-        L8_2 = L8_2 * A4_2
-        L8_2 = L8_2 * A4_2
-        L7_2 = L7_2 + L8_2
-        L8_2 = A2_2[2]
-        L8_2 = L8_2 * A4_2
-        L7_2 = L7_2 + L8_2
-        L8_2 = A0_2[2]
-        L7_2 = L7_2 + L8_2
-        L8_2 = A0_2[3]
-        L8_2 = L8_2 * 2.0
-        L9_2 = A1_2[3]
-        L9_2 = L9_2 * -2.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A2_2[3]
-        L8_2 = L8_2 + L9_2
-        L9_2 = A3_2[3]
-        L8_2 = L8_2 + L9_2
-        L8_2 = L8_2 * A4_2
-        L8_2 = L8_2 * A4_2
-        L8_2 = L8_2 * A4_2
-        L9_2 = A0_2[3]
-        L9_2 = L9_2 * -3.0
-        L10_2 = A1_2[3]
-        L10_2 = L10_2 * 3.0
-        L9_2 = L9_2 + L10_2
-        L10_2 = A2_2[3]
-        L10_2 = L10_2 * -2.0
-        L9_2 = L9_2 + L10_2
-        L10_2 = A3_2[3]
-        L9_2 = L9_2 - L10_2
-        L9_2 = L9_2 * A4_2
-        L9_2 = L9_2 * A4_2
-        L8_2 = L8_2 + L9_2
-        L9_2 = A2_2[3]
-        L9_2 = L9_2 * A4_2
-        L8_2 = L8_2 + L9_2
-        L9_2 = A0_2[3]
-        L8_2 = L8_2 + L9_2
-        L5_2[1] = L6_2
-        L5_2[2] = L7_2
-        L5_2[3] = L8_2
-        return L5_2
+    @:native("S6E889CF9C9368AC0")
+    public static function HermiteCurve(A0_2:Vec3, A1_2:Vec3, A2_2:Vec3, A3_2:Vec3, A4_2){
+        var x = (A0_2.x * 2.0 + A1_2.x * -2.0 + A2_2.x + A3_2.x) * Math.pow(A4_2, 3) + (A0_2.x * -3.0 + A1_2.x * 3.0 + A2_2.x * -2.0 - A3_2.x) * Math.pow(A4_2, 2) + A2_2.x * A4_2 + A0_2.x;
+        var y = (A0_2.y * 2.0 + A1_2.y * -2.0 + A2_2.y + A3_2.y) * Math.pow(A4_2, 3) + (A0_2.y * -3.0 + A1_2.y * 3.0 + A2_2.y * -2.0 - A3_2.y) * Math.pow(A4_2, 2) + A2_2.y * A4_2 + A0_2.y; 
+        var z = (A0_2.z * 2.0 + A1_2.z * -2.0 + A2_2.z + A3_2.z) * Math.pow(A4_2, 3) + (A0_2.z * -3.0 + A1_2.z * 3.0 + A2_2.z * -2.0 - A3_2.z) * Math.pow(A4_2, 2) + A2_2.z * A4_2 + A0_2.z;
+        return [x, y, z];
     }
 
     @:native("S3EA310859987A429")
-    public static function S3EA310859987A429(A0_2, A1_2, A2_2, A3_2, A4_2){
-        local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
-        L5_2 = {}
-        L6_2 = A0_2[1]
-        L6_2 = L6_2 * 6.0
-        L7_2 = A1_2[1]
-        L7_2 = L7_2 * -6.0
-        L6_2 = L6_2 + L7_2
-        L7_2 = A2_2[1]
-        L7_2 = L7_2 * 3.0
-        L6_2 = L6_2 + L7_2
-        L7_2 = A3_2[1]
-        L7_2 = L7_2 * 3.0
-        L6_2 = L6_2 + L7_2
-        L6_2 = L6_2 * A4_2
-        L6_2 = L6_2 * A4_2
-        L7_2 = A0_2[1]
-        L7_2 = L7_2 * -6.0
-        L8_2 = A1_2[1]
-        L8_2 = L8_2 * 6.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A2_2[1]
-        L8_2 = L8_2 * -4.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A3_2[1]
-        L8_2 = L8_2 * 2.0
-        L7_2 = L7_2 - L8_2
-        L7_2 = L7_2 * A4_2
-        L6_2 = L6_2 + L7_2
-        L7_2 = A2_2[1]
-        L6_2 = L6_2 + L7_2
-        L7_2 = A0_2[2]
-        L7_2 = L7_2 * 6.0
-        L8_2 = A1_2[2]
-        L8_2 = L8_2 * -6.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A2_2[2]
-        L8_2 = L8_2 * 3.0
-        L7_2 = L7_2 + L8_2
-        L8_2 = A3_2[2]
-        L8_2 = L8_2 * 3.0
-        L7_2 = L7_2 + L8_2
-        L7_2 = L7_2 * A4_2
-        L7_2 = L7_2 * A4_2
-        L8_2 = A0_2[2]
-        L8_2 = L8_2 * -6.0
-        L9_2 = A1_2[2]
-        L9_2 = L9_2 * 6.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A2_2[2]
-        L9_2 = L9_2 * -4.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A3_2[2]
-        L9_2 = L9_2 * 2.0
-        L8_2 = L8_2 - L9_2
-        L8_2 = L8_2 * A4_2
-        L7_2 = L7_2 + L8_2
-        L8_2 = A2_2[2]
-        L7_2 = L7_2 + L8_2
-        L8_2 = A0_2[3]
-        L8_2 = L8_2 * 6.0
-        L9_2 = A1_2[3]
-        L9_2 = L9_2 * -6.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A2_2[3]
-        L9_2 = L9_2 * 3.0
-        L8_2 = L8_2 + L9_2
-        L9_2 = A3_2[3]
-        L9_2 = L9_2 * 3.0
-        L8_2 = L8_2 + L9_2
-        L8_2 = L8_2 * A4_2
-        L8_2 = L8_2 * A4_2
-        L9_2 = A0_2[3]
-        L9_2 = L9_2 * -6.0
-        L10_2 = A1_2[3]
-        L10_2 = L10_2 * 6.0
-        L9_2 = L9_2 + L10_2
-        L10_2 = A2_2[3]
-        L10_2 = L10_2 * -4.0
-        L9_2 = L9_2 + L10_2
-        L10_2 = A3_2[3]
-        L10_2 = L10_2 * 2.0
-        L9_2 = L9_2 - L10_2
-        L9_2 = L9_2 * A4_2
-        L8_2 = L8_2 + L9_2
-        L9_2 = A2_2[3]
-        L8_2 = L8_2 + L9_2
-        L5_2[1] = L6_2
-        L5_2[2] = L7_2
-        L5_2[3] = L8_2
-        return L5_2
-    }*/
+    public static function S3EA310859987A429(A0_2:Vec3, A1_2:Vec3, A2_2:Vec3, A3_2:Vec3, A4_2){
+        var x = (A0_2.x * 6.0 + A1_2.x * -6.0 + A2_2.x * 3.0 + A3_2.x * 3.0) * Math.pow(A4_2, 2) + (A0_2.x * -6.0 + A1_2.x * 6.0 + A2_2.x * -4.0 - A3_2.x * 2.0) * A4_2 + A2_2.x;
+        var y = (A0_2.y * 6.0 + A1_2.y * -6.0 + A2_2.y * 3.0 + A3_2.y * 3.0) * Math.pow(A4_2, 2) + (A0_2.y * -6.0 + A1_2.y * 6.0 + A2_2.y * -4.0 - A3_2.y * 2.0) * A4_2 + A2_2.y;
+        var z = (A0_2.z * 6.0 + A1_2.z * -6.0 + A2_2.z * 3.0 + A3_2.z * 3.0) * Math.pow(A4_2, 2) + (A0_2.z * -6.0 + A1_2.z * 6.0 + A2_2.z * -4.0 - A3_2.z * 2.0) * A4_2 + A2_2.z;
+        return [x, y, z];
+    }
 
     @:native("SB705C912384302D1")
     public static function Catmull(p0:Float, p1:Float, p2:Float, p3:Float, t){
@@ -457,7 +281,7 @@ class CED59418C4CAB0EC4 {
     }
 
     @:native("S58AFF1920558A1FE")
-    public static function CatmullVec3(A0_2, A1_2, A2_2, A3_2, A4_2){
+    public static function CatmullVec3(p0:Array<Float>, p1:Array<Float>, p2:Array<Float>, p3:Array<Float>, t){
         var arr = [0., 0., 0.];
         for(i in 0...arr.length)
             arr[i] = Catmull(p0[i], p1[i], p2[i], p3[i], t);
@@ -465,7 +289,7 @@ class CED59418C4CAB0EC4 {
     }
 
     @:native("S58AFF4920558A717")
-    public static function CatmullVec4(A0_2, A1_2, A2_2, A3_2, A4_2){
+    public static function CatmullVec4(p0:Array<Float>, p1:Array<Float>, p2:Array<Float>, p3:Array<Float>, t){
         var arr = [0., 0., 0., 0.];
         for(i in 0...arr.length)
             arr[i] = Catmull(p0[i], p1[i], p2[i], p3[i], t);
@@ -514,148 +338,35 @@ class CED59418C4CAB0EC4 {
         return A0_2;
     }
 
-    /*@:native("SF6B1543657D10AD3")
-    public static function SF6B1543657D10AD3(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2){
-        local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2
-        var L6_2 = [0, 0, 0];
-        A3_2 = _G.math.max(1.0E-4, A3_2)
-        L7_2 = 2.0 / A3_2
-        L8_2 = L7_2 * A5_2
-        L9_2 = 1.0 + L8_2
-        L10_2 = 0.48 * L8_2
-        L10_2 = L10_2 * L8_2
-        L9_2 = L9_2 + L10_2
-        L10_2 = 0.235 * L8_2
-        L10_2 = L10_2 * L8_2
-        L10_2 = L10_2 * L8_2
-        L9_2 = L9_2 + L10_2
-        L10_2 = 1.0
-        L9_2 = L10_2 / L9_2
-        L10_2 = {}
-        L10_2[1] = A0_2[1] - A1_2[1]
-        L10_2[2] = A0_2[2] - A1_2[2]
-        L10_2[3] = A0_2[3] - A1_2[3]
-        L11_2 = {}
-        L12_2 = A1_2[1]
-        L13_2 = A1_2[2]
-        L14_2 = A1_2[3]
-        L11_2[1] = L12_2
-        L11_2[2] = L13_2
-        L11_2[3] = L14_2
-        L12_2 = A4_2 * A3_2
-        L13_2 = L10_2[1]
-        L14_2 = L10_2[1]
-        L13_2 = L13_2 * L14_2
-        L14_2 = L10_2[2]
-        L15_2 = L10_2[2]
-        L14_2 = L14_2 * L15_2
-        L13_2 = L13_2 + L14_2
-        L14_2 = L10_2[3]
-        L15_2 = L10_2[3]
-        L14_2 = L14_2 * L15_2
-        L13_2 = L13_2 + L14_2
-        L14_2 = L12_2 * L12_2
-        if L13_2 > L14_2 then
-        L14_2 = _G.math.sqrt(L13_2)
-        L15_2 = {}
-        L15_2[1] = (L10_2[1] / L14_2) * L12_2
-        L15_2[2] = (L10_2[2] / L14_2) * L12_2
-        L15_2[3] = (L10_2[3] / L14_2) * L12_2
-        L10_2 = L15_2
-        end
-        L14_2 = {}
-        L15_2 = A0_2[1]
-        L16_2 = L10_2[1]
-        L15_2 = L15_2 - L16_2
-        L16_2 = A0_2[2]
-        L17_2 = L10_2[2]
-        L16_2 = L16_2 - L17_2
-        L17_2 = A0_2[3]
-        L18_2 = L10_2[3]
-        L17_2 = L17_2 - L18_2
-        L14_2[1] = L15_2
-        L14_2[2] = L16_2
-        L14_2[3] = L17_2
-        A1_2 = L14_2
-        L14_2 = A2_2[1]
-        L15_2 = L10_2[1]
-        L15_2 = L7_2 * L15_2
-        L14_2 = L14_2 + L15_2
-        L14_2 = L14_2 * A5_2
-        L15_2 = A2_2[2]
-        L16_2 = L10_2[2]
-        L16_2 = L7_2 * L16_2
-        L15_2 = L15_2 + L16_2
-        L15_2 = L15_2 * A5_2
-        L16_2 = A2_2[3]
-        L17_2 = L10_2[3]
-        L17_2 = L7_2 * L17_2
-        L16_2 = L16_2 + L17_2
-        L16_2 = L16_2 * A5_2
-        L17_2 = A2_2[1]
-        L18_2 = L7_2 * L14_2
-        L17_2 = L17_2 - L18_2
-        L17_2 = L17_2 * L9_2
-        A2_2[1] = L17_2
-        L17_2 = A2_2[2]
-        L18_2 = L7_2 * L15_2
-        L17_2 = L17_2 - L18_2
-        L17_2 = L17_2 * L9_2
-        A2_2[2] = L17_2
-        L17_2 = A2_2[3]
-        L18_2 = L7_2 * L16_2
-        L17_2 = L17_2 - L18_2
-        L17_2 = L17_2 * L9_2
-        A2_2[3] = L17_2
-        L17_2 = {}
-        L18_2 = A1_2[1]
-        L19_2 = L10_2[1]
-        L19_2 = L19_2 + L14_2
-        L19_2 = L19_2 * L9_2
-        L18_2 = L18_2 + L19_2
-        L19_2 = A1_2[2]
-        L20_2 = L10_2[2]
-        L20_2 = L20_2 + L15_2
-        L20_2 = L20_2 * L9_2
-        L19_2 = L19_2 + L20_2
-        L20_2 = A1_2[3]
-        L21_2 = L10_2[3]
-        L21_2 = L21_2 + L16_2
-        L21_2 = L21_2 * L9_2
-        L20_2 = L20_2 + L21_2
-        L17_2[1] = L18_2
-        L17_2[2] = L19_2
-        L17_2[3] = L20_2
-        L6_2 = L17_2
-        L17_2 = L11_2[1]
-        L18_2 = A0_2[1]
-        L17_2 = L17_2 - L18_2
-        L18_2 = L6_2[1]
-        L19_2 = L11_2[1]
-        L18_2 = L18_2 - L19_2
-        L17_2 = L17_2 * L18_2
-        L18_2 = L11_2[2]
-        L19_2 = A0_2[2]
-        L18_2 = L18_2 - L19_2
-        L19_2 = L6_2[2]
-        L20_2 = L11_2[2]
-        L19_2 = L19_2 - L20_2
-        L18_2 = L18_2 * L19_2
-        L17_2 = L17_2 + L18_2
-        L18_2 = L11_2[3]
-        L19_2 = A0_2[3]
-        L18_2 = L18_2 - L19_2
-        L19_2 = L6_2[3]
-        L20_2 = L11_2[3]
-        L19_2 = L19_2 - L20_2
-        L18_2 = L18_2 * L19_2
-        L17_2 = L17_2 + L18_2
-        if L17_2 > 0 then
-        L6_2 = L11_2
-        A2_2[1] = (L11_2[1] - L11_2[1]) / A5_2
-        A2_2[2] = (L11_2[2] - L11_2[2]) / A5_2
-        A2_2[3] = (L11_2[3] - L11_2[3]) / A5_2
-        end
-        return L6_2
-    }*/
+    @:native("SF6B1543657D10AD3")
+    public static function SF6B1543657D10AD3(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Array<Float>, A3_2, A4_2, A5_2):Array<Float> {
+        A3_2 = Math.max(1.0E-4, A3_2); 
+
+        var L6_2:Array<Float> = [0, 0, 0];
+        var L9_2 = 1.0 / ((1.0 + 2.0 / A3_2 * A5_2) + 0.48 * Math.pow( 2.0 / A3_2 * A5_2, 2) + 0.235 * Math.pow(2.0 / A3_2 * A5_2, 3));
+        var L10_2:Array<Float> = [A0_2[0] - A1_2[0], A0_2[1] - A1_2[1], A0_2[2] - A1_2[2]];
+        var L11_2 = [A1_2[0], A1_2[1], A1_2[2]];
+        var L13_2 = Math.pow(L10_2[0], 2) + Math.pow(L10_2[1], 2) + Math.pow(L10_2[2], 2);
+        var L17_2:Float = 0;
+
+        if (L13_2 > Math.pow(A4_2 * A3_2, 2)) {
+            L10_2 = [(L10_2[0] / Math.sqrt(L13_2)) * (A4_2 * A3_2), (L10_2[1] / Math.sqrt(L13_2)) * (A4_2 * A3_2), (L10_2[2] / Math.sqrt(L13_2)) * (A4_2 * A3_2)];
+        }
+        A1_2 = [A0_2[0] - L10_2[0], A0_2[1] - L10_2[1], A0_2[2] - L10_2[2]];
+
+        A2_2[0] = (A2_2[0] - 2.0 / A3_2 * (A2_2[0] + 2.0 / A3_2 * L10_2[0]) * A5_2) * L9_2;
+        A2_2[1] = (A2_2[1] - 2.0 / A3_2 * (A2_2[1] + 2.0 / A3_2 * L10_2[1]) * A5_2) * L9_2;
+        A2_2[2] = (A2_2[2] - 2.0 / A3_2 * (A2_2[2] + 2.0 / A3_2 * L10_2[2]) * A5_2) * L9_2;
+
+        L6_2 = [A1_2[0] + (L10_2[0] + (A2_2[0] + 2.0 / A3_2 * L10_2[0]) * A5_2) * L9_2, A1_2[1] + (L10_2[1] + (A2_2[1] + 2.0 / A3_2 * L10_2[1]) * A5_2) * L9_2, A1_2[2] + (L10_2[2] + (A2_2[2] + 2.0 / A3_2 * L10_2[2]) * A5_2) * L9_2];
+        L17_2 = (L11_2[0] - A0_2[0]) * (L6_2[0] - L11_2[0]) + (L11_2[1] - A0_2[1]) * (L6_2[1] - L11_2[1]) + (L11_2[2] - A0_2[2]) * (L6_2[2] - L11_2[2]);
+
+        if (L17_2 > 0) {
+            L6_2 = L11_2;
+            A2_2[0] = (L11_2[0] - L11_2[0]) / A5_2;
+            A2_2[1] = (L11_2[1] - L11_2[1]) / A5_2;
+            A2_2[2] = (L11_2[2] - L11_2[2]) / A5_2;
+        }
+        return L6_2;
+    }
 }

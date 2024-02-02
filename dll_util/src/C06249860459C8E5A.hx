@@ -119,7 +119,7 @@ class C06249860459C8E5A {
                 L9_2 = unk2.fCB2FEF1E(0);
         }else{
             var L11_2 = unk2.fD5B33F22();
-            while (0 < L11_2) {
+            while (L10_2 < L11_2) {
                 L10_2++;
                 var L12_2 = unk2.fCB2FEF1E(L10_2 - 1);
                 var L13_2 = A5_2(L12_2);

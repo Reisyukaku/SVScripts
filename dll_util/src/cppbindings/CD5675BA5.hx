@@ -1,13 +1,59 @@
 package cppbindings;
 
 @:native("cD5675BA5")
-extern class CD5675BA5 { //Quaternion?
-    function fBE61A5F8():Any;
-    function fCCBD9548():Float;
-    function fBBBAA5DE():Float;
-    function f22B3F464():Float;
-    function f5C0288D9():Float;
-
-    static function f1C9D9E00(f1:Int, f2:Any):Any;
-    static function f0151A26E():Any;
+extern class CD5675BA5 {   //Quaternion?
+	function f2F440732():Array<Float>;
+	function fCCBD9548():Float;
+	function f13C65580(p1:Float):Void;
+	function fBBBAA5DE():Float;
+	function f64C16516(p1:Float):Any;
+	function f22B3F464():Float;
+	function fFDC834AC(p1:Float):Any;
+	function f5C0288D9():Float;
+	function f83794811(p1:Float):Any;
+	function f56310C93(p1:Float):Any;
+	function f21363C05(p1:Float, p2:Float, p3:Float, p4:Float):Void;
+	function fB83F6DBF(p1:Float, p2:Float, p3:Float, p4:Float):Void;
+	function fCF385D29(p1:Float, p2:Float, p3:Float, p4:Float):Void;
+	function f609B00D7():Any;
+	function fCA247E7A(p1:Float, p2:Float, p3:Float):Array<Float>;
+	function fBD234EEC():Any;
+	function f78531D35():Any;
+	function f602B9121():Any;
+	function fDAFF56CD():Any;
+	function f643B5D6F():Any;
+	function f04EE1F22():Any;
+	function fBD92E0EC():Any;
+	function f92852F73():Any;
+	function f1087DA78():Any;
+	function f4999A377():Any;
+	static function f1C9D9E00(f1:Int, f2:Any):Any;
+	static function f15834BF3():Any;
+	static function f0DC6CEFD():Any;
+	static function f7AC1FE6B():Any;
+	static function fE3C8AFD1():Any;
+	static function f94CF9F47():Any;
+	static function f0AAB0AE4():Any;
+	static function f7DAC3A72():Any;
+	static function fE4A56BC8():Any;
+	static function f0151A26E():Any;
+	static function fB5706664():Any;
+	static function fC1785368(p1:Float, p2:Float, p3:Float, p4:Float):Any;
+	static function fA66AE1A5():Any;
+	static function fFA44D7AF():Any;
+	static function f17EF09C7():Any;
+	static function f0B717451():Any;
+	static function f7C7644C7():Any;
+	static function fD9D3C136():Any;
+	static function f6ED31C2F():Any;
+	static function f748E1697():Any;
+	static function f74C1A5DE():Any;
+	static function fBE61A5F8(p1:Dynamic, p2:Dynamic, p3:Float):CD5675BA5;
+	static function f94EDA9E7():Any;
+	static function f40FA7004():Any;
+	static function fDEF447CC():Any;
+	static function f2135E276():Any;
+	static function fD2EB105A():Any;
+	static function f530C2CA3():Any;
+	static function f9F4C3CD9():Any;
 }

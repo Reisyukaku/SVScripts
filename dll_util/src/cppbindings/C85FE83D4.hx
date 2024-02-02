@@ -12,9 +12,9 @@ extern class C85FE83D4 {
 	function fDEC84709():Dynamic;
 	function f4D570596():Any;
 	function f54A82C13():Any;
-	static function f0E773DBA():Any;
-	static function fB42C1274():Any;
-	static function fB41FD22F():Any;
-	static function fB2817049():Any;
-	static function f5F94162B():Any;
+	static function f0E773DBA(p1:Dynamic, p2:Dynamic):Bool;
+	static function fB42C1274(p1:Dynamic, p2:Dynamic):Bool;
+	static function fB41FD22F(p1:Dynamic):C85FE83D4;
+	static function fB2817049(p1:Dynamic):Int;
+	static function f5F94162B(p1:Dynamic, p2:Int):C85FE83D4;
 }
