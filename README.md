@@ -29,5 +29,5 @@
   - Rewrite: ![](https://geps.dev/progress/100)
   - Verify: ![](https://geps.dev/progress/10)
 - CED59418C4CAB0EC4
-  - Rewrite: ![](https://geps.dev/progress/50)
+  - Rewrite: ![](https://geps.dev/progress/100)
   - Verify: ![](https://geps.dev/progress/0)
