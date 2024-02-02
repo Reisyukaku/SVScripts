@@ -98,7 +98,7 @@ class C06249860459C8E5A {
         }
         var L7_2 = C95DC25DB.f544F902B();
         var unk = L7_2.f5E1D7445();
-        var unk2:C63DF0026 = unk.f586A3930(A0_2[1], A0_2[2], A0_2[3], A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L6_2, rayOpt);
+        var unk2:C63DF0026 = unk.f586A3930(A0_2[0], A0_2[1], A0_2[2], A1_2[0], A1_2[1], A1_2[2], A2_2, A3_2, L6_2, rayOpt);
         var tbl:C60B2EB370A8B68F0 = new C60B2EB370A8B68F0();
         var L9_2:C49951D04 = null;
         var L10_2 = 0;
@@ -162,12 +162,12 @@ class C06249860459C8E5A {
             L6_2 = 0;
         }
         var arr = [];
-        var L11_2:Array<Float> = C7A48E3FC.fD9D3C136(A2_2[1] - A1_2[1], A2_2[2] - A1_2[2], A2_2[3] - A1_2[3]);
+        var L11_2:Array<Float> = C7A48E3FC.fD9D3C136(A2_2[0] - A1_2[0], A2_2[1] - A1_2[1], A2_2[2] - A1_2[2]);
 
         C7A48E3FC.fBD92E0EC(L11_2[0], L11_2[1], L11_2[2]);
         var L17_2:C95DC25DB = C95DC25DB.f544F902B();
         var unk = L17_2.f5E1D7445();
-        var unk2 = unk.f7CB96C6D(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2[1], A2_2[2], A2_2[3], A3_2, A4_2, L6_2);
+        var unk2 = unk.f7CB96C6D(A0_2, A1_2[0], A1_2[1], A1_2[2], A2_2[0], A2_2[1], A2_2[2], A3_2, A4_2, L6_2);
         var i = 0;
         while (i < unk2.fD5B33F22()){
             i = i + 1;
@@ -211,7 +211,7 @@ class C06249860459C8E5A {
         var L11_2 = C7A48E3FC.fD9D3C136(L8_2, L9_2, L10_2);
         C7A48E3FC.fBD92E0EC(L11_2[0], L11_2[1], L11_2[2]);
         
-        var L17_2 = C95DC25DB.f544F902B().f5E1D7445().fBB974055(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2[1], A2_2[2], A2_2[3], A3_2, A4_2, L6_2);
+        var L17_2 = C95DC25DB.f544F902B().f5E1D7445().fBB974055(A0_2, A1_2[0], A1_2[1], A1_2[2], A2_2[0], A2_2[1], A2_2[2], A3_2, A4_2, L6_2);
         
         var L18_2 = 0;
         var L19_2 = L17_2.fD5B33F22();
@@ -243,7 +243,7 @@ class C06249860459C8E5A {
         }
         
         var result = [];
-        var L7_2:C63DF0026 = C95DC25DB.f544F902B().f5E1D7445().fC72F2D3F(A0_2, A1_2[1], A1_2[2], A1_2[3], A2_2, A3_2, L5_2);
+        var L7_2:C63DF0026 = C95DC25DB.f544F902B().f5E1D7445().fC72F2D3F(A0_2, A1_2[0], A1_2[1], A1_2[2], A2_2, A3_2, L5_2);
         var i = 0;
         while (i < L7_2.fD5B33F22()) {
             i++;
@@ -299,28 +299,28 @@ class C06249860459C8E5A {
             case 1:
                 var L3_2 = A0_2.fFB6EE94F();
                 var L4_2 = L3_2.fF614FCF7();
-                L3_2.f6E53BC7A(A1_2[1], A1_2[2], A1_2[3]);
+                L3_2.f6E53BC7A(A1_2[0], A1_2[1], A1_2[2]);
                 A0_2.f84705A38(L3_2);
                 return L4_2;
             
             case 2:
                 var L6_2 = A0_2.fDEC84709();
                 var L7_2 = L6_2.fF614FCF7();
-                L6_2.f6E53BC7A(A1_2[1], A1_2[2], A1_2[3]);
+                L6_2.f6E53BC7A(A1_2[0], A1_2[1], A1_2[2]);
                 A0_2.fC0E7F040(L6_2);
                 return L7_2;
             
             case 3:
                 var L9_2 = A0_2.f4D570596();
                 var L10_2 = L9_2.fF614FCF7();
-                L9_2.f6E53BC7A(A1_2[1], A1_2[2], A1_2[3]);
+                L9_2.f6E53BC7A(A1_2[0], A1_2[1], A1_2[2]);
                 A0_2.f8349FFBA(L9_2);
                 return L10_2;
             
             case 7:
                 var L12_2 = A0_2.f54A82C13();
                 var L13_2 = L12_2.fF614FCF7();
-                L12_2.f6E53BC7A(A1_2[1], A1_2[2], A1_2[3]);
+                L12_2.f6E53BC7A(A1_2[0], A1_2[1], A1_2[2]);
                 A0_2.f2BB69F64(L12_2);
                 return L13_2;
             
