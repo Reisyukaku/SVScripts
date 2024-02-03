@@ -103,7 +103,7 @@ class CC93E4D9B3BF1544F {
     }
     
     @:native("SAA02E02602AD9CE2")
-    public static function SetColor(col:Array<Int>) {
+    public static function SetColor(col:Array<Float>) {
         CFAFACFDC.f68DE7298(col[0], col[1], col[2], col[3]);
         CFAFACFDC.f1B4F55DF(3);
     }

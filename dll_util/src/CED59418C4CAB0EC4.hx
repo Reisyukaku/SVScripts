@@ -44,7 +44,7 @@ class CED59418C4CAB0EC4 {
     }
     
     @:native("S83677FF4EE3F1CBF")
-    public static function GetVectorAngle(v1:Array<Float>, v2:Array<Float>):Float {
+    public static function GetVectorAngle(v1, v2):Float {
         var dotProduct = C7A48E3FC.f04EE1F22(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
         dotProduct = Math.max(-1, Math.min(dotProduct, 1));
 

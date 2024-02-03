@@ -332,74 +332,74 @@ class CAAC30701973E8223 {
     @:native("SCE2C9A68643F70E7")
     public static function Func(func:Int):Dynamic {
         switch func {
-            case 0: return CAAC30701973E8223.InSine;
-            case 1: return CAAC30701973E8223.OutSine;
-            case 2: return CAAC30701973E8223.InOutSine;
-            case 3: return CAAC30701973E8223.InQuad;
-            case 4: return CAAC30701973E8223.OutQuad;
-            case 5: return CAAC30701973E8223.InOutQuad;
-            case 6: return CAAC30701973E8223.InCubic;
-            case 7: return CAAC30701973E8223.OutCubic;
-            case 8: return CAAC30701973E8223.InOutCubic;
-            case 9: return CAAC30701973E8223.InQuart;
-            case 10: return CAAC30701973E8223.OutQuart;
-            case 11: return CAAC30701973E8223.InOutQuart;
-            case 12: return CAAC30701973E8223.InQuint;
-            case 13: return CAAC30701973E8223.OutQuint;
-            case 14: return CAAC30701973E8223.InOutQuint;
-            case 15: return CAAC30701973E8223.InExpo;
-            case 16: return CAAC30701973E8223.OutExpo;
-            case 17: return CAAC30701973E8223.InOutExpo;
-            case 18: return CAAC30701973E8223.InCirc;
-            case 19: return CAAC30701973E8223.OutCirc;
-            case 20: return CAAC30701973E8223.InOutCirc;
-            case 21: return CAAC30701973E8223.InBack;
-            case 22: return CAAC30701973E8223.OutBack;
-            case 23: return CAAC30701973E8223.InOutBack;
-            case 24: return CAAC30701973E8223.InElastic;
-            case 25: return CAAC30701973E8223.OutElastic;
-            case 26: return CAAC30701973E8223.InOutElastic;
-            case 27: return CAAC30701973E8223.InBounce;
-            case 28: return CAAC30701973E8223.OutBounce;
-            case 29: return CAAC30701973E8223.InOutBounce;
-            default: return CAAC30701973E8223.Linear;
+            case 0: return InSine;
+            case 1: return OutSine;
+            case 2: return InOutSine;
+            case 3: return InQuad;
+            case 4: return OutQuad;
+            case 5: return InOutQuad;
+            case 6: return InCubic;
+            case 7: return OutCubic;
+            case 8: return InOutCubic;
+            case 9: return InQuart;
+            case 10: return OutQuart;
+            case 11: return InOutQuart;
+            case 12: return InQuint;
+            case 13: return OutQuint;
+            case 14: return InOutQuint;
+            case 15: return InExpo;
+            case 16: return OutExpo;
+            case 17: return InOutExpo;
+            case 18: return InCirc;
+            case 19: return OutCirc;
+            case 20: return InOutCirc;
+            case 21: return InBack;
+            case 22: return OutBack;
+            case 23: return InOutBack;
+            case 24: return InElastic;
+            case 25: return OutElastic;
+            case 26: return InOutElastic;
+            case 27: return InBounce;
+            case 28: return OutBounce;
+            case 29: return InOutBounce;
+            default: return Linear;
         }
     }
     
     @:native("S0A0EAE3F3AFC912A")
     public static function Value(args:Dynamic, func:Int):Dynamic {
         switch func {
-            case 0: return CAAC30701973E8223.InSine(args);
-            case 1: return CAAC30701973E8223.OutSine(args);
-            case 2: return CAAC30701973E8223.InOutSine(args);
-            case 3: return CAAC30701973E8223.InQuad(args);
-            case 4: return CAAC30701973E8223.OutQuad(args);
-            case 5: return CAAC30701973E8223.InOutQuad(args);
-            case 6: return CAAC30701973E8223.InCubic(args);
-            case 7: return CAAC30701973E8223.OutCubic(args);
-            case 8: return CAAC30701973E8223.InOutCubic(args);
-            case 9: return CAAC30701973E8223.InQuart(args);
-            case 10: return CAAC30701973E8223.OutQuart(args);
-            case 11: return CAAC30701973E8223.InOutQuart(args);
-            case 12: return CAAC30701973E8223.InQuint(args);
-            case 13: return CAAC30701973E8223.OutQuint(args);
-            case 14: return CAAC30701973E8223.InOutQuint(args);
-            case 15: return CAAC30701973E8223.InExpo(args);
-            case 16: return CAAC30701973E8223.OutExpo(args);
-            case 17: return CAAC30701973E8223.InOutExpo(args);
-            case 18: return CAAC30701973E8223.InCirc(args);
-            case 19: return CAAC30701973E8223.OutCirc(args);
-            case 20: return CAAC30701973E8223.InOutCirc(args);
-            case 21: return CAAC30701973E8223.InBack(args);
-            case 22: return CAAC30701973E8223.OutBack(args);
-            case 23: return CAAC30701973E8223.InOutBack(args);
-            case 24: return CAAC30701973E8223.InElastic(args);
-            case 25: return CAAC30701973E8223.OutElastic(args);
-            case 26: return CAAC30701973E8223.InOutElastic(args);
-            case 27: return CAAC30701973E8223.InBounce(args);
-            case 28: return CAAC30701973E8223.OutBounce(args);
-            case 29: return CAAC30701973E8223.InOutBounce(args);
-            default: return CAAC30701973E8223.Linear(args);
+            case 0: return InSine(args);
+            case 1: return OutSine(args);
+            case 2: return InOutSine(args);
+            case 3: return InQuad(args);
+            case 4: return OutQuad(args);
+            case 5: return InOutQuad(args);
+            case 6: return InCubic(args);
+            case 7: return OutCubic(args);
+            case 8: return InOutCubic(args);
+            case 9: return InQuart(args);
+            case 10: return OutQuart(args);
+            case 11: return InOutQuart(args);
+            case 12: return InQuint(args);
+            case 13: return OutQuint(args);
+            case 14: return InOutQuint(args);
+            case 15: return InExpo(args);
+            case 16: return OutExpo(args);
+            case 17: return InOutExpo(args);
+            case 18: return InCirc(args);
+            case 19: return OutCirc(args);
+            case 20: return InOutCirc(args);
+            case 21: return InBack(args);
+            case 22: return OutBack(args);
+            case 23: return InOutBack(args);
+            case 24: return InElastic(args);
+            case 25: return OutElastic(args);
+            case 26: return InOutElastic(args);
+            case 27: return InBounce(args);
+            case 28: return OutBounce(args);
+            case 29: return InOutBounce(args);
+            default: return Linear(args);
         }
     }
 }

@@ -116,7 +116,7 @@ haxe: $(MODULES:%=src/%.$(MODULE_EXT))
 	$(COMPILER) -o $(OUTPUT) $(NATIVE_LIBS) $(NATIVE_LIB_FLAG) $(LFLAGS) $(LIBS:=.$(LIB_EXT)) $(MODULES:%=src/%.$(MODULE_EXT))
 
 haxelib:
-	(cd $(CURDIR)/extra/haxelib_src && $(CURDIR)/$(OUTPUT) client.hxml && nekotools boot run.n)
+	(cd $(CURDIR)/extra/haxelib_src && $(CURDIR)/$(OUTPUT) client_legacy.hxml && nekotools boot run.n)
 	mv extra/haxelib_src/run$(EXTENSION) haxelib$(EXTENSION)
 
 tools: haxelib

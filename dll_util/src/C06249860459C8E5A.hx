@@ -1,3 +1,4 @@
+import lua.Bit;
 import cppbindings.*;
 
 @:expose
@@ -7,8 +8,8 @@ class C06249860459C8E5A {
     @:native("S93E1062E6DDDB25E") static var NPC_LAYER = 4;
     @:native("S42DCF09450C02265") static var m_messageCloseCoroutine = 6;
     @:native("SC8BF65C975FB4CF0") static var SCROLL_INDEX_TAIL = 12;
-    @:native("S96314C522A76154A") static var GROUND_BITFIELD = (1 << (GROUND_LAYER - 1));
-    @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = (1 << (WATER_LAYER - 1));
+    @:native("S96314C522A76154A") static var GROUND_BITFIELD = Bit.lshift(1, (GROUND_LAYER - 1));
+    @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = Bit.lshift(1, (WATER_LAYER - 1));
     @:native("S5323CBCB07E5B8A8") static var S5323CBCB07E5B8A8 = 0.05;
     @:native("S469DB55DA92DD3BC") static var rayOpt:CE19B10CC = CE19B10CC.f101D811F();
     
@@ -61,39 +62,61 @@ class C06249860459C8E5A {
     
     @:native("SFEBBEE8D9284A00B")
     public static function WaterRayCast(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Dynamic = 0, A3_2:Int = 1):C60B2EB370A8B68F0 {
-        return LayeredRayCast(A0_2, A1_2, 1 << 2, A3_2, A2_2);
+        return LayeredRayCast(A0_2, A1_2, Bit.lshift(1, 2), A3_2, A2_2);
     }
     
     @:native("SE97248E46ABB5CA7")
     public static function LandRayCast(A0_2:Array<Float>, A1_2:Array<Float>, ?A2_2:Int = 0, ?A3_2:Int = 1):C60B2EB370A8B68F0 {
-        return LayeredRayCast(A0_2, A1_2, 1 | (1 << 1) | (1 << 6), A3_2, A2_2);
+        var flags = 1;
+        flags = Bit.bor(flags, Bit.lshift(1, 1));
+        flags = Bit.bor(flags, Bit.lshift(1, 6));
+        return LayeredRayCast(A0_2, A1_2, flags, A3_2, A2_2);
     }
     
     @:native("S1110B18BD2FEF032")
     public static function LandShapeCast(A0_2:Int, A1_2:Array<Float>, A2_2:Int = 1):Array<C60B2EB370A8B68F0> {
-        return LayeredShapeCast(A0_2, A1_2, (1 << 1) | (1 << 6), A2_2);
+        var flags = 0;
+        flags = Bit.bor(flags, Bit.lshift(1, 1));
+        flags = Bit.bor(flags, Bit.lshift(1, 6));
+        return LayeredShapeCast(A0_2, A1_2, flags, A2_2);
     }
     
     @:native("S2757B69498F389AE")
     public static function WaterShapeCast(A0_2:Int, A1_2:Array<Float>, A2_2:Int = 1):Array<C60B2EB370A8B68F0> {
-        return LayeredShapeCast(A0_2, A1_2, 1 << 2, A2_2);
+        return LayeredShapeCast(A0_2, A1_2, Bit.lshift(1, 2), A2_2);
     }
     
     @:native("S2B5898695BCB23F4")
     public static function LandCapsuleCast(A0_2:Dynamic, A1_2:Array<Float>, A2_2:Array<Float>, ?A3_2:Int = 1):Array<C60B2EB370A8B68F0> {
-        return LayeredCapsuleCast(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
+        var flags = 0;
+        flags = Bit.bor(flags, Bit.lshift(1, 1));
+        flags = Bit.bor(flags, Bit.lshift(1, 6));
+        return LayeredCapsuleCast(A0_2, A1_2, A2_2, flags, A3_2);
+    }
+
+    @:native("S557EE6B53E7A494A")
+    public static function LandPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
+        var flags = 0;
+        flags = Bit.bor(flags, Bit.lshift(1, 1));
+        flags = Bit.bor(flags, Bit.lshift(1, 6));
+        return LayeredPencilCast(A0_2, A1_2, A2_2, flags, A3_2);
+    }
+    
+    @:native("S8A78048732E361AE")
+    public static function WaterPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
+        return LayeredPencilCast(A0_2, A1_2, A2_2, Bit.lshift(1, 2), A3_2);
     }
     
     @:native("SB5650EB38CCD091A")
     public static function LayeredRayCast(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Int, A3_2:Int, A4_2:Int, ?A5_2:Dynamic):C60B2EB370A8B68F0 {
-        var L8_2 = (A4_2 & 1) != 0;
+        var L8_2 = Bit.band(A4_2, 1) != 0;
         rayOpt.fCF1931BB(L8_2);
-        L8_2 = (A4_2 & 2) != 0;
+        L8_2 = Bit.band(A4_2, 2) != 0;
         rayOpt.f973490B9(L8_2);
-        L8_2 = (A4_2 & 4) != 0;
+        L8_2 = Bit.band(A4_2, 4) != 0;
         rayOpt.f2C469077(L8_2);
         var L6_2 = 1;
-        if ((A4_2 & 8) != 0){
+        if (Bit.band(A4_2, 8) != 0){
             L6_2 = 0;
         }
         var L7_2 = C95DC25DB.f544F902B();
@@ -101,17 +124,17 @@ class C06249860459C8E5A {
         var unk2:C63DF0026 = unk.f586A3930(A0_2[0], A0_2[1], A0_2[2], A1_2[0], A1_2[1], A1_2[2], A2_2, A3_2, L6_2, rayOpt);
         var tbl:C60B2EB370A8B68F0 = new C60B2EB370A8B68F0();
         var L9_2:C49951D04 = null;
-        var L10_2 = 0;
+        var i = 0;
         if (A5_2 == null){
-            L10_2 = unk2.fD5B33F22();
-            var L11_2 = L10_2 < 0;
+            i = unk2.fD5B33F22();
+            var L11_2 = i < 0;
             function L12_2(){
                 var L0_3 = null;
                 var L1_3 = L11_2;
                 if (L1_3 != false){
                     L0_3 = L11_2;
                 }else{
-                    L0_3 = L10_2 > 0;
+                    L0_3 = i > 0;
                 }
                 return L0_3;
             }
@@ -120,9 +143,8 @@ class C06249860459C8E5A {
                 L9_2 = unk2.fCB2FEF1E(0);
         }else{
             var L11_2 = unk2.fD5B33F22();
-            while (L10_2 < L11_2) {
-                L10_2++;
-                var L12_2 = unk2.fCB2FEF1E(L10_2 - 1);
+            while (i++ < L11_2) {
+                var L12_2 = unk2.fCB2FEF1E(i - 1);
                 var L13_2 = A5_2(L12_2);
                 if (L13_2){
                     L9_2 = L12_2;
@@ -152,13 +174,13 @@ class C06249860459C8E5A {
     
     @:native("SF725F7C11C979360")
     public static function WaterCapsuleCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
-        return LayeredCapsuleCast(A0_2, A1_2, A2_2, 1 << 2, A3_2);
+        return LayeredCapsuleCast(A0_2, A1_2, A2_2, Bit.lshift(1, 2), A3_2);
     }
     
     @:native("S9E7F9F1C6EB5BBB9")
     public static function LayeredCapsuleCast(A0_2:Dynamic, A1_2:Array<Float>, A2_2:Array<Float>, A3_2:Int, A4_2:Int, ?A5_2:Int = 0):Array<C60B2EB370A8B68F0> {
         var L6_2 = 1;
-        if ((A5_2 & 8) != 0){
+        if (Bit.band(A5_2, 8) != 0){
             L6_2 = 0;
         }
         var arr = [];
@@ -187,20 +209,10 @@ class C06249860459C8E5A {
         return arr;
     }
     
-    @:native("S557EE6B53E7A494A")
-    public static function LandPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
-        return LayeredPencilCast(A0_2, A1_2, A2_2, (1 << 1) | (1 << 6), A3_2);
-    }
-    
-    @:native("S8A78048732E361AE")
-    public static function WaterPencilCast(A0_2, A1_2, A2_2, ?A3_2 = 1):Array<C60B2EB370A8B68F0> {
-        return LayeredPencilCast(A0_2, A1_2, A2_2, 1 << 2, A3_2);
-    }
-    
     @:native("SA614A0FD7D5BC105")
     public static function LayeredPencilCast(A0_2, A1_2, A2_2, A3_2, A4_2, ?A5_2 = 0):Array<C60B2EB370A8B68F0> {
         var L6_2 = 1;
-        if ((A5_2 & 8) != 0) {
+        if (Bit.band(A5_2, 8) != 0) {
             L6_2 = 0;
         }
         
@@ -238,7 +250,7 @@ class C06249860459C8E5A {
     @:native("S34504A5C8F8B4FCF")
     public static function LayeredShapeCast(A0_2:Int, A1_2:Array<Float>, A2_2:Int, A3_2:Int, ?A4_2:Int = 0):Array<C60B2EB370A8B68F0> {
         var L5_2 = 1;
-        if ((A4_2 & 8) != 0) {
+        if (Bit.band(A4_2, 8) != 0) {
             L5_2 = 0;
         }
         

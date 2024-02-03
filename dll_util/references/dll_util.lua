@@ -3821,10 +3821,7 @@ function L46_1(A0_2, A1_2, A2_2, A3_2)
   L5_2 = A0_2
   L6_2 = A1_2
   L7_2 = _hx_bit_raw.bor
-  L8_2 = _hx_bit_raw.alshift
-  L9_2 = 1
-  L10_2 = 1
-  L8_2 = L8_2(L9_2, L10_2)
+  L8_2 = _hx_bit_raw.alshift(1, 1)
   L9_2 = _hx_bit_raw.alshift
   L10_2 = 1
   L11_2 = 6
@@ -3860,22 +3857,15 @@ function L46_1(A0_2, A1_2, A2_2, A3_2)
 end
 
 L45_1.SFEBBEE8D9284A00B = L46_1
-L45_1 = C06249860459C8E5A
 
-function L46_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
+C06249860459C8E5A.SB5650EB38CCD091A = function(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   local L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
-  L6_2 = C06249860459C8E5A
-  L6_2 = L6_2.S469DB55DA92DD3BC
-  L7_2 = L6_2
-  L6_2 = L6_2.fCF1931BB
-  L8_2 = _hx_bit_raw.band
-  L9_2 = A4_2
-  L10_2 = 1
-  L8_2 = L8_2(L9_2, L10_2)
+
+  L6_2 = C06249860459C8E5A.S469DB55DA92DD3BC
+  L8_2 = _hx_bit_raw.band(A4_2, 1)
   L8_2 = 0 ~= L8_2
-  L6_2(L7_2, L8_2)
-  L6_2 = C06249860459C8E5A
-  L6_2 = L6_2.S469DB55DA92DD3BC
+  L6_2.fCF1931BB(L6_2, L8_2)
+  L6_2 = C06249860459C8E5A.S469DB55DA92DD3BC
   L7_2 = L6_2
   L6_2 = L6_2.f973490B9
   L8_2 = _hx_bit_raw.band
@@ -4042,7 +4032,6 @@ function L46_1(A0_2, A1_2, A2_2, A3_2, A4_2, A5_2)
   return L8_2
 end
 
-L45_1.SB5650EB38CCD091A = L46_1
 L45_1 = C06249860459C8E5A
 
 function L46_1(A0_2, A1_2, A2_2, A3_2)
