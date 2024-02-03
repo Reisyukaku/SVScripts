@@ -2,8 +2,8 @@ package cppbindings;
 
 @:native("cCE8E2D0A")
 extern class CCE8E2D0A { //Matrix?
-	function fA25AF567():Any;
-	function f5AABCAB6():Any;
+	function fA25AF567():Array<Float>;
+	function f5AABCAB6(p1:Float, p2:Float, p3:Float, p4:Float):Void;
 	function fD55DC5F1():Any;
 	function f2DACFA20():Any;
 	function f4C54944B():Any;
@@ -17,7 +17,7 @@ extern class CCE8E2D0A { //Matrix?
 	function f33A459EF():Any;
 	function f6B20D21C():Any;
 	function f250C1821():Any;
-	function f47BEA911(f1:Float, f2:Float, f3:Float, f4:Float):Any; //Vec4Mul?
+	function f47BEA911(f1:Float, f2:Float, f3:Float, f4:Float):Vec4; //Vec4Mul?
 	function fB372E29C():Any;
 	function f1BECE3E7():Any;
 	function f643B5D6F():Vec3;
