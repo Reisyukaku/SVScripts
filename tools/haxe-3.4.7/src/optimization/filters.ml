@@ -739,10 +739,27 @@ let apply_native_paths ctx t =
 		| _ ->
 			error "String expected" mp
 	in
+	let int64s_of_string str =
+		let rec loop str i len =
+			if i == len then []
+			else (Int64.of_int (int_of_char str.[i])) :: loop str (i + 1) len
+		in
+			loop str 0 (String.length str)
+	in
+	let fnv_64_init = 0xcbf29ce484222325L in
+	let fnv_64_prime = 0x100000001b3L in
+	let ( *!) = Int64.mul in
+	let ( ^!) = Int64.logxor in
+	let fnv1_64 key =
+		let loop h b = (h *! fnv_64_prime) ^! b in
+		List.fold_left loop fnv_64_init (int64s_of_string key)	
+	in
+
 	let get_real_name meta name =
 		let name',p = get_native_name meta in
 		(Meta.RealPath,[Ast.EConst (Ast.String (name)), p], p), name'
 	in
+	
 	let get_real_path meta path =
 		let name,p = get_native_name meta in
 		(Meta.RealPath,[Ast.EConst (Ast.String (s_type_path path)), p], p), parse_path name

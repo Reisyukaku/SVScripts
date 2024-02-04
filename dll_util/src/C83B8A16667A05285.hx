@@ -4,18 +4,18 @@ import cppbindings.*;
 class C83B8A16667A05285 {
     
     @:native("SD79F00DEB5032D7D")
-    public static function CalcWorldToScreen(worldPos:Vec4, A1:Array<Float>, A2:CCE8E2D0A, A3:CCE8E2D0A):Dynamic {
+    public static function CalcWorldToScreen(pos:Vec4, screenSize:Array<Float>, mat1:CCE8E2D0A, mat2:CCE8E2D0A):Dynamic {
         var matrix:CCE8E2D0A = CCE8E2D0A.f0151A26E();
         matrix.f56310C93(
-            A1[0] / 2.0,    0,               0,        0, 
-            0,              -A1[1] / 2.0,    0,        0, 
-            0,              0,               1,        0, 
-            A1[0] / 2.0,    A1[1] / 2.0,     0,        1
+            screenSize[0] / 2.0,        0,               0,        0, 
+            0,                  -screenSize[1] / 2.0,    0,        0, 
+            0,                   0,                      1,        0, 
+            screenSize[0] / 2.0, screenSize[1] / 2.0,    0,        1
         );
-        var vec1 = A2.f47BEA911(worldPos.x, worldPos.y, worldPos.z, 1.0);
-        var vec2 = A3.f47BEA911(vec1.x, vec1.y, vec1.z, vec1.w);
-        var proj = matrix.f47BEA911(vec2.x, vec2.y, vec2.z, vec2.w);
-        var screen = [proj.x / proj.w, proj.y / proj.w];
+        var vec1 = mat1.f47BEA911(pos.x, pos.y, pos.z, 1.0);
+        var vec2 = mat2.f47BEA911(vec1.x, vec1.y, vec1.z, vec1.w);
+        var vec3 = matrix.f47BEA911(vec2.x, vec2.y, vec2.z, vec2.w);
+        var screen = [vec3.x / vec3.w, vec3.y / vec3.w];
         return screen;
     }
     

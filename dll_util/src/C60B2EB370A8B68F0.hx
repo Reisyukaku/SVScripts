@@ -2,7 +2,7 @@ import cppbindings.*;
 
 @:expose
 @:publicFields
-@:arrayAccess
+@:native("C60B2EB370A8B68F0")
 class C60B2EB370A8B68F0 {
     var unkBool_0:Bool;
     var unkArray_1:Array<Float>;

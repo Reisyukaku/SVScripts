@@ -167,6 +167,7 @@ type strict_meta =
 	| UserVariable
 	| Value
 	| Void
+	| FNV1A64
 	| Last
 	(* do not put any custom metadata after Last *)
 	| Dollar of string
@@ -361,6 +362,7 @@ let get_info = function
 	| UserVariable -> ":userVariable",("Internally used to mark variables that come from user code",[UsedInternally])
 	| Value -> ":value",("Used to store default values for fields and function arguments",[UsedOn TClassField])
 	| Void -> ":void",("Use Cpp native 'void' return type",[Platform Cpp])
+	|	FNV1A64 -> ":fnv1a64",("Use to hash name using FNV1A64.",[UsedOnEither [TClass;TClassField;TEnum]])
 	| Last -> assert false
 	(* do not put any custom metadata after Last *)
 	| Dollar s -> "$" ^ s,("",[])
