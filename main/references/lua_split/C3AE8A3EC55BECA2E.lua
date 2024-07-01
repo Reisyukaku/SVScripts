@@ -1,0 +1,43 @@
+L55_1 = _ENV
+L56_1 = "C3AE8A3EC55BECA2E"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["C3AE8A3EC55BECA2E"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C3AE8A3EC55BECA2E"]
+L69_1 = "__name__"
+L70_1 = "C3AE8A3EC55BECA2E"
+L68_1[L69_1] = L70_1
+_ENV["C3AE8A3EC55BECA2E"]["S988D7D0A4EEF693D"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = L16_1
+  L3_2 = {}
+  L4_2 = {}
+  L4_2.offset = true
+  L4_2.index = true
+  L3_2.__fields__ = L4_2
+  L4_2 = L10_1.math
+  L4_2 = L4_2.floor
+  L5_2 = CDEFF9E191D3E5A11
+  L5_2 = L5_2.SF59F1732BFDB1B87
+  L5_2 = A1_2 / L5_2
+  L4_2 = L4_2(L5_2)
+  L5_2 = CDEFF9E191D3E5A11
+  L5_2 = L5_2.SD72A57CBA2E92F71
+  L5_2 = L5_2[A0_2]
+  L4_2 = L4_2 + L5_2
+  L3_2.offset = L4_2
+  L4_2 = L10_1.math
+  L4_2 = L4_2.fmod
+  L5_2 = A1_2
+  L6_2 = CDEFF9E191D3E5A11
+  L6_2 = L6_2.SF59F1732BFDB1B87
+  L4_2 = L4_2(L5_2, L6_2)
+  L3_2.index = L4_2
+  return L2_2(L3_2)
+end
+

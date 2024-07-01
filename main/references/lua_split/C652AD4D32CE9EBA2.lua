@@ -1,0 +1,49 @@
+L55_1 = _ENV
+L56_1 = "C652AD4D32CE9EBA2"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["C652AD4D32CE9EBA2"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C652AD4D32CE9EBA2"]
+L69_1 = "__name__"
+L70_1 = "C652AD4D32CE9EBA2"
+L68_1[L69_1] = L70_1
+_ENV["C652AD4D32CE9EBA2"]["SC60B51144663DD73"] = function()
+
+  local L0_2, L1_2, L2_2
+  L0_2 = CF78090999444A548
+  L0_2 = L0_2.new
+  L0_2 = L0_2()
+  L2_2 = L0_2
+  L1_2 = L0_2.FB68CFA277DC5D2A5
+  L1_2(L2_2)
+  while true do
+    L2_2 = L0_2
+    L1_2 = L0_2.FDCC89D158E22EBDE
+    L1_2 = L1_2(L2_2)
+    if L1_2 then
+      break
+    end
+    L1_2 = CC6FE82819C6E1D55
+    L1_2 = L1_2.S12F63EE47FFCB183
+    L1_2()
+  end
+  while true do
+    L2_2 = L0_2
+    L1_2 = L0_2.FA480585E08011D0F
+    L1_2 = L1_2(L2_2)
+    if L1_2 then
+      break
+    end
+    L1_2 = CC6FE82819C6E1D55
+    L1_2 = L1_2.S12F63EE47FFCB183
+    L1_2()
+  end
+  L2_2 = L0_2
+  L1_2 = L0_2.FD7D37C5A967ABE41
+  L1_2(L2_2)
+end
+

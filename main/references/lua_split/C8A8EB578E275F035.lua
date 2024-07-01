@@ -1,0 +1,27 @@
+L55_1 = _ENV
+L56_1 = "C8A8EB578E275F035"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["C8A8EB578E275F035"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C8A8EB578E275F035"]
+L69_1 = "__name__"
+L70_1 = "C8A8EB578E275F035"
+L68_1[L69_1] = L70_1
+_ENV["C8A8EB578E275F035"]["SC49955E1890E9FA0"] = function(A0_2)
+
+  local L1_2, L2_2
+  L1_2 = C8A8EB578E275F035
+  L1_2 = L1_2.SC652B6856C8A600C
+  L1_2 = L1_2.h
+  L1_2 = L1_2[A0_2]
+  L2_2 = L42_1.tnull
+  if L1_2 == L2_2 then
+    L1_2 = nil
+  end
+  return L1_2
+end
+

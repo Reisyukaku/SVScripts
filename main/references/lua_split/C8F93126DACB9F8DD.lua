@@ -1,0 +1,206 @@
+L55_1 = _ENV
+L56_1 = "C8F93126DACB9F8DD"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+_ENV["C8F93126DACB9F8DD"]["new"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2
+  L0_2 = lua_helper_new
+  L1_2 = C8F93126DACB9F8DD
+  L1_2 = L1_2.prototype
+  L2_2 = 0
+  L3_2 = 6
+  L0_2 = L0_2(L1_2, L2_2, L3_2)
+  L1_2 = C8F93126DACB9F8DD
+  L1_2 = L1_2.super
+  L2_2 = L0_2
+  L1_2(L2_2)
+  return L0_2
+end
+
+_ENV["C8F93126DACB9F8DD"]["super"] = function(A0_2)
+
+  local L1_2, L2_2
+  L1_2 = C1DAF90683584C5A0
+  L1_2 = L1_2.super
+  L2_2 = A0_2
+  L1_2(L2_2)
+end
+
+L68_1 = _ENV["C8F93126DACB9F8DD"]
+L69_1 = "__name__"
+L70_1 = "C8F93126DACB9F8DD"
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C8F93126DACB9F8DD"]
+L69_1 = "prototype"
+L70_1 = _hx_e
+L70_1 = L70_1()
+L68_1[L69_1] = L70_1
+_ENV["C8F93126DACB9F8DD"]["prototype"]["F042B860498E558B2"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L1_2 = C8F93126DACB9F8DD
+  L1_2 = L1_2.SCDE029F999265372
+  L2_2 = c37452BA0
+  L2_2 = L2_2.fCA8A8522
+  L3_2 = C8F93126DACB9F8DD
+  L3_2 = L3_2.S62549C7FA456CA60
+  L3_2 = L3_2.startPos
+  L4_2 = L1_2[1]
+  L5_2 = L1_2[2]
+  L6_2 = L1_2[3]
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = c37452BA0
+  L2_2 = L2_2.fF29295C8
+  L3_2 = C8F93126DACB9F8DD
+  L3_2 = L3_2.S62549C7FA456CA60
+  L3_2 = L3_2.startRot
+  L4_2 = cD5675BA5
+  L4_2 = L4_2.f0151A26E
+  L4_2, L5_2, L6_2, L7_2 = L4_2()
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = C8F93126DACB9F8DD
+  L2_2 = L2_2.S62549C7FA456CA60
+  L2_2 = L2_2.isInMainLand
+  L2_2[2] = true
+  L4_2 = L2_2
+  L3_2 = L2_2.F549DD8BF55FD45EE
+  L5_2 = L2_2[1]
+  L6_2 = true
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = c37452BA0
+  L3_2 = L3_2.f3F4CAD2D
+  L4_2 = C8F93126DACB9F8DD
+  L4_2 = L4_2.S62549C7FA456CA60
+  L4_2 = L4_2.lastSubField
+  L5_2 = CA412F80CB1F1E083
+  L5_2 = L5_2.S8715C77E4D577008
+  L3_2(L4_2, L5_2)
+  L3_2 = c37452BA0
+  L3_2 = L3_2.f3F4CAD2D
+  L4_2 = C8F93126DACB9F8DD
+  L4_2 = L4_2.S62549C7FA456CA60
+  L4_2 = L4_2.lastRoomMapName
+  L5_2 = ""
+  L3_2(L4_2, L5_2)
+  L3_2 = c37452BA0
+  L3_2 = L3_2.fCA8A8522
+  L4_2 = C8F93126DACB9F8DD
+  L4_2 = L4_2.S62549C7FA456CA60
+  L4_2 = L4_2.lastGreenPos
+  L5_2 = C8F93126DACB9F8DD
+  L5_2 = L5_2.S06B19C757D40A201
+  L6_2 = C8F93126DACB9F8DD
+  L6_2 = L6_2.S06B19C757D40A201
+  L7_2 = C8F93126DACB9F8DD
+  L7_2 = L7_2.S06B19C757D40A201
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+end
+
+_ENV["C8F93126DACB9F8DD"]["prototype"]["FA7B9750360BF2368"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L1_2 = CFC8F368D91411014
+  L1_2 = L1_2.S495AB2C927F6FDBC
+  L1_2 = L1_2()
+  if nil ~= L1_2 then
+    L2_2 = C440DCA38121CB47F
+    L2_2 = L2_2.S264F26F6894F3392
+    L2_2 = L2_2[1]
+    L2_2 = L2_2.h
+    L2_2 = L2_2.OverwritePlayerSavePos
+    L3_2 = L47_1.tnull
+    if L2_2 == L3_2 then
+      L2_2 = nil
+    end
+    if not L2_2 then
+      L3_2 = C8F93126DACB9F8DD
+      L3_2 = L3_2.S62549C7FA456CA60
+      L3_2 = L3_2.startPos
+      L5_2 = L1_2
+      L4_2 = L1_2.F7C7427B293ECF3AB
+      L4_2 = L4_2(L5_2)
+      L5_2 = c37452BA0
+      L5_2 = L5_2.fCA8A8522
+      L6_2 = L3_2
+      L7_2 = L4_2[1]
+      L8_2 = L4_2[2]
+      L9_2 = L4_2[3]
+      L5_2(L6_2, L7_2, L8_2, L9_2)
+    end
+    L3_2 = c37452BA0
+    L3_2 = L3_2.fF29295C8
+    L4_2 = C8F93126DACB9F8DD
+    L4_2 = L4_2.S62549C7FA456CA60
+    L4_2 = L4_2.startRot
+    L6_2 = L1_2
+    L5_2 = L1_2.F82BCEC04BE0E293E
+    L5_2, L6_2, L7_2, L8_2, L9_2 = L5_2(L6_2)
+    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+  end
+  L2_2 = C42D1CDB112422850
+  L2_2 = L2_2.S56FEE9093E5D5CA2
+  L2_2 = L2_2()
+  L3_2 = c37452BA0
+  L3_2 = L3_2.fCA8A8522
+  L4_2 = C8F93126DACB9F8DD
+  L4_2 = L4_2.S62549C7FA456CA60
+  L4_2 = L4_2.lastGreenPos
+  L5_2 = L2_2[1]
+  L6_2 = L2_2[2]
+  L7_2 = L2_2[3]
+  L3_2(L4_2, L5_2, L6_2, L7_2)
+end
+
+_ENV["C8F93126DACB9F8DD"]["prototype"]["F6C5D0398122A6629"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2
+  L1_2 = c37452BA0
+  L1_2 = L1_2.fD8C39FA5
+  L2_2 = C8F93126DACB9F8DD
+  L2_2 = L2_2.S62549C7FA456CA60
+  L2_2 = L2_2.lastGreenPos
+  L1_2, L2_2, L3_2 = L1_2(L2_2)
+  L4_2 = {}
+  L5_2 = L1_2
+  L6_2 = L2_2
+  L7_2 = L3_2
+  L4_2[1] = L5_2
+  L4_2[2] = L6_2
+  L4_2[3] = L7_2
+  L5_2 = L4_2[1]
+  L6_2 = C8F93126DACB9F8DD
+  L6_2 = L6_2.S06B19C757D40A201
+  if L5_2 ~= L6_2 then
+    L5_2 = C42D1CDB112422850
+    L5_2 = L5_2.SF213EE425F1151CE
+    L6_2 = L4_2
+    L5_2(L6_2)
+  end
+  L5_2 = c37452BA0
+  L5_2 = L5_2.fD8C39FA5
+  L6_2 = C8F93126DACB9F8DD
+  L6_2 = L6_2.S62549C7FA456CA60
+  L6_2 = L6_2.startPos
+  L5_2, L6_2, L7_2 = L5_2(L6_2)
+  L8_2 = C23E5342B132D5323
+  L8_2 = L8_2.S8CED43592045F1F1
+  L9_2 = {}
+  L10_2 = L5_2
+  L11_2 = L6_2
+  L12_2 = L7_2
+  L9_2[1] = L10_2
+  L9_2[2] = L11_2
+  L9_2[3] = L12_2
+  L8_2(L9_2)
+end
+
+L68_1 = _ENV["C8F93126DACB9F8DD"]["prototype"]
+L69_1 = _ENV["C8F93126DACB9F8DD"]
+L68_1.__class__ = L69_1
+L68_1 = _ENV["C8F93126DACB9F8DD"]
+L69_1 = "__super__"
+L69_1 = _ENV["C8F93126DACB9F8DD"]["prototype"]
+L70_1 = {}
+L71_1 = "__index"

@@ -1,0 +1,25 @@
+L55_1 = _ENV
+L56_1 = "C657D0C6FCD7BE34F"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["C657D0C6FCD7BE34F"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C657D0C6FCD7BE34F"]
+L69_1 = "__name__"
+L70_1 = "C657D0C6FCD7BE34F"
+L68_1[L69_1] = L70_1
+_ENV["C657D0C6FCD7BE34F"]["SFED404825799B099"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = 0
+  while L1_2 < 2 do
+    L1_2 = L1_2 + 1
+    L2_2 = A0_2
+    L3_2 = L1_2 - 1
+    L2_2(L3_2)
+  end
+end
+

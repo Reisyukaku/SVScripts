@@ -1,0 +1,58 @@
+L55_1 = _ENV
+L56_1 = "CF91B1076ACF67AF6"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["CF91B1076ACF67AF6"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["CF91B1076ACF67AF6"]
+L69_1 = "__name__"
+L70_1 = "CF91B1076ACF67AF6"
+L68_1[L69_1] = L70_1
+_ENV["CF91B1076ACF67AF6"]["SB5BB7B8249A77DB2"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L0_2 = L26_1.new
+  L0_2 = L0_2()
+  L2_2 = L0_2
+  L1_2 = L0_2.resize
+  L3_2 = 2
+  L1_2(L2_2, L3_2)
+  L1_2 = 0
+  L2_2 = L0_2.length
+  while L1_2 < L2_2 do
+    L1_2 = L1_2 + 1
+    L3_2 = L1_2 - 1
+    L4_2 = CE6145FDB1845D0BD
+    L4_2 = L4_2.S385504EFF7E842C3
+    L4_2 = L4_2()
+    L5_2 = L4_2
+    L4_2 = L4_2.F8904D35CE2995C5B
+    L6_2 = L3_2
+    L4_2 = L4_2(L5_2, L6_2)
+    L0_2[L3_2] = L4_2
+  end
+  return L0_2
+end
+
+_ENV["CF91B1076ACF67AF6"]["SABEDABEBC55CDC6A"] = function()
+
+  local L0_2, L1_2
+  L0_2 = 3000
+  return L0_2
+end
+
+_ENV["CF91B1076ACF67AF6"]["S24A434C639CFE605"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C71E20570A8F58A79
+  L0_2 = L0_2.S381B047005A52C82
+  L1_2 = "hairsalon_win_00_04"
+  L0_2(L1_2)
+  L0_2 = CCD22EFED4E9E5F89
+  L0_2 = L0_2.S4B3DD107F4CBB90C
+  L0_2()
+end
+

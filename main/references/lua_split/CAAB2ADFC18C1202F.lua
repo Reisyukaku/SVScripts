@@ -1,0 +1,46 @@
+-- CAAB2ADFC18C1202F: main.playables.free_move.trig.LadderConstant
+L55_1 = _ENV
+L56_1 = "CAAB2ADFC18C1202F"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+C2B9940E0A00B9333 = L55_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+CB56F5097860388AA = L55_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+CE02CDFF7F422063E = L55_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+CD6D5DA9455737676 = L55_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+C8BEA1CECD16DDF36 = L55_1
+L68_1 = _ENV["CAAB2ADFC18C1202F"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["CAAB2ADFC18C1202F"]
+L69_1 = "__name__"
+L70_1 = "CAAB2ADFC18C1202F"
+L68_1[L69_1] = L70_1
+C2B9940E0A00B9333["new"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = lua_helper_new
+  L2_2 = C2B9940E0A00B9333
+  L2_2 = L2_2.prototype
+  L3_2 = 5
+  L4_2 = 7
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  L2_2 = C2B9940E0A00B9333
+  L2_2 = L2_2.super
+  L3_2 = L1_2
+  L4_2 = A0_2
+  L2_2(L3_2, L4_2)
+  return L1_2
+end
+

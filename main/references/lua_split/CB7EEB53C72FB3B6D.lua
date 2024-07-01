@@ -1,0 +1,891 @@
+_ENV["CB7EEB53C72FB3B6D"]["super"] = function(A0_2, A1_2, A2_2, A3_2, A4_2)
+
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L5_2 = C2C51A2FB219477E8
+  L5_2 = L5_2.super
+  L6_2 = A0_2
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = A3_2
+  L10_2 = A4_2
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+
+L68_1 = _ENV["CB7EEB53C72FB3B6D"]
+L69_1 = "__name__"
+L70_1 = "CB7EEB53C72FB3B6D"
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["CB7EEB53C72FB3B6D"]
+L69_1 = "prototype"
+L70_1 = _hx_e
+L70_1 = L70_1()
+L68_1[L69_1] = L70_1
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["FC87C731D11C58354"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["F92BA869F22AE5BC6"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["F2E6C9E25867BCE8D"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = _hx_tab_array
+  L2_2 = {}
+  L2_2.length = 0
+  L2_2[0] = "event_npc_gym_normal_040_normal"
+  L3_2 = 1
+  L1_2 = L1_2(L2_2, L3_2)
+  A0_2[6] = L1_2
+end
+
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["FD8D5F3745B4B5174"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = CF4B448D8C3744CAF
+  L1_2 = L1_2.SDDCF2C31DADBAB65
+  L2_2 = "VS_GYM_BATTLE_TOWN_BREAK"
+  L1_2(L2_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.SEE6738E890EC4A8F
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = 1
+  L4_2 = 1
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 12.68
+  L6_2 = 0.73
+  L7_2 = -26.9
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = 12.15
+  L7_2 = 14.34
+  L8_2 = 6.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 33.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 10.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 12.44
+  L6_2 = 1.22
+  L7_2 = -27.81
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = 12.15
+  L7_2 = 14.34
+  L8_2 = 6.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 33.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S3EDC50DEB344C642
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = "msg_btl_talk_leader_normal_town_01"
+  L4_2 = nil
+  L5_2 = 0
+  L6_2 = false
+  L7_2 = false
+  L8_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 3.5
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 1.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 12.44
+  L6_2 = 1.22
+  L7_2 = -27.81
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = 12.15
+  L7_2 = 14.34
+  L8_2 = 6.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 29.0
+  L6_2 = 0
+  L7_2 = 7
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 1.5
+  L1_2(L2_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S7C91080775560DF8
+  L1_2()
+  L1_2 = C3A36506FBC96ACBD
+  L1_2 = L1_2.SC6181320B46854EE
+  L2_2 = "PLAY_SS_COMMON_CAMERA_WHOOSH02"
+  L1_2(L2_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S3EDC50DEB344C642
+  L2_2 = "tr0430_chef"
+  L3_2 = "msg_btl_talk_leader_normal_town_02"
+  L4_2 = nil
+  L5_2 = 1
+  L6_2 = false
+  L7_2 = false
+  L8_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.3
+  L1_2(L2_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S50FC461CBDCA4B95
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = "tr0430_chef"
+  L4_2 = "neck"
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.2
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 2.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 14.04
+  L6_2 = 1.69
+  L7_2 = -29.28
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -4.05
+  L7_2 = 98.07
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 25.0
+  L6_2 = 0
+  L7_2 = 2
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 2.2
+  L1_2(L2_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S7C91080775560DF8
+  L1_2()
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = -1.04
+  L6_2 = 1.37
+  L7_2 = -25.34
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -2.62
+  L7_2 = 79.87
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 28.0
+  L6_2 = 0
+  L7_2 = 1
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 7.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = -1.28
+  L6_2 = 1.37
+  L7_2 = -25.39
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -2.62
+  L7_2 = 79.87
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 28.0
+  L6_2 = 0
+  L7_2 = 1
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "tr0430_chef"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S3EDC50DEB344C642
+  L2_2 = "tr0430_chef"
+  L3_2 = "msg_btl_talk_leader_normal_town_03"
+  L4_2 = nil
+  L5_2 = 0
+  L6_2 = false
+  L7_2 = false
+  L8_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 5.2
+  L1_2(L2_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S7C91080775560DF8
+  L1_2()
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S6EFB6BD692E0CEBF
+  L2_2 = "tr0430_chef"
+  L3_2 = true
+  L1_2(L2_2, L3_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.SC9FEDFD2BE9E787A
+  L2_2 = "tr0430_chef"
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 0
+  L6_2 = 1.3
+  L7_2 = 0
+  L3_2, L4_2, L5_2, L6_2, L7_2, L8_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 1.5
+  L1_2(L2_2)
+  L1_2 = C3A36506FBC96ACBD
+  L1_2 = L1_2.SC6181320B46854EE
+  L2_2 = "PLAY_AUDIENCE_CHEER_GYM_BATTLE_COURT_RND"
+  L1_2(L2_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku01"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku02"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku03"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku04"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 0.0
+  L4_2 = -0.4
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 1.7
+  L6_2 = 0.43
+  L7_2 = -0.53
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -1.29
+  L7_2 = 10.46
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 28.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 6.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 1.25
+  L6_2 = 0.43
+  L7_2 = -0.45
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -1.29
+  L7_2 = 10.46
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 28.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.5
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S16533937B2BA85FD
+  L2_2 = "event_npc_gym_normal_040_okyaku01"
+  L3_2 = 0.35
+  L4_2 = -14.1
+  L5_2 = true
+  L6_2 = 0.8
+  L7_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.5
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S16533937B2BA85FD
+  L2_2 = "event_npc_gym_normal_040_okyaku04"
+  L3_2 = 4.59
+  L4_2 = -3.92
+  L5_2 = true
+  L6_2 = 0.8
+  L7_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.5
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S16533937B2BA85FD
+  L2_2 = "event_npc_gym_normal_040_okyaku02"
+  L3_2 = 0.3
+  L4_2 = -11.15
+  L5_2 = true
+  L6_2 = 0.8
+  L7_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.5
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S16533937B2BA85FD
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 8.32
+  L4_2 = -4.52
+  L5_2 = true
+  L6_2 = 0.8
+  L7_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.1
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S16533937B2BA85FD
+  L2_2 = "event_npc_gym_normal_040_okyaku03"
+  L3_2 = -0.96
+  L4_2 = -10.5
+  L5_2 = true
+  L6_2 = 1.0
+  L7_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 2.0
+  L1_2(L2_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku06"
+  L3_2 = 14.67
+  L4_2 = -3.98
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku07"
+  L3_2 = 12.24
+  L4_2 = -4.19
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku08"
+  L3_2 = 0.41
+  L4_2 = -17.82
+  L5_2 = 90.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku09"
+  L3_2 = 1.04
+  L4_2 = -27.3
+  L5_2 = 90.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku10"
+  L3_2 = 15.86
+  L4_2 = -4.78
+  L5_2 = 180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 15.83
+  L6_2 = 1.73
+  L7_2 = -6.46
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -14.43
+  L7_2 = 170.48
+  L8_2 = 0.0
+  L8_2 = -L8_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 34.3
+  L6_2 = 0
+  L7_2 = 2
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku01"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku02"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku03"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku04"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku06"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku07"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku08"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku09"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S9DEB10F3B940A275
+  L2_2 = "event_npc_gym_normal_040_okyaku10"
+  L3_2 = 14
+  L4_2 = false
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 2.0
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 1.78
+  L6_2 = 1.47
+  L7_2 = -13.78
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -8.06
+  L7_2 = 128.31
+  L8_2 = 0.0
+  L8_2 = -L8_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 34.3
+  L6_2 = 0
+  L7_2 = 2
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S09ADDEF4C45A0B05
+  L2_2 = "event_npc_gym_normal_040_okyaku01"
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S09ADDEF4C45A0B05
+  L2_2 = "event_npc_gym_normal_040_okyaku02"
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S09ADDEF4C45A0B05
+  L2_2 = "event_npc_gym_normal_040_okyaku03"
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S09ADDEF4C45A0B05
+  L2_2 = "event_npc_gym_normal_040_okyaku04"
+  L1_2(L2_2)
+  L1_2 = C72C179367FB1199D
+  L1_2 = L1_2.S09ADDEF4C45A0B05
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L1_2(L2_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku01"
+  L3_2 = 1.39
+  L4_2 = -20.0
+  L5_2 = 90.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku02"
+  L3_2 = 0.71
+  L4_2 = -13.09
+  L5_2 = 90.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku03"
+  L3_2 = -1.0
+  L4_2 = -10.63
+  L5_2 = 90.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku04"
+  L3_2 = 0.9
+  L4_2 = -8.55
+  L5_2 = 90.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.S57B48B7940399B1D
+  L2_2 = "event_npc_gym_normal_040_okyaku05"
+  L3_2 = 9.15
+  L4_2 = -4.49
+  L5_2 = -180.0
+  L1_2(L2_2, L3_2, L4_2, L5_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 1.5
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 17.66
+  L6_2 = 3.39
+  L7_2 = -3.54
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -14.21
+  L7_2 = 42.63
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 25.0
+  L6_2 = 0
+  L7_2 = 8
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.SD6A4A7158737A563
+  L1_2()
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 1.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 19.67
+  L6_2 = 4.14
+  L7_2 = -1.36
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -14.21
+  L7_2 = 42.63
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 37.0
+  L6_2 = 0
+  L7_2 = 8
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S3EDC50DEB344C642
+  L2_2 = ""
+  L3_2 = "msg_btl_talk_leader_normal_town_04"
+  L4_2 = nil
+  L5_2 = 1
+  L6_2 = false
+  L7_2 = false
+  L8_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.SDA9FAC3B251BA47A
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L1_2(L2_2)
+  L1_2 = CDCBFD50A277E546D
+  L1_2 = L1_2.SDA9FAC3B251BA47A
+  L2_2 = "tr0430_chef"
+  L1_2(L2_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 5.0
+  L1_2(L2_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S7C91080775560DF8
+  L1_2()
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 13.65
+  L6_2 = 0.88
+  L7_2 = -27.71
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -10.08
+  L7_2 = 52.54
+  L8_2 = 0.0
+  L8_2 = -L8_2
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 32.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.S522E0FDD52DD6AE5
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = "ej_cityaction_c01_trigger"
+  L1_2(L2_2, L3_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S3EDC50DEB344C642
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = "msg_btl_talk_leader_normal_town_05"
+  L4_2 = nil
+  L5_2 = 0
+  L6_2 = false
+  L7_2 = false
+  L8_2 = false
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 1.0
+  L1_2(L2_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.SEE6738E890EC4A8F
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = 8
+  L4_2 = 1
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 0.5
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 11.33
+  L6_2 = 1.3
+  L7_2 = -28.12
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -3.21
+  L7_2 = -40.94
+  L8_2 = -7.6
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 32.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 1.5
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.0
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 12.03
+  L6_2 = 1.65
+  L7_2 = -28.02
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -2.47
+  L7_2 = -2.63
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 33.0
+  L6_2 = 0
+  L7_2 = 30
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 1.3
+  L1_2(L2_2)
+  L1_2 = C9F6C325569B7E07F
+  L1_2 = L1_2.S2E9035BDE01AB38A
+  L2_2 = 0.5
+  L4_2 = A0_2
+  L3_2 = A0_2.F0A528C2F9F2670CD
+  L5_2 = 12.03
+  L6_2 = 1.66
+  L7_2 = -28.08
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2)
+  L5_2 = A0_2
+  L4_2 = A0_2.F0A528C2F9F2670CD
+  L6_2 = -2.47
+  L7_2 = -2.63
+  L8_2 = 0.0
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L5_2 = 28.0
+  L6_2 = 0
+  L7_2 = 4
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.SEE6738E890EC4A8F
+  L2_2 = "event_npc_gym_normal_040_normal"
+  L3_2 = 1
+  L4_2 = 1
+  L1_2(L2_2, L3_2, L4_2)
+  L1_2 = CC6FE82819C6E1D55
+  L1_2 = L1_2.S32FAD7D4DF3ACA95
+  L2_2 = 3.2
+  L1_2(L2_2)
+  L1_2 = C9B54BC04DD492B6D
+  L1_2 = L1_2.S7C91080775560DF8
+  L1_2()
+  L1_2 = CF4B448D8C3744CAF
+  L1_2 = L1_2.SDDCF2C31DADBAB65
+  L2_2 = "VS_GYM_BATTLE_LAST_PART"
+  L1_2(L2_2)
+end
+
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["F84C84FA1590CD2A3"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["F740FB4E96926D103"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["CB7EEB53C72FB3B6D"]["prototype"]["F3E13E4094D09A594"] = function(A0_2)
+
+  local L1_2
+end
+
+L68_1 = _ENV["CB7EEB53C72FB3B6D"]["prototype"]
+L69_1 = _ENV["CB7EEB53C72FB3B6D"]
+L68_1.__class__ = L69_1
+L68_1 = _ENV["CB7EEB53C72FB3B6D"]
+L69_1 = "__super__"
+L69_1 = _ENV["CB7EEB53C72FB3B6D"]["prototype"]
+L70_1 = {}
+L71_1 = "__index"

@@ -1,0 +1,329 @@
+L55_1 = _ENV
+L56_1 = "C502A74E467A441C4"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["C502A74E467A441C4"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C502A74E467A441C4"]
+L69_1 = "__name__"
+L70_1 = "C502A74E467A441C4"
+L68_1[L69_1] = L70_1
+_ENV["C502A74E467A441C4"]["SE458CA9EF855E909"] = function(A0_2)
+
+  local L1_2
+  if 1 == A0_2 then
+    L1_2 = 2
+    return L1_2
+  elseif 2 == A0_2 then
+    L1_2 = 1
+    return L1_2
+  elseif 3 == A0_2 then
+    L1_2 = 0
+    return L1_2
+  else
+    L1_2 = nil
+    return L1_2
+  end
+end
+
+_ENV["C502A74E467A441C4"]["S22C5BC1F2962ACDA"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L1_2 = A0_2
+  if nil == A0_2 or A0_2 < 1 then
+    L1_2 = 25
+  end
+  L2_2 = L31_1.string
+  L3_2 = L31_1.string
+  L4_2 = L31_1.string
+  L5_2 = L31_1.string
+  L6_2 = "appli/tex/pokedex_capture_thum/pokedex_capture_thum_"
+  L5_2 = L5_2(L6_2)
+  L6_2 = L31_1.string
+  L7_2 = L32_1.lpad
+  L8_2 = L31_1.string
+  L9_2 = ""
+  L8_2 = L8_2(L9_2)
+  L9_2 = L31_1.string
+  L10_2 = L1_2
+  L9_2 = L9_2(L10_2)
+  L8_2 = L8_2 .. L9_2
+  L9_2 = "0"
+  L10_2 = 3
+  L7_2, L8_2, L9_2, L10_2 = L7_2(L8_2, L9_2, L10_2)
+  L6_2 = L6_2(L7_2, L8_2, L9_2, L10_2)
+  L5_2 = L5_2 .. L6_2
+  L4_2 = L4_2(L5_2)
+  L5_2 = L31_1.string
+  L6_2 = "/pokedex_capture_thum_"
+  L5_2 = L5_2(L6_2)
+  L4_2 = L4_2 .. L5_2
+  L3_2 = L3_2(L4_2)
+  L4_2 = L31_1.string
+  L5_2 = L32_1.lpad
+  L6_2 = L31_1.string
+  L7_2 = ""
+  L6_2 = L6_2(L7_2)
+  L7_2 = L31_1.string
+  L8_2 = L1_2
+  L7_2 = L7_2(L8_2)
+  L6_2 = L6_2 .. L7_2
+  L7_2 = "0"
+  L8_2 = 3
+  L5_2, L6_2, L7_2, L8_2, L9_2, L10_2 = L5_2(L6_2, L7_2, L8_2)
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+  L3_2 = L3_2 .. L4_2
+  L2_2 = L2_2(L3_2)
+  L3_2 = L31_1.string
+  L4_2 = ".bntx"
+  L3_2 = L3_2(L4_2)
+  L2_2 = L2_2 .. L3_2
+  return L2_2
+end
+
+_ENV["C502A74E467A441C4"]["S1E62D9F7E3DF8EBF"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L1_2 = A0_2
+  if nil == A0_2 or A0_2 < 1 then
+    L1_2 = 25
+  end
+  L2_2 = L31_1.string
+  L3_2 = L31_1.string
+  L4_2 = "demo/appli/pokedex/zk0000_00/pokedex_capture_thum_"
+  L3_2 = L3_2(L4_2)
+  L4_2 = L31_1.string
+  L5_2 = L32_1.lpad
+  L6_2 = L31_1.string
+  L7_2 = ""
+  L6_2 = L6_2(L7_2)
+  L7_2 = L31_1.string
+  L8_2 = L1_2
+  L7_2 = L7_2(L8_2)
+  L6_2 = L6_2 .. L7_2
+  L7_2 = "0"
+  L8_2 = 3
+  L5_2, L6_2, L7_2, L8_2 = L5_2(L6_2, L7_2, L8_2)
+  L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+  L3_2 = L3_2 .. L4_2
+  L2_2 = L2_2(L3_2)
+  L3_2 = L31_1.string
+  L4_2 = ".bntx"
+  L3_2 = L3_2(L4_2)
+  L2_2 = L2_2 .. L3_2
+  return L2_2
+end
+
+_ENV["C502A74E467A441C4"]["SC31A5CEBC955F683"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = A0_2
+  L1_2 = A0_2.FA23D39922B76B247
+  L3_2 = "P_new_00"
+  L4_2 = C46C85AAF8542DDE8
+  L4_2 = L4_2.S385504EFF7E842C3
+  L4_2 = L4_2()
+  L5_2 = L4_2
+  L4_2 = L4_2.F6AFFFEB38646FEFC
+  L6_2 = 0
+  L4_2 = L4_2(L5_2, L6_2)
+  L4_2 = L4_2.length
+  L4_2 = 0 ~= L4_2
+  L1_2(L2_2, L3_2, L4_2)
+end
+
+_ENV["C502A74E467A441C4"]["S3C7429DEEF5B2C6D"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  if nil == A0_2 or nil == A1_2 then
+    return
+  end
+  L2_2 = C46C85AAF8542DDE8
+  L2_2 = L2_2.S385504EFF7E842C3
+  L2_2 = L2_2()
+  L3_2 = L2_2
+  L2_2 = L2_2.F781B3DBFB1777AA0
+  L2_2 = L2_2(L3_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.FA23D39922B76B247
+  L5_2 = A1_2
+  L6_2 = L2_2
+  L3_2(L4_2, L5_2, L6_2)
+  if L2_2 then
+    L4_2 = A0_2
+    L3_2 = A0_2.F748A3DCD68216D1D
+    L5_2 = L31_1.string
+    L6_2 = L31_1.string
+    L7_2 = ""
+    L6_2 = L6_2(L7_2)
+    L7_2 = L31_1.string
+    L8_2 = A1_2
+    L7_2 = L7_2(L8_2)
+    L6_2 = L6_2 .. L7_2
+    L5_2 = L5_2(L6_2)
+    L6_2 = L31_1.string
+    L7_2 = "/keep"
+    L6_2 = L6_2(L7_2)
+    L5_2 = L5_2 .. L6_2
+    L3_2(L4_2, L5_2)
+  end
+end
+
+_ENV["C502A74E467A441C4"]["S1C2E57C1B903E0B7"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L1_2 = cC99399C3
+  L1_2 = L1_2.f101D811F
+  L1_2 = L1_2()
+  L3_2 = A0_2
+  L2_2 = A0_2.F446E6F27353D6A74
+  L2_2 = L2_2(L3_2)
+  L4_2 = A0_2
+  L3_2 = A0_2.FB7A611A033BB3240
+  L3_2 = L3_2(L4_2)
+  L5_2 = L1_2
+  L4_2 = L1_2.f2247607A
+  L6_2 = L2_2
+  L4_2(L5_2, L6_2)
+  L5_2 = L1_2
+  L4_2 = L1_2.f81738FA1
+  L6_2 = L3_2
+  L4_2(L5_2, L6_2)
+  L4_2 = c2C618D1A
+  L4_2 = L4_2.f0C28C511
+  L5_2 = L2_2
+  L6_2 = L3_2
+  L4_2 = L4_2(L5_2, L6_2)
+  if 1 == L4_2 then
+    L6_2 = L1_2
+    L5_2 = L1_2.f88C47BAC
+    L7_2 = 0
+    L5_2(L6_2, L7_2)
+  elseif 2 == L4_2 then
+    L6_2 = L1_2
+    L5_2 = L1_2.f88C47BAC
+    L7_2 = 1
+    L5_2(L6_2, L7_2)
+  elseif 3 == L4_2 then
+    L6_2 = L1_2
+    L5_2 = L1_2.f88C47BAC
+    L7_2 = 2
+    L5_2(L6_2, L7_2)
+  else
+    L6_2 = L1_2
+    L5_2 = L1_2.f88C47BAC
+    L7_2 = lua.Boot.__cast
+    L9_2 = A0_2
+    L8_2 = A0_2.F6FBD60781B4F266E
+    L8_2 = L8_2(L9_2)
+    L9_2 = L8_2
+    L8_2 = L8_2.f10833B21
+    L8_2 = L8_2(L9_2)
+    L9_2 = L19_1
+    L7_2, L8_2, L9_2 = L7_2(L8_2, L9_2)
+    L5_2(L6_2, L7_2, L8_2, L9_2)
+  end
+  L6_2 = L1_2
+  L5_2 = L1_2.f02983AD3
+  L7_2 = 100
+  L5_2(L6_2, L7_2)
+  L5_2 = c113335A8
+  L5_2 = L5_2.f7AC1FE6B
+  L6_2 = L1_2
+  return L5_2(L6_2)
+end
+
+_ENV["C502A74E467A441C4"]["SCC0EE799D8DF51CC"] = function(A0_2, A1_2, A2_2, A3_2)
+
+  local L4_2, L5_2, L6_2, L7_2
+  L4_2 = cC99399C3
+  L4_2 = L4_2.f101D811F
+  L4_2 = L4_2()
+  L6_2 = L4_2
+  L5_2 = L4_2.f2247607A
+  L7_2 = A0_2
+  L5_2(L6_2, L7_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.f81738FA1
+  L7_2 = A1_2
+  L5_2(L6_2, L7_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.f88C47BAC
+  L7_2 = A2_2
+  L5_2(L6_2, L7_2)
+  L6_2 = L4_2
+  L5_2 = L4_2.f02983AD3
+  L7_2 = 100
+  L5_2(L6_2, L7_2)
+  L5_2 = c113335A8
+  L5_2 = L5_2.f7AC1FE6B
+  L6_2 = L4_2
+  L5_2 = L5_2(L6_2)
+  if A3_2 then
+    L7_2 = L5_2
+    L6_2 = L5_2.fADC6C3C5
+    L6_2(L7_2)
+  else
+    L7_2 = L5_2
+    L6_2 = L5_2.fEBF9E3DA
+    L6_2(L7_2)
+  end
+  return L5_2
+end
+
+_ENV["C502A74E467A441C4"]["SB4A0BDBEB4D10815"] = function(A0_2)
+
+  local L1_2
+  if 998 == A0_2 or 999 == A0_2 then
+    L1_2 = true
+    return L1_2
+  end
+  L1_2 = false
+  return L1_2
+end
+
+_ENV["C502A74E467A441C4"]["SF3FDA7E66F4C24CE"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2
+  L2_2 = c1619DA33
+  L2_2 = L2_2.f5ED1389E
+  L3_2 = A0_2
+  L4_2 = A1_2
+  return L2_2(L3_2, L4_2)
+end
+
+_ENV["C502A74E467A441C4"]["S09ABE594EBD26109"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = nil
+  L3_2 = cA042DA13
+  L3_2 = L3_2.f25C936C9
+  L4_2 = C6825AC9B197940B4
+  L4_2 = L4_2.SC22C2773A68837D3
+  L5_2 = A0_2
+  L6_2 = A1_2
+  L4_2 = L4_2(L5_2, L6_2)
+  L5_2 = L2_2
+  return L3_2(L4_2, L5_2)
+end
+
+_ENV["C502A74E467A441C4"]["S00F9D222427E4F6A"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C6825AC9B197940B4
+  L0_2 = L0_2.SAE728AF193086C55
+  L0_2 = L0_2()
+  if not L0_2 then
+    L0_2 = true
+    return L0_2
+  end
+  L0_2 = C6825AC9B197940B4
+  L0_2 = L0_2.S768600CE8B68B7F8
+  L0_2()
+  L0_2 = false
+  return L0_2
+end
+

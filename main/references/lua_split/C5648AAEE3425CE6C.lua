@@ -1,0 +1,3141 @@
+L55_1 = _ENV
+L56_1 = "C5648AAEE3425CE6C"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+_ENV["C5648AAEE3425CE6C"]["new"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = lua_helper_new
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.prototype
+  L3_2 = 1
+  L4_2 = 8
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.super
+  L3_2 = L1_2
+  L4_2 = A0_2
+  L2_2(L3_2, L4_2)
+  return L1_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["super"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2
+  L2_2 = CDC3F92928A2194E6
+  L2_2 = L2_2.super
+  L3_2 = A0_2
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+
+L68_1 = "C5648AAEE3425CE6C"
+L69_1 = _ENV["C5648AAEE3425CE6C"]
+L25_1[L68_1] = L69_1
+L68_1 = _ENV["C5648AAEE3425CE6C"]
+L69_1 = "__name__"
+L70_1 = "C5648AAEE3425CE6C"
+L68_1[L69_1] = L70_1
+_ENV["C5648AAEE3425CE6C"]["SBCFE4ECF7149C757"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S5F560793FAAE7616
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S1A0EA56735BD4B3F
+  return L0_2(L1_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S5F560793FAAE7616"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = 0
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.S38219578837B5DAF
+  while true do
+    L3_2 = L2_2.length
+    if not (L1_2 < L3_2) then
+      break
+    end
+    L3_2 = L2_2[L1_2]
+    L1_2 = L1_2 + 1
+    L4_2 = L3_2.courseId
+    if L4_2 == A0_2 then
+      return L3_2
+    end
+  end
+  L3_2 = nil
+  return L3_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S2AE80E9B240DD188"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S5F560793FAAE7616
+  L2_2 = A0_2
+  L1_2 = L1_2(L2_2)
+  if nil == L1_2 then
+    L2_2 = nil
+    return L2_2
+  end
+  L2_2 = C10578806AC30DCA3
+  L2_2 = L2_2.S971699EB064C6350
+  L2_2 = L2_2.h
+  L3_2 = L1_2.bestRecordTimeName
+  L2_2 = L2_2[L3_2]
+  L3_2 = L47_1.tnull
+  if L2_2 == L3_2 then
+    L2_2 = nil
+  end
+  L3_2 = C5CD0E05F9B34473D
+  L3_2 = L3_2.S8B8102AF973F474D
+  L4_2 = L2_2
+  return L3_2(L4_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S524953FEE039AC8B"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2.SD55C563B8386E657 = A0_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S640882CE3C4ADBD9
+  L1_2 = L1_2.h
+  while nil ~= L1_2 do
+    L2_2 = L1_2.item
+    L1_2 = L1_2.next
+    L3_2 = L2_2
+    L4_2 = C5648AAEE3425CE6C
+    L4_2 = L4_2.SD55C563B8386E657
+    L3_2(L4_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SF249BC95978D5349"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S640882CE3C4ADBD9
+  L2_2 = L1_2
+  L1_2 = L1_2.push
+  L3_2 = A0_2
+  L1_2(L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S8007E3F73DB266D6"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S640882CE3C4ADBD9
+  L2_2 = L1_2
+  L1_2 = L1_2.remove
+  L3_2 = A0_2
+  L1_2(L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S7819745075199A34"] = function()
+
+  local L0_2, L1_2, L2_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SE577585E25140410
+  if nil == L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L1_2 = CAB155339E76DF633
+    L1_2 = L1_2.new
+    L1_2 = L1_2()
+    L0_2.SE577585E25140410 = L1_2
+  end
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SE577585E25140410
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.SE577585E25140410
+    L1_2 = L0_2
+    L0_2 = L0_2.FF63038921D0742CE
+    L0_2(L1_2)
+  end
+  L0_2 = C05C7D15ECE099E1D
+  L0_2 = L0_2.S0B3F69C4549A0284
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.F9E34DE3A7D85BDED
+  L2_2 = 6
+  L0_2(L1_2, L2_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SD5E67B37BA2ADA51"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SE577585E25140410
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.SE577585E25140410
+    L1_2 = L0_2
+    L0_2 = L0_2.FD59E5ED5F9F2AAE3
+    L0_2(L1_2)
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.SE577585E25140410
+    L1_2 = L0_2
+    L0_2 = L0_2.FC290A70B39892E57
+    L0_2(L1_2)
+    L0_2 = C5648AAEE3425CE6C
+    L0_2.SE577585E25140410 = nil
+  end
+  L0_2 = C05C7D15ECE099E1D
+  L0_2 = L0_2.S0B3F69C4549A0284
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.F16B0487F48F19467
+  L0_2(L1_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SB005A5F1D87C5FE2"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9CF49FFB47DC73FE
+  if nil == L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L1_2 = C3DB3AA5CBCFB1FE7
+    L1_2 = L1_2.new
+    L1_2 = L1_2()
+    L0_2.S9CF49FFB47DC73FE = L1_2
+  end
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9CF49FFB47DC73FE
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9CF49FFB47DC73FE
+    L1_2 = L0_2
+    L0_2 = L0_2.FF63038921D0742CE
+    L0_2(L1_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S5E6BEBD3D0E70A45"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9CF49FFB47DC73FE
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9CF49FFB47DC73FE
+    L1_2 = L0_2
+    L0_2 = L0_2.FD59E5ED5F9F2AAE3
+    L0_2(L1_2)
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9CF49FFB47DC73FE
+    L1_2 = L0_2
+    L0_2 = L0_2.FC290A70B39892E57
+    L0_2(L1_2)
+    L0_2 = C5648AAEE3425CE6C
+    L0_2.S9CF49FFB47DC73FE = nil
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S989F697F6EC8998D"] = function(A0_2, A1_2, A2_2)
+
+  local L3_2, L4_2, L5_2
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S5F560793FAAE7616
+  L4_2 = A0_2
+  L3_2 = L3_2(L4_2)
+  if nil == L3_2 then
+    return
+  end
+  L4_2 = C5648AAEE3425CE6C
+  L4_2.S116CB2324E532569 = true
+  L4_2 = C5648AAEE3425CE6C
+  L4_2.S1A0EA56735BD4B3F = A0_2
+  L4_2 = C5648AAEE3425CE6C
+  L4_2.S88FD7653C3C108C2 = A1_2
+  L4_2 = C5648AAEE3425CE6C
+  L5_2 = L3_2.showNewRecord
+  L4_2.S86C4700B1D00ED51 = L5_2
+  L4_2 = C5648AAEE3425CE6C
+  L5_2 = L3_2.showClearTime
+  L4_2.S00B92B2FF1E3679A = L5_2
+  L4_2 = C5648AAEE3425CE6C
+  L4_2.S0B07C3AAA4B9A327 = A2_2
+  L4_2 = C5648AAEE3425CE6C
+  L4_2.S007ED4DEB8533D2B = nil
+  L4_2 = C5648AAEE3425CE6C
+  L4_2.SC56DE1268A61F8A7 = false
+  L4_2 = CC6FE82819C6E1D55
+  L4_2 = L4_2.S11BCAE33A13C945C
+  L5_2 = "gym_koori_test_course_start"
+  L4_2(L5_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SC5308813DFCC7894"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.S116CB2324E532569 = false
+end
+
+_ENV["C5648AAEE3425CE6C"]["SFBF56ABD13E8DFBB"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S116CB2324E532569
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["SCF9D89FF5BC6D008"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S007ED4DEB8533D2B
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S007ED4DEB8533D2B
+    L0_2 = L0_2.isClear
+    return L0_2
+  end
+  L0_2 = false
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["SB6D139220FA90E3F"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S86C4700B1D00ED51
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S717F2A8E03073E18"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S00B92B2FF1E3679A
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["SFB730E13EADA7545"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SD55C563B8386E657
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.Playing
+  L0_2 = L0_2 == L1_2
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S46FA3430F937329D"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S5A6F620A895E38D7
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S4097278AAB477DF4"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S88FD7653C3C108C2
+  L0_2 = "gym_koori_020" == L0_2
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S3219481D5C52345B"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S007ED4DEB8533D2B
+  return L0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S6C31A7B71EA4987F"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2
+  L2_2 = A1_2.bestRecordTime
+  L2_2 = L2_2[5]
+  L2_2 = 0 == L2_2
+  if L2_2 then
+    L3_2 = A1_2.bestRecordWork
+    L5_2 = A0_2
+    L4_2 = A0_2.F43E53EEBE53EEB45
+    L4_2 = L4_2(L5_2)
+    L5_2 = C10578806AC30DCA3
+    L5_2 = L5_2.S971699EB064C6350
+    if nil == L4_2 then
+      L6_2 = L5_2.h
+      L7_2 = L47_1.tnull
+      L6_2[L3_2] = L7_2
+    else
+      L6_2 = L5_2.h
+      L6_2[L3_2] = L4_2
+    end
+    L6_2 = c37452BA0
+    L6_2 = L6_2.f8A7498B1
+    L7_2 = L3_2
+    L8_2 = L4_2
+    L6_2(L7_2, L8_2)
+  end
+  L3_2 = C5648AAEE3425CE6C
+  L4_2 = L16_1
+  L5_2 = {}
+  L6_2 = {}
+  L6_2.time = true
+  L6_2.isBestRecord = true
+  L6_2.isClear = true
+  L5_2.__fields__ = L6_2
+  L5_2.time = A0_2
+  L5_2.isBestRecord = L2_2
+  L6_2 = A0_2[5]
+  L7_2 = A1_2.clearTime
+  L7_2 = L7_2[5]
+  L6_2 = L6_2 <= L7_2
+  L5_2.isClear = L6_2
+  L4_2 = L4_2(L5_2)
+  L3_2.S007ED4DEB8533D2B = L4_2
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S898550FF9F3DC899
+  L3_2()
+  L3_2 = C0D02CEE5FD6D6D49
+  L3_2 = L3_2.SFCE091807173F6E9
+  L4_2 = "gym_koori_test_course_goal"
+  L3_2(L4_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S7FF135CDDD0D6330"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SF6EC53B08253162A
+  L0_2()
+  L0_2 = C0D02CEE5FD6D6D49
+  L0_2 = L0_2.SFCE091807173F6E9
+  L1_2 = "gym_koori_test_course_timeup"
+  L0_2(L1_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SE520EA6407A67718"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  if nil == A0_2 then
+    A0_2 = false
+  end
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S979A36FEF91A638A
+  L2_2 = A0_2
+  L1_2(L2_2)
+  L1_2 = C0D02CEE5FD6D6D49
+  L1_2 = L1_2.SFCE091807173F6E9
+  L2_2 = "gym_koori_test_course_out"
+  L3_2 = nil
+  L4_2 = L16_1
+  L5_2 = {}
+  L6_2 = {}
+  L6_2.isAutoReturn = true
+  L5_2.__fields__ = L6_2
+  L5_2.isAutoReturn = A0_2
+  L4_2, L5_2, L6_2 = L4_2(L5_2)
+  L1_2(L2_2, L3_2, L4_2, L5_2, L6_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SCE4F80561ABE34DE"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SC50E7EF24468ABAC
+  L0_2()
+  L0_2 = C0D02CEE5FD6D6D49
+  L0_2 = L0_2.SFCE091807173F6E9
+  L1_2 = "gym_koori_test_course_retry"
+  L0_2(L1_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S2826BA4FEC1D7463"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S6BC24FAA5683B03D
+  L0_2()
+  L0_2 = C0D02CEE5FD6D6D49
+  L0_2 = L0_2.SFCE091807173F6E9
+  L1_2 = "gym_koori_test_course_retire"
+  L0_2(L1_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S2902E4230C7FA424"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S524953FEE039AC8B
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.Start
+  L0_2(L1_2)
+  L0_2 = C42D1CDB112422850
+  L0_2 = L0_2.S8AC38D717D35C41A
+  L1_2 = "gym_koori"
+  L0_2(L1_2)
+  L0_2 = C62368E94ECF995ED
+  L0_2 = L0_2.S385504EFF7E842C3
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.F8B52A55AA603178E
+  L2_2 = false
+  L0_2(L1_2, L2_2)
+  L0_2 = C4EE52E49562F8277
+  L0_2 = L0_2.S85EBD285324D85ED
+  L1_2 = false
+  L0_2(L1_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S7819745075199A34
+  L0_2()
+  L0_2 = C07E4F1BF071B0460
+  L0_2 = L0_2.S218E2A14A790D265
+  L1_2 = "BlackFade"
+  L2_2 = 1.0
+  L0_2(L1_2, L2_2)
+  L0_2 = CC6FE82819C6E1D55
+  L0_2 = L0_2.S03C74CCED292E948
+  L1_2 = false
+  L0_2(L1_2)
+  L0_2 = C9B54BC04DD492B6D
+  L0_2 = L0_2.S12FD376DC11712C8
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S55FD03DF3F38878A
+  L0_2(L1_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S826EA6B5EF324454
+  L0_2()
+  L0_2 = CC6FE82819C6E1D55
+  L0_2 = L0_2.S12F63EE47FFCB183
+  L0_2()
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SD2547BD57E08FF34
+  L0_2()
+  L0_2 = CC6FE82819C6E1D55
+  L0_2 = L0_2.S12F63EE47FFCB183
+  L0_2()
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S80C7A941DD5C8B35
+  L0_2()
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S5FBD4D6E70D27CA4
+  L1_2 = "gym_koori_course_start"
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = c016374C1
+  L2_2 = L2_2.f8C7D4F4D
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 then
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.S8078012D665B195F
+    L2_2()
+    L2_2 = C07E4F1BF071B0460
+    L2_2 = L2_2.S2D4F4BC40511B560
+    L3_2 = "BlackFade"
+    L4_2 = 1.0
+    L2_2(L3_2, L4_2)
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.S4097278AAB477DF4
+    L2_2 = L2_2()
+    if L2_2 then
+      L2_2 = CF4B448D8C3744CAF
+      L2_2 = L2_2.SDDCF2C31DADBAB65
+      L3_2 = "GYM_TRAINING_KOORI_COURSE_CAMERA"
+      L2_2(L3_2)
+    else
+      L2_2 = CF4B448D8C3744CAF
+      L2_2 = L2_2.SDDCF2C31DADBAB65
+      L3_2 = "GYM_MINIGAME_KOORI_COURSE_CAMERA"
+      L2_2(L3_2)
+    end
+    L2_2 = C9F6C325569B7E07F
+    L2_2 = L2_2.SD6A4A7158737A563
+    L2_2()
+    L2_2 = C07E4F1BF071B0460
+    L2_2 = L2_2.S218E2A14A790D265
+    L3_2 = "BlackFade"
+    L4_2 = 0.5
+    L2_2(L3_2, L4_2)
+    L2_2 = nil
+    L3_2 = C9F6C325569B7E07F
+    L3_2 = L3_2.S15F1FE666677756A
+    L4_2 = 0.0
+    L5_2 = {}
+    L6_2 = -1.42
+    L7_2 = 9.06
+    L8_2 = -9.53
+    L5_2[1] = L6_2
+    L5_2[2] = L7_2
+    L5_2[3] = L8_2
+    L6_2 = {}
+    L7_2 = -33.99
+    L8_2 = -168.91
+    L9_2 = -5.51
+    L6_2[1] = L7_2
+    L6_2[2] = L8_2
+    L6_2[3] = L9_2
+    L7_2 = 46.0
+    L8_2 = 0
+    function L9_2()
+      local L0_3, L1_3, L2_3, L3_3
+      L0_3 = nil
+      L1_3 = c016374C1
+      L1_3 = L1_3.f4555D276
+      L2_3 = L0_2
+      L3_3 = L2_2
+      L1_3 = L1_3(L2_3, L3_3)
+      if L1_3 then
+        L0_3 = nil
+      else
+        L1_3 = L16_1
+        L2_3 = {}
+        L3_3 = {}
+        L3_3.owner = true
+        L2_3.__fields__ = L3_3
+        L3_3 = L0_2
+        L2_3.owner = L3_3
+        L1_3 = L1_3(L2_3)
+        L0_3 = L1_3
+      end
+      return L0_3
+    end
+    L9_2 = L9_2()
+    L10_2 = 2
+    L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2)
+    L3_2 = C9F6C325569B7E07F
+    L3_2 = L3_2.SD6A4A7158737A563
+    L3_2()
+    L3_2 = nil
+    L4_2 = C9F6C325569B7E07F
+    L4_2 = L4_2.S15F1FE666677756A
+    L5_2 = 2.0
+    L6_2 = {}
+    L7_2 = -0.22
+    L8_2 = 3.59
+    L9_2 = -2.55
+    L6_2[1] = L7_2
+    L6_2[2] = L8_2
+    L6_2[3] = L9_2
+    L7_2 = {}
+    L8_2 = -36.7
+    L9_2 = -175.93
+    L10_2 = -5.51
+    L7_2[1] = L8_2
+    L7_2[2] = L9_2
+    L7_2[3] = L10_2
+    L8_2 = 46.0
+    L9_2 = 0
+    function L10_2()
+      local L0_3, L1_3, L2_3, L3_3
+      L0_3 = nil
+      L1_3 = c016374C1
+      L1_3 = L1_3.f4555D276
+      L2_3 = L0_2
+      L3_3 = L3_2
+      L1_3 = L1_3(L2_3, L3_3)
+      if L1_3 then
+        L0_3 = nil
+      else
+        L1_3 = L16_1
+        L2_3 = {}
+        L3_3 = {}
+        L3_3.owner = true
+        L2_3.__fields__ = L3_3
+        L3_3 = L0_2
+        L2_3.owner = L3_3
+        L1_3 = L1_3(L2_3)
+        L0_3 = L1_3
+      end
+      return L0_3
+    end
+    L10_2 = L10_2()
+    L11_2 = 2
+    L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+    L4_2 = C07E4F1BF071B0460
+    L4_2 = L4_2.S2D4F4BC40511B560
+    L5_2 = "BlackFade"
+    L6_2 = 0.5
+    L4_2(L5_2, L6_2)
+    L4_2 = C9F6C325569B7E07F
+    L4_2 = L4_2.SD6A4A7158737A563
+    L4_2()
+  else
+    L2_2 = C07E4F1BF071B0460
+    L2_2 = L2_2.S2D4F4BC40511B560
+    L3_2 = "BlackFade"
+    L4_2 = 1.0
+    L2_2(L3_2, L4_2)
+  end
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.S4097278AAB477DF4
+  L2_2 = L2_2()
+  if L2_2 then
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.S32FAD7D4DF3ACA95
+    L3_2 = 1.0
+    L2_2(L3_2)
+    L2_2 = CF4B448D8C3744CAF
+    L2_2 = L2_2.SDDCF2C31DADBAB65
+    L3_2 = "GYM_TRAINING_KOORI_START"
+    L2_2(L3_2)
+    L2_2 = C664F7A623C9C28A3
+    L2_2 = L2_2.SC1736716652A52E0
+    L3_2 = 5
+    L2_2(L3_2)
+  end
+  L2_2 = CD76E9906F3647D5C
+  L2_2 = L2_2.S9B7A043198F1AFD8
+  L2_2()
+end
+
+_ENV["C5648AAEE3425CE6C"]["S8078012D665B195F"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S1A0EA56735BD4B3F
+  if 1003 == L0_2 then
+    L0_2 = C9F6C325569B7E07F
+    L0_2 = L0_2.S2E9035BDE01AB38A
+    L1_2 = 0.0
+    L2_2 = {}
+    L3_2 = 2808.66
+    L4_2 = 516.13
+    L5_2 = -4303.58
+    L2_2[1] = L3_2
+    L2_2[2] = L4_2
+    L2_2[3] = L5_2
+    L3_2 = {}
+    L4_2 = -15.65
+    L5_2 = 143.57
+    L6_2 = 0.0
+    L3_2[1] = L4_2
+    L3_2[2] = L5_2
+    L3_2[3] = L6_2
+    L4_2 = 46.0
+    L5_2 = 0
+    L6_2 = 2
+    L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2)
+    L0_2 = C9F6C325569B7E07F
+    L0_2 = L0_2.SD6A4A7158737A563
+    L0_2()
+    L0_2 = C9F6C325569B7E07F
+    L0_2 = L0_2.S2E9035BDE01AB38A
+    L1_2 = 8.0
+    L2_2 = {}
+    L3_2 = 2964.05
+    L4_2 = 496.22
+    L5_2 = -4420.51
+    L2_2[1] = L3_2
+    L2_2[2] = L4_2
+    L2_2[3] = L5_2
+    L3_2 = {}
+    L4_2 = -23.14
+    L5_2 = 102.68
+    L6_2 = 0.0
+    L3_2[1] = L4_2
+    L3_2[2] = L5_2
+    L3_2[3] = L6_2
+    L4_2 = 46.0
+    L5_2 = 0
+    L6_2 = 2
+    L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2)
+  else
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S1A0EA56735BD4B3F
+    if 1004 == L0_2 then
+      L0_2 = C9F6C325569B7E07F
+      L0_2 = L0_2.S2E9035BDE01AB38A
+      L1_2 = 0.0
+      L2_2 = {}
+      L3_2 = 2924.01
+      L4_2 = 576.43
+      L5_2 = -4381.41
+      L2_2[1] = L3_2
+      L2_2[2] = L4_2
+      L2_2[3] = L5_2
+      L3_2 = {}
+      L4_2 = -19.55
+      L5_2 = 134.26
+      L6_2 = 0.0
+      L3_2[1] = L4_2
+      L3_2[2] = L5_2
+      L3_2[3] = L6_2
+      L4_2 = 46.0
+      L5_2 = 0
+      L6_2 = 2
+      L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2)
+      L0_2 = C9F6C325569B7E07F
+      L0_2 = L0_2.SD6A4A7158737A563
+      L0_2()
+      L0_2 = C9F6C325569B7E07F
+      L0_2 = L0_2.S2E9035BDE01AB38A
+      L1_2 = 8.0
+      L2_2 = {}
+      L3_2 = 2713.55
+      L4_2 = 376.4
+      L5_2 = -4535.94
+      L2_2[1] = L3_2
+      L2_2[2] = L4_2
+      L2_2[3] = L5_2
+      L3_2 = {}
+      L4_2 = -24.01
+      L5_2 = 111.75
+      L6_2 = 0.0
+      L3_2[1] = L4_2
+      L3_2[2] = L5_2
+      L3_2[3] = L6_2
+      L4_2 = 46.0
+      L5_2 = 0
+      L6_2 = 2
+      L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2)
+    else
+      L0_2 = C9F6C325569B7E07F
+      L0_2 = L0_2.S2E9035BDE01AB38A
+      L1_2 = 0.0
+      L2_2 = {}
+      L3_2 = 2815.33
+      L4_2 = 674.95
+      L5_2 = -3903.45
+      L2_2[1] = L3_2
+      L2_2[2] = L4_2
+      L2_2[3] = L5_2
+      L3_2 = {}
+      L4_2 = -30.3
+      L5_2 = -162.41
+      L6_2 = 0.0
+      L3_2[1] = L4_2
+      L3_2[2] = L5_2
+      L3_2[3] = L6_2
+      L4_2 = 46.0
+      L5_2 = 0
+      L6_2 = 2
+      L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2)
+      L0_2 = C9F6C325569B7E07F
+      L0_2 = L0_2.SD6A4A7158737A563
+      L0_2()
+      L0_2 = C9F6C325569B7E07F
+      L0_2 = L0_2.S2E9035BDE01AB38A
+      L1_2 = 8.0
+      L2_2 = {}
+      L3_2 = 2825.04
+      L4_2 = 677.38
+      L5_2 = -3898.26
+      L2_2[1] = L3_2
+      L2_2[2] = L4_2
+      L2_2[3] = L5_2
+      L3_2 = {}
+      L4_2 = -45.91
+      L5_2 = 121.93
+      L6_2 = 0.0
+      L3_2[1] = L4_2
+      L3_2[2] = L5_2
+      L3_2[3] = L6_2
+      L4_2 = 46.0
+      L5_2 = 0
+      L6_2 = 2
+      L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2)
+    end
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SC50E7EF24468ABAC"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S524953FEE039AC8B
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.Retry
+  L0_2(L1_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S206403166F99E7FA"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S4097278AAB477DF4
+  L0_2 = L0_2()
+  if L0_2 then
+    L0_2 = CF4B448D8C3744CAF
+    L0_2 = L0_2.SDDCF2C31DADBAB65
+    L1_2 = "GYM_TRAINING_KOORI_READY"
+    L0_2(L1_2)
+  else
+    L0_2 = CF4B448D8C3744CAF
+    L0_2 = L0_2.SDDCF2C31DADBAB65
+    L1_2 = "GYM_MINIGAME_KOORI_READY"
+    L0_2(L1_2)
+  end
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[9]
+  L0_2[7] = false
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SEBF4ADF2F268C1A6
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.FE849672F1E41A271
+  L2_2 = false
+  L0_2(L1_2, L2_2)
+  L0_2 = C07E4F1BF071B0460
+  L0_2 = L0_2.S218E2A14A790D265
+  L1_2 = "BlackFade"
+  L2_2 = 1.0
+  L0_2(L1_2, L2_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[33]
+  L0_2 = L0_2.Activation
+  if L0_2 then
+    L0_2 = CFC8F368D91411014
+    L0_2 = L0_2.SA92CAF490088B894
+    L0_2 = L0_2()
+    L0_2 = L0_2[25]
+    L0_2 = L0_2[1]
+    L0_2 = L0_2[3]
+    L1_2 = L0_2
+    L0_2 = L0_2.FB0E319FDADB5BBDD
+    L2_2 = C9DDEB30C1158409B
+    L2_2 = L2_2.new
+    L3_2 = false
+    L2_2 = L2_2(L3_2)
+    L3_2 = false
+    L0_2(L1_2, L2_2, L3_2)
+    while true do
+      L0_2 = CFC8F368D91411014
+      L0_2 = L0_2.SA92CAF490088B894
+      L0_2 = L0_2()
+      L0_2 = L0_2[33]
+      L0_2 = L0_2.Activation
+      if not L0_2 then
+        break
+      end
+      L0_2 = CC6FE82819C6E1D55
+      L0_2 = L0_2.S12F63EE47FFCB183
+      L0_2()
+    end
+  end
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[13]
+  L1_2 = L0_2[19]
+  if false ~= L1_2 then
+    L0_2[19] = false
+    L1_2 = L0_2[19]
+    if L1_2 then
+      L2_2 = L0_2
+      L1_2 = L0_2.FC6EB40A3469C7E75
+      L1_2(L2_2)
+    else
+      L2_2 = L0_2
+      L1_2 = L0_2.F7AA41A1A86494083
+      L1_2(L2_2)
+    end
+  end
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S9A2943361E45C912
+  if nil ~= L1_2 then
+    L1_2 = C5648AAEE3425CE6C
+    L1_2 = L1_2.S9A2943361E45C912
+    L2_2 = L1_2
+    L1_2 = L1_2.FCBF70E3CBA67E335
+    L1_2(L2_2)
+  end
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S3583DF1B473351C2
+  L1_2()
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S5FBD4D6E70D27CA4
+  L2_2 = "gym_koori_course_start"
+  L1_2 = L1_2(L2_2)
+  L2_2 = nil
+  L3_2 = c016374C1
+  L3_2 = L3_2.f8C7D4F4D
+  L4_2 = L1_2
+  L5_2 = L2_2
+  L3_2 = L3_2(L4_2, L5_2)
+  if L3_2 then
+    L3_2 = nil
+    L4_2 = C9F6C325569B7E07F
+    L4_2 = L4_2.S15F1FE666677756A
+    L5_2 = 0.0
+    L6_2 = {}
+    L7_2 = -0.22
+    L8_2 = 3.59
+    L9_2 = -2.55
+    L6_2[1] = L7_2
+    L6_2[2] = L8_2
+    L6_2[3] = L9_2
+    L7_2 = {}
+    L8_2 = -36.7
+    L9_2 = -175.93
+    L10_2 = -5.51
+    L7_2[1] = L8_2
+    L7_2[2] = L9_2
+    L7_2[3] = L10_2
+    L8_2 = 46.0
+    L9_2 = 0
+    function L10_2()
+      local L0_3, L1_3, L2_3, L3_3
+      L0_3 = nil
+      L1_3 = c016374C1
+      L1_3 = L1_3.f4555D276
+      L2_3 = L1_2
+      L3_3 = L3_2
+      L1_3 = L1_3(L2_3, L3_3)
+      if L1_3 then
+        L0_3 = nil
+      else
+        L1_3 = L16_1
+        L2_3 = {}
+        L3_3 = {}
+        L3_3.owner = true
+        L2_3.__fields__ = L3_3
+        L3_3 = L1_2
+        L2_3.owner = L3_3
+        L1_3 = L1_3(L2_3)
+        L0_3 = L1_3
+      end
+      return L0_3
+    end
+    L10_2 = L10_2()
+    L11_2 = 2
+    L4_2(L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2)
+    L4_2 = C9F6C325569B7E07F
+    L4_2 = L4_2.SD6A4A7158737A563
+    L4_2()
+  end
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.SEF96E5FA660B1A4F
+  L3_2()
+  L3_2 = CC6FE82819C6E1D55
+  L3_2 = L3_2.S12F63EE47FFCB183
+  L3_2()
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.SD2547BD57E08FF34
+  L3_2()
+  L3_2 = CC6FE82819C6E1D55
+  L3_2 = L3_2.S12F63EE47FFCB183
+  L3_2()
+  L3_2 = CC6FE82819C6E1D55
+  L3_2 = L3_2.S32FAD7D4DF3ACA95
+  L4_2 = 1.0
+  L3_2(L4_2)
+  L3_2 = C07E4F1BF071B0460
+  L3_2 = L3_2.S2D4F4BC40511B560
+  L4_2 = "BlackFade"
+  L5_2 = 1.0
+  L3_2(L4_2, L5_2)
+  L3_2 = CD76E9906F3647D5C
+  L3_2 = L3_2.S9B7A043198F1AFD8
+  L3_2()
+end
+
+_ENV["C5648AAEE3425CE6C"]["S6BC24FAA5683B03D"] = function()
+
+  local L0_2, L1_2, L2_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S524953FEE039AC8B
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.Retire
+  L0_2(L1_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[9]
+  L0_2[7] = false
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SEBF4ADF2F268C1A6
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.FE849672F1E41A271
+  L2_2 = false
+  L0_2(L1_2, L2_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[13]
+  L1_2 = L0_2[19]
+  if false ~= L1_2 then
+    L0_2[19] = false
+    L1_2 = L0_2[19]
+    if L1_2 then
+      L2_2 = L0_2
+      L1_2 = L0_2.FC6EB40A3469C7E75
+      L1_2(L2_2)
+    else
+      L2_2 = L0_2
+      L1_2 = L0_2.F7AA41A1A86494083
+      L1_2(L2_2)
+    end
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SDCECFB1F31EF1A7F"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S4097278AAB477DF4
+  L0_2 = L0_2()
+  if L0_2 then
+    L0_2 = CF4B448D8C3744CAF
+    L0_2 = L0_2.SDDCF2C31DADBAB65
+    L1_2 = "GYM_TRAINING_KOORI_RETIRED"
+    L0_2(L1_2)
+  else
+    L0_2 = CF4B448D8C3744CAF
+    L0_2 = L0_2.SDDCF2C31DADBAB65
+    L1_2 = "GYM_MINIGAME_KOORI_RETIRED"
+    L0_2(L1_2)
+  end
+  L0_2 = CC6FE82819C6E1D55
+  L0_2 = L0_2.S32FAD7D4DF3ACA95
+  L1_2 = 1
+  L0_2(L1_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9A2943361E45C912
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9A2943361E45C912
+    L1_2 = L0_2
+    L0_2 = L0_2.FCBF70E3CBA67E335
+    L0_2(L1_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S4E5CE533F81E2EA3"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S524953FEE039AC8B
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.CountDown
+  L0_2(L1_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9A2943361E45C912
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9A2943361E45C912
+    L1_2 = L0_2
+    L0_2 = L0_2.F941B33D497100ED0
+    L0_2(L1_2)
+  end
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S0739851835AEF1C5
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S0739851835AEF1C5
+    L1_2 = L0_2
+    L0_2 = L0_2.FAD1E6E8096DD1191
+    L0_2(L1_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SBDE2D81916EF645A"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  if nil == A0_2 then
+    A0_2 = false
+  end
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S524953FEE039AC8B
+  L2_2 = EA4552630426F1460
+  L2_2 = L2_2.Playing
+  L1_2(L2_2)
+  if not A0_2 then
+    L1_2 = CFC8F368D91411014
+    L1_2 = L1_2.SA92CAF490088B894
+    L1_2 = L1_2()
+    L1_2 = L1_2[25]
+    L1_2 = L1_2[1]
+    L1_2 = L1_2[9]
+    L1_2[7] = true
+    L1_2 = CFC8F368D91411014
+    L1_2 = L1_2.SEBF4ADF2F268C1A6
+    L1_2 = L1_2()
+    L2_2 = L1_2
+    L1_2 = L1_2.FE849672F1E41A271
+    L3_2 = true
+    L1_2(L2_2, L3_2)
+  end
+  L1_2 = CFC8F368D91411014
+  L1_2 = L1_2.SA92CAF490088B894
+  L1_2 = L1_2()
+  L1_2 = L1_2[25]
+  L1_2 = L1_2[1]
+  L1_2 = L1_2[13]
+  L2_2 = L1_2[19]
+  if true ~= L2_2 then
+    L1_2[19] = true
+    L2_2 = L1_2[19]
+    if L2_2 then
+      L3_2 = L1_2
+      L2_2 = L1_2.FC6EB40A3469C7E75
+      L2_2(L3_2)
+    else
+      L3_2 = L1_2
+      L2_2 = L1_2.F7AA41A1A86494083
+      L2_2(L3_2)
+    end
+  end
+  L2_2 = C5648AAEE3425CE6C
+  L2_2.S5A6F620A895E38D7 = false
+end
+
+_ENV["C5648AAEE3425CE6C"]["SB177799885BB939B"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L0_2 = C9F6C325569B7E07F
+  L0_2 = L0_2.S15F1FE666677756A
+  L1_2 = 0.0
+  L2_2 = {}
+  L3_2 = 1.52
+  L4_2 = 2.36
+  L5_2 = 3.3
+  L2_2[1] = L3_2
+  L2_2[2] = L4_2
+  L2_2[3] = L5_2
+  L3_2 = {}
+  L4_2 = -25.92
+  L5_2 = 24.35
+  L6_2 = 0.0
+  L6_2 = -L6_2
+  L3_2[1] = L4_2
+  L3_2[2] = L5_2
+  L3_2[3] = L6_2
+  L4_2 = 46.0
+  L5_2 = 0
+  L6_2 = CFC8F368D91411014
+  L6_2 = L6_2.S5F0710AB3300886D
+  L6_2 = L6_2()
+  L7_2 = 30
+  L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+  L0_2 = C9F6C325569B7E07F
+  L0_2 = L0_2.SD6A4A7158737A563
+  L0_2()
+  L0_2 = C9F6C325569B7E07F
+  L0_2 = L0_2.S15F1FE666677756A
+  L1_2 = 10.0
+  L2_2 = {}
+  L3_2 = -1.67
+  L4_2 = 2.36
+  L5_2 = 3.26
+  L2_2[1] = L3_2
+  L2_2[2] = L4_2
+  L2_2[3] = L5_2
+  L3_2 = {}
+  L4_2 = -25.92
+  L5_2 = -25.85
+  L6_2 = 0.0
+  L6_2 = -L6_2
+  L3_2[1] = L4_2
+  L3_2[2] = L5_2
+  L3_2[3] = L6_2
+  L4_2 = 46.0
+  L5_2 = 0
+  L6_2 = CFC8F368D91411014
+  L6_2 = L6_2.S5F0710AB3300886D
+  L6_2 = L6_2()
+  L7_2 = 30
+  L0_2(L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S898550FF9F3DC899"] = function()
+
+  local L0_2, L1_2, L2_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S524953FEE039AC8B
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.Goal
+  L0_2(L1_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[9]
+  L0_2[7] = false
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SEBF4ADF2F268C1A6
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.FE849672F1E41A271
+  L2_2 = false
+  L0_2(L1_2, L2_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[13]
+  L1_2 = L0_2[19]
+  if false ~= L1_2 then
+    L0_2[19] = false
+    L1_2 = L0_2[19]
+    if L1_2 then
+      L2_2 = L0_2
+      L1_2 = L0_2.FC6EB40A3469C7E75
+      L1_2(L2_2)
+    else
+      L2_2 = L0_2
+      L1_2 = L0_2.F7AA41A1A86494083
+      L1_2(L2_2)
+    end
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S626F1CDC639576EB"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2
+  L0_2 = C043642B35062DFB9
+  L0_2 = L0_2.S37BB39776E9CB702
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S88FD7653C3C108C2
+  L2_2 = false
+  L0_2(L1_2, L2_2)
+  L0_2 = CE55264D46437D7D3
+  L0_2 = L0_2.S17AC14A588D418A2
+  L1_2 = false
+  L2_2 = ""
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S88FD7653C3C108C2
+  L0_2(L1_2, L2_2, L3_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.SC56DE1268A61F8A7 = true
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S4097278AAB477DF4
+  L0_2 = L0_2()
+  if L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.SCF9D89FF5BC6D008
+    L0_2 = L0_2()
+    if L0_2 then
+      L0_2 = CC6FE82819C6E1D55
+      L0_2 = L0_2.S32FAD7D4DF3ACA95
+      L1_2 = 1.0
+      L0_2(L1_2)
+      L0_2 = C5648AAEE3425CE6C
+      L0_2 = L0_2.SBE8F207A1F88ABC3
+      L1_2 = true
+      L2_2 = false
+      L0_2(L1_2, L2_2)
+      L0_2 = CF4B448D8C3744CAF
+      L0_2 = L0_2.SDDCF2C31DADBAB65
+      L1_2 = "GYM_TRAINING_KOORI_SUCCESS"
+      L0_2(L1_2)
+      L0_2 = C5648AAEE3425CE6C
+      L0_2 = L0_2.SB177799885BB939B
+      L0_2()
+      L0_2 = C664F7A623C9C28A3
+      L0_2 = L0_2.S4586CE78D486773D
+      L1_2 = 5
+      L0_2(L1_2)
+      L0_2 = CC6FE82819C6E1D55
+      L0_2 = L0_2.S32FAD7D4DF3ACA95
+      L1_2 = 2.0
+      L0_2(L1_2)
+    else
+      L0_2 = CC6FE82819C6E1D55
+      L0_2 = L0_2.S32FAD7D4DF3ACA95
+      L1_2 = 1.0
+      L0_2(L1_2)
+      L0_2 = C5648AAEE3425CE6C
+      L0_2 = L0_2.SBE8F207A1F88ABC3
+      L1_2 = false
+      L2_2 = false
+      L0_2(L1_2, L2_2)
+      L0_2 = C5648AAEE3425CE6C
+      L0_2 = L0_2.SB177799885BB939B
+      L0_2()
+      L0_2 = CC6FE82819C6E1D55
+      L0_2 = L0_2.S32FAD7D4DF3ACA95
+      L1_2 = 4.0
+      L0_2(L1_2)
+    end
+  else
+    L0_2 = false
+    L1_2 = nil
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.SB6D139220FA90E3F
+    L2_2 = L2_2()
+    if L2_2 then
+      L2_2 = C5648AAEE3425CE6C
+      L2_2 = L2_2.S3219481D5C52345B
+      L2_2 = L2_2()
+      L0_2 = L2_2.isBestRecord
+      L1_2 = L2_2.time
+    end
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.S32FAD7D4DF3ACA95
+    L3_2 = 1.0
+    L2_2(L3_2)
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.SBE8F207A1F88ABC3
+    L3_2 = false
+    L4_2 = L0_2
+    L2_2(L3_2, L4_2)
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.SB177799885BB939B
+    L2_2()
+    if L0_2 then
+      L2_2 = C5648AAEE3425CE6C
+      L2_2 = L2_2.SEF4A60EBB2A51413
+      L3_2 = L1_2
+      L2_2(L3_2)
+      L2_2 = C5648AAEE3425CE6C
+      L2_2 = L2_2.S9A2943361E45C912
+      if nil ~= L2_2 then
+        L2_2 = C5648AAEE3425CE6C
+        L2_2 = L2_2.S9A2943361E45C912
+        L3_2 = L2_2
+        L2_2 = L2_2.FCBF70E3CBA67E335
+        L2_2(L3_2)
+      end
+    end
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.S32FAD7D4DF3ACA95
+    L3_2 = 4.0
+    L2_2(L3_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SBE8F207A1F88ABC3"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2
+  if A0_2 then
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.S32FAD7D4DF3ACA95
+    L3_2 = 1.0
+    L2_2(L3_2)
+  else
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.S0739851835AEF1C5
+    if nil ~= L2_2 then
+      L2_2 = C5648AAEE3425CE6C
+      L2_2 = L2_2.S0739851835AEF1C5
+      L3_2 = L2_2
+      L2_2 = L2_2.FBD163AB650386AEC
+      L2_2(L3_2)
+    end
+  end
+  if not A1_2 then
+    L2_2 = C5648AAEE3425CE6C
+    L2_2 = L2_2.S9A2943361E45C912
+    if nil ~= L2_2 then
+      L2_2 = C5648AAEE3425CE6C
+      L2_2 = L2_2.S9A2943361E45C912
+      L3_2 = L2_2
+      L2_2 = L2_2.FCBF70E3CBA67E335
+      L2_2(L3_2)
+    end
+  end
+  L2_2 = CC6FE82819C6E1D55
+  L2_2 = L2_2.S32FAD7D4DF3ACA95
+  L3_2 = 0.4
+  L2_2(L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SEF4A60EBB2A51413"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C3A36506FBC96ACBD
+  L1_2 = L1_2.SC6181320B46854EE
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.SA0C8E9CF4F790924
+  L1_2(L2_2)
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S1D281614EE330596
+  if nil ~= L1_2 then
+    L1_2 = C5648AAEE3425CE6C
+    L1_2 = L1_2.S1D281614EE330596
+    L2_2 = L1_2
+    L1_2 = L1_2.FF889F5E839BFC102
+    L3_2 = A0_2
+    L1_2(L2_2, L3_2)
+  end
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S9A2943361E45C912
+  if nil ~= L1_2 then
+    L1_2 = C5648AAEE3425CE6C
+    L1_2 = L1_2.S9A2943361E45C912
+    L2_2 = L1_2
+    L1_2 = L1_2.FF889F5E839BFC102
+    L3_2 = A0_2
+    L1_2(L2_2, L3_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S979A36FEF91A638A"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  if nil == A0_2 then
+    A0_2 = false
+  end
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S524953FEE039AC8B
+  L2_2 = EA4552630426F1460
+  L2_2 = L2_2.Out
+  L1_2(L2_2)
+  if not A0_2 then
+    L1_2 = CFC8F368D91411014
+    L1_2 = L1_2.SA92CAF490088B894
+    L1_2 = L1_2()
+    L1_2 = L1_2[25]
+    L1_2 = L1_2[1]
+    L1_2 = L1_2[9]
+    L1_2[7] = false
+    L1_2 = CFC8F368D91411014
+    L1_2 = L1_2.SEBF4ADF2F268C1A6
+    L1_2 = L1_2()
+    L2_2 = L1_2
+    L1_2 = L1_2.FE849672F1E41A271
+    L3_2 = false
+    L1_2(L2_2, L3_2)
+  end
+  L1_2 = CFC8F368D91411014
+  L1_2 = L1_2.SA92CAF490088B894
+  L1_2 = L1_2()
+  L1_2 = L1_2[25]
+  L1_2 = L1_2[1]
+  L1_2 = L1_2[13]
+  L2_2 = L1_2[19]
+  if false ~= L2_2 then
+    L1_2[19] = false
+    L2_2 = L1_2[19]
+    if L2_2 then
+      L3_2 = L1_2
+      L2_2 = L1_2.FC6EB40A3469C7E75
+      L2_2(L3_2)
+    else
+      L3_2 = L1_2
+      L2_2 = L1_2.F7AA41A1A86494083
+      L2_2(L3_2)
+    end
+  end
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.SB005A5F1D87C5FE2
+  L2_2()
+end
+
+_ENV["C5648AAEE3425CE6C"]["S67B69AA19851D61C"] = function(A0_2, A1_2, A2_2)
+
+  local L3_2, L4_2, L5_2
+  if nil == A2_2 then
+    A2_2 = false
+  end
+  if not A2_2 then
+    L3_2 = C07E4F1BF071B0460
+    L3_2 = L3_2.S218E2A14A790D265
+    L4_2 = "BlackFade"
+    L5_2 = 1.0
+    L3_2(L4_2, L5_2)
+  end
+  L3_2 = C3A36506FBC96ACBD
+  L3_2 = L3_2.SC6181320B46854EE
+  L4_2 = "PLAY_GYM_ICE_COURSE_OUT"
+  L3_2(L4_2)
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.SC46F740C849A289F
+  L4_2 = A0_2
+  L5_2 = A1_2
+  L3_2(L4_2, L5_2)
+  L3_2 = CD76E9906F3647D5C
+  L3_2 = L3_2.S9B7A043198F1AFD8
+  L3_2()
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S5E6BEBD3D0E70A45
+  L3_2()
+  if not A2_2 then
+    L3_2 = C07E4F1BF071B0460
+    L3_2 = L3_2.S2D4F4BC40511B560
+    L4_2 = "BlackFade"
+    L5_2 = 1.0
+    L3_2(L4_2, L5_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SF6EC53B08253162A"] = function()
+
+  local L0_2, L1_2, L2_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S524953FEE039AC8B
+  L1_2 = EA4552630426F1460
+  L1_2 = L1_2.Timeup
+  L0_2(L1_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[9]
+  L0_2[7] = false
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SEBF4ADF2F268C1A6
+  L0_2 = L0_2()
+  L1_2 = L0_2
+  L0_2 = L0_2.FE849672F1E41A271
+  L2_2 = false
+  L0_2(L1_2, L2_2)
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[13]
+  L1_2 = L0_2[19]
+  if false ~= L1_2 then
+    L0_2[19] = false
+    L1_2 = L0_2[19]
+    if L1_2 then
+      L2_2 = L0_2
+      L1_2 = L0_2.FC6EB40A3469C7E75
+      L1_2(L2_2)
+    else
+      L2_2 = L0_2
+      L1_2 = L0_2.F7AA41A1A86494083
+      L1_2(L2_2)
+    end
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S98CDE5DE89516BF4"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S0739851835AEF1C5
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S0739851835AEF1C5
+    L1_2 = L0_2
+    L0_2 = L0_2.F63DCE4B7AE8A1FF7
+    L0_2(L1_2)
+  end
+  L0_2 = CC6FE82819C6E1D55
+  L0_2 = L0_2.S32FAD7D4DF3ACA95
+  L1_2 = 1
+  L0_2(L1_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9A2943361E45C912
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9A2943361E45C912
+    L1_2 = L0_2
+    L0_2 = L0_2.FCBF70E3CBA67E335
+    L0_2(L1_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S05F8DCFAD5487B0D"] = function()
+
+  local L0_2, L1_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S9A2943361E45C912
+  if nil ~= L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2 = L0_2.S9A2943361E45C912
+    L1_2 = L0_2
+    L0_2 = L0_2.F2AE1D517C0BEF694
+    L0_2(L1_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SA35B862F8CDE4419"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2
+  L0_2 = C42D1CDB112422850
+  L0_2 = L0_2.S2FA25650F123CB4F
+  L0_2()
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S5FBD4D6E70D27CA4
+  L1_2 = "gym_koori_course_exit"
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = c016374C1
+  L2_2 = L2_2.f8C7D4F4D
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 then
+    L3_2 = L0_2
+    L2_2 = L0_2.f7360ED03
+    L2_2, L3_2, L4_2 = L2_2(L3_2)
+    L5_2 = L2_2
+    L6_2 = L3_2
+    L7_2 = L4_2
+    L9_2 = L0_2
+    L8_2 = L0_2.f64857644
+    L8_2 = L8_2(L9_2)
+    L9_2 = L8_2
+    L8_2 = L8_2.fCA247E7A
+    L10_2 = 2
+    L11_2 = 4
+    L12_2 = -3
+    L8_2, L9_2, L10_2 = L8_2(L9_2, L10_2, L11_2, L12_2)
+    L11_2 = {}
+    L12_2 = L5_2 + L8_2
+    L13_2 = L6_2 + L9_2
+    L14_2 = L7_2 + L10_2
+    L11_2[1] = L12_2
+    L11_2[2] = L13_2
+    L11_2[3] = L14_2
+    L13_2 = L0_2
+    L12_2 = L0_2.f7360ED03
+    L12_2, L13_2, L14_2 = L12_2(L13_2)
+    L15_2 = C9F6C325569B7E07F
+    L15_2 = L15_2.SE29389D94D7EC89E
+    L16_2 = 0.0
+    L17_2 = L11_2
+    L18_2 = {}
+    L19_2 = L12_2 + 0
+    L20_2 = L13_2 + 1.5
+    L21_2 = L14_2 + 0
+    L18_2[1] = L19_2
+    L18_2[2] = L20_2
+    L18_2[3] = L21_2
+    L15_2(L16_2, L17_2, L18_2)
+    L15_2 = CA705BDBE7ADE7BAC
+    L15_2 = L15_2.SCA7329942774246E
+    L15_2 = L15_2.length
+    L15_2 = L15_2 > 0
+    if L15_2 then
+      L16_2 = C9F6C325569B7E07F
+      L16_2 = L16_2.SAB50B037AF2BC20B
+      L17_2 = 0
+      L16_2(L17_2)
+    end
+    L17_2 = L0_2
+    L16_2 = L0_2.f7360ED03
+    L16_2, L17_2, L18_2 = L16_2(L17_2)
+    L19_2 = {}
+    L20_2 = L16_2
+    L21_2 = L17_2
+    L22_2 = L18_2
+    L19_2[1] = L20_2
+    L19_2[2] = L21_2
+    L19_2[3] = L22_2
+    L21_2 = L0_2
+    L20_2 = L0_2.f64857644
+    L20_2 = L20_2(L21_2)
+    L21_2 = CC6FE82819C6E1D55
+    L21_2 = L21_2.SFBF86D7C138AB6C6
+    L22_2 = "map_change_core"
+    L23_2 = nil
+    L24_2 = L16_1
+    L25_2 = {}
+    L26_2 = {}
+    L26_2.mapChangeInfo = true
+    L26_2.forcePosition = true
+    L26_2.forceRotation = true
+    L25_2.__fields__ = L26_2
+    L26_2 = L16_1
+    L27_2 = {}
+    L28_2 = {}
+    L28_2.type = true
+    L28_2.destScene = true
+    L28_2.destLocation = true
+    L28_2.destOffset = true
+    L27_2.__fields__ = L28_2
+    L27_2.type = 3
+    L27_2.destScene = ""
+    L27_2.destLocation = ""
+    L28_2 = {}
+    L29_2 = 0
+    L30_2 = 0
+    L31_2 = 0
+    L28_2[1] = L29_2
+    L28_2[2] = L30_2
+    L28_2[3] = L31_2
+    L27_2.destOffset = L28_2
+    L26_2 = L26_2(L27_2)
+    L25_2.mapChangeInfo = L26_2
+    L25_2.forcePosition = L19_2
+    L25_2.forceRotation = L20_2
+    L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2 = L24_2(L25_2)
+    L21_2(L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2)
+    L21_2 = CCD22EFED4E9E5F89
+    L21_2 = L21_2.S92F44AA7751BA6FC
+    L22_2 = true
+    L21_2(L22_2)
+    L21_2 = CCD22EFED4E9E5F89
+    L21_2 = L21_2.SA10AE4787B2E55A3
+    L21_2()
+    if L15_2 then
+      L21_2 = C9F6C325569B7E07F
+      L21_2 = L21_2.S78BBE9C0C6452E1E
+      L21_2()
+    end
+  end
+  L2_2 = CFC8F368D91411014
+  L2_2 = L2_2.SA92CAF490088B894
+  L2_2 = L2_2()
+  L3_2 = L2_2[25]
+  L3_2 = L3_2[1]
+  L3_2 = L3_2[3]
+  L4_2 = L3_2
+  L3_2 = L3_2.FB0E319FDADB5BBDD
+  L5_2 = CAF0F7EA44334A8D5
+  L5_2 = L5_2.new
+  L6_2 = 2
+  L5_2 = L5_2(L6_2)
+  L6_2 = false
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = L2_2[25]
+  L3_2 = L3_2[1]
+  L3_2 = L3_2[3]
+  L4_2 = L3_2
+  L3_2 = L3_2.FB0E319FDADB5BBDD
+  L5_2 = C1AED195D7D8D6504
+  L5_2 = L5_2.new
+  L5_2 = L5_2()
+  L6_2 = false
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = L2_2[25]
+  L3_2 = L3_2[1]
+  L3_2 = L3_2[3]
+  L4_2 = L3_2
+  L3_2 = L3_2.FB0E319FDADB5BBDD
+  L5_2 = C5CC8AA9FEBDAA7BE
+  L5_2 = L5_2.new
+  L5_2 = L5_2()
+  L6_2 = false
+  L3_2(L4_2, L5_2, L6_2)
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.SEF96E5FA660B1A4F
+  L3_2()
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.SF4EE6F5D57F48B7B
+  L3_2()
+  L3_2 = C9B54BC04DD492B6D
+  L3_2 = L3_2.SEC5605D9D6B5E309
+  L4_2 = C5648AAEE3425CE6C
+  L4_2 = L4_2.S55FD03DF3F38878A
+  L3_2(L4_2)
+  L3_2 = C62368E94ECF995ED
+  L3_2 = L3_2.S385504EFF7E842C3
+  L3_2 = L3_2()
+  L4_2 = L3_2
+  L3_2 = L3_2.F8B52A55AA603178E
+  L5_2 = true
+  L3_2(L4_2, L5_2)
+  L3_2 = C4EE52E49562F8277
+  L3_2 = L3_2.S85EBD285324D85ED
+  L4_2 = true
+  L3_2(L4_2)
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.SD5E67B37BA2ADA51
+  L3_2()
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S5E6BEBD3D0E70A45
+  L3_2()
+  L3_2 = C07E4F1BF071B0460
+  L3_2 = L3_2.S2D4F4BC40511B560
+  L4_2 = "BlackFade"
+  L5_2 = 1.0
+  L3_2(L4_2, L5_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S2497E1CB269A1A28"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2
+  L0_2 = C07E4F1BF071B0460
+  L0_2 = L0_2.S218E2A14A790D265
+  L1_2 = "BlackFade"
+  L2_2 = 1.0
+  L0_2(L1_2, L2_2)
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SC56DE1268A61F8A7
+  if L0_2 then
+    L0_2 = C5648AAEE3425CE6C
+    L0_2.SC56DE1268A61F8A7 = false
+    L0_2 = C043642B35062DFB9
+    L0_2 = L0_2.S37BB39776E9CB702
+    L1_2 = C5648AAEE3425CE6C
+    L1_2 = L1_2.S88FD7653C3C108C2
+    L2_2 = true
+    L0_2(L1_2, L2_2)
+    L0_2 = CE55264D46437D7D3
+    L0_2 = L0_2.S17AC14A588D418A2
+    L1_2 = true
+    L2_2 = ""
+    L3_2 = C5648AAEE3425CE6C
+    L3_2 = L3_2.S88FD7653C3C108C2
+    L0_2(L1_2, L2_2, L3_2)
+  end
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[33]
+  L0_2 = L0_2.Activation
+  if L0_2 then
+    L0_2 = CFC8F368D91411014
+    L0_2 = L0_2.SA92CAF490088B894
+    L0_2 = L0_2()
+    L0_2 = L0_2[25]
+    L0_2 = L0_2[1]
+    L0_2 = L0_2[3]
+    L1_2 = L0_2
+    L0_2 = L0_2.FB0E319FDADB5BBDD
+    L2_2 = C9DDEB30C1158409B
+    L2_2 = L2_2.new
+    L3_2 = false
+    L2_2 = L2_2(L3_2)
+    L3_2 = false
+    L0_2(L1_2, L2_2, L3_2)
+    while true do
+      L0_2 = CFC8F368D91411014
+      L0_2 = L0_2.SA92CAF490088B894
+      L0_2 = L0_2()
+      L0_2 = L0_2[33]
+      L0_2 = L0_2.Activation
+      if not L0_2 then
+        break
+      end
+      L0_2 = CC6FE82819C6E1D55
+      L0_2 = L0_2.S12F63EE47FFCB183
+      L0_2()
+    end
+  end
+  L0_2 = C0D02CEE5FD6D6D49
+  L0_2 = L0_2.SFCE091807173F6E9
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S88FD7653C3C108C2
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.S0B07C3AAA4B9A327
+  L0_2(L1_2, L2_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S3E5EE1CB630CFBDA"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.S5A6F620A895E38D7 = true
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[3]
+  L1_2 = L0_2
+  L0_2 = L0_2.FB0E319FDADB5BBDD
+  L2_2 = C9DDEB30C1158409B
+  L2_2 = L2_2.new
+  L3_2 = true
+  L2_2 = L2_2(L3_2)
+  L3_2 = false
+  L0_2(L1_2, L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S9DF859B75DEC8409"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.S5A6F620A895E38D7 = false
+  L0_2 = CFC8F368D91411014
+  L0_2 = L0_2.SA92CAF490088B894
+  L0_2 = L0_2()
+  L0_2 = L0_2[25]
+  L0_2 = L0_2[1]
+  L0_2 = L0_2[3]
+  L1_2 = L0_2
+  L0_2 = L0_2.FB0E319FDADB5BBDD
+  L2_2 = C9DDEB30C1158409B
+  L2_2 = L2_2.new
+  L3_2 = false
+  L2_2 = L2_2(L3_2)
+  L3_2 = false
+  L0_2(L1_2, L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SAE04CF29BB8C6B73"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  if A0_2 then
+    L1_2 = CFC8F368D91411014
+    L1_2 = L1_2.SA92CAF490088B894
+    L1_2 = L1_2()
+    L1_2 = L1_2[25]
+    L1_2 = L1_2[1]
+    L1_2 = L1_2[13]
+    L2_2 = L1_2[19]
+    if false ~= L2_2 then
+      L1_2[19] = false
+      L2_2 = L1_2[19]
+      if L2_2 then
+        L3_2 = L1_2
+        L2_2 = L1_2.FC6EB40A3469C7E75
+        L2_2(L3_2)
+      else
+        L3_2 = L1_2
+        L2_2 = L1_2.F7AA41A1A86494083
+        L2_2(L3_2)
+      end
+    end
+  else
+    L1_2 = CFC8F368D91411014
+    L1_2 = L1_2.SA92CAF490088B894
+    L1_2 = L1_2()
+    L1_2 = L1_2[25]
+    L1_2 = L1_2[1]
+    L1_2 = L1_2[13]
+    L2_2 = L1_2[19]
+    if true ~= L2_2 then
+      L1_2[19] = true
+      L2_2 = L1_2[19]
+      if L2_2 then
+        L3_2 = L1_2
+        L2_2 = L1_2.FC6EB40A3469C7E75
+        L2_2(L3_2)
+      else
+        L3_2 = L1_2
+        L2_2 = L1_2.F7AA41A1A86494083
+        L2_2(L3_2)
+      end
+    end
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S826EA6B5EF324454"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L0_2 = c682D8E4F
+  L0_2 = L0_2.fEF94D11D
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S63E40066C345CE7B
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = cA042DA13
+  L2_2 = L2_2.f25C936C9
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 then
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.SC22C2773A68837D3
+    L3_2 = L0_2
+    L2_2(L3_2)
+    L2_2 = C5648AAEE3425CE6C
+    L3_2 = C5648AAEE3425CE6C
+    L3_2 = L3_2.S5E76D6B9790115ED
+    L4_2 = L0_2
+    L5_2 = "action_lyt"
+    L3_2 = L3_2(L4_2, L5_2)
+    L2_2.S0739851835AEF1C5 = L3_2
+  end
+  L2_2 = c682D8E4F
+  L2_2 = L2_2.fEF94D11D
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S332EF56EAF915CBF
+  L2_2 = L2_2(L3_2)
+  L3_2 = nil
+  L4_2 = cA042DA13
+  L4_2 = L4_2.f25C936C9
+  L5_2 = L2_2
+  L6_2 = L3_2
+  L4_2 = L4_2(L5_2, L6_2)
+  if L4_2 then
+    L4_2 = CC6FE82819C6E1D55
+    L4_2 = L4_2.SC22C2773A68837D3
+    L5_2 = L2_2
+    L4_2(L5_2)
+    L4_2 = C5648AAEE3425CE6C
+    L5_2 = C5648AAEE3425CE6C
+    L5_2 = L5_2.S5E76D6B9790115ED
+    L6_2 = L2_2
+    L7_2 = "top_lyt"
+    L5_2 = L5_2(L6_2, L7_2)
+    L4_2.S9A2943361E45C912 = L5_2
+    L4_2 = C5648AAEE3425CE6C
+    L5_2 = C5648AAEE3425CE6C
+    L5_2 = L5_2.S5E76D6B9790115ED
+    L6_2 = L2_2
+    L7_2 = "new_record_lyt"
+    L5_2 = L5_2(L6_2, L7_2)
+    L4_2.S1D281614EE330596 = L5_2
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SF4EE6F5D57F48B7B"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.S0739851835AEF1C5 = nil
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.S9A2943361E45C912 = nil
+  L0_2 = C5648AAEE3425CE6C
+  L0_2.S1D281614EE330596 = nil
+  L0_2 = c682D8E4F
+  L0_2 = L0_2.fEF94D11D
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S332EF56EAF915CBF
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = cA042DA13
+  L2_2 = L2_2.f25C936C9
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 then
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.SF8D8FFC774DA1818
+    L3_2 = L0_2
+    L2_2(L3_2)
+  end
+  L2_2 = c682D8E4F
+  L2_2 = L2_2.fEF94D11D
+  L3_2 = C5648AAEE3425CE6C
+  L3_2 = L3_2.S63E40066C345CE7B
+  L2_2 = L2_2(L3_2)
+  L3_2 = nil
+  L4_2 = cA042DA13
+  L4_2 = L4_2.f25C936C9
+  L5_2 = L2_2
+  L6_2 = L3_2
+  L4_2 = L4_2(L5_2, L6_2)
+  if L4_2 then
+    L4_2 = CC6FE82819C6E1D55
+    L4_2 = L4_2.SF8D8FFC774DA1818
+    L5_2 = L2_2
+    L4_2(L5_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S5E76D6B9790115ED"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L3_2 = A0_2
+  L2_2 = A0_2.fD4E64AB7
+  L4_2 = A1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  L3_2 = nil
+  L4_2 = c016374C1
+  L4_2 = L4_2.f4555D276
+  L5_2 = L2_2
+  L6_2 = L3_2
+  L4_2 = L4_2(L5_2, L6_2)
+  if L4_2 then
+    L4_2 = nil
+    return L4_2
+  end
+  while true do
+    L5_2 = L2_2
+    L4_2 = L2_2.f9D8BC178
+    L4_2 = L4_2(L5_2)
+    if L4_2 then
+      break
+    end
+    L4_2 = CC6FE82819C6E1D55
+    L4_2 = L4_2.S12F63EE47FFCB183
+    L4_2()
+  end
+  L4_2 = CC6FE82819C6E1D55
+  L4_2 = L4_2.S12F63EE47FFCB183
+  L4_2()
+  L5_2 = L2_2
+  L4_2 = L2_2.fB3CF1DEB
+  L4_2 = L4_2(L5_2)
+  L5_2 = C3B091777E3EC94A5
+  L5_2 = L5_2.S3AB27FFAF33EFD2D
+  L5_2 = L5_2.h
+  L5_2 = L5_2[L4_2]
+  L6_2 = L42_1.tnull
+  if L5_2 == L6_2 then
+    L5_2 = nil
+  end
+  L6_2 = L5_2
+  if nil == L6_2 then
+    L7_2 = nil
+    return L7_2
+  end
+  return L6_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["S5FBD4D6E70D27CA4"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L1_2 = c682D8E4F
+  L1_2 = L1_2.fEF94D11D
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.SBCFE4ECF7149C757
+  L2_2 = L2_2()
+  L2_2 = L2_2.sceneName
+  L1_2 = L1_2(L2_2)
+  L2_2 = nil
+  L3_2 = cA042DA13
+  L3_2 = L3_2.fB1E655AE
+  L4_2 = L1_2
+  L5_2 = L2_2
+  L3_2 = L3_2(L4_2, L5_2)
+  if L3_2 then
+    L3_2 = nil
+    return L3_2
+  end
+  L4_2 = L1_2
+  L3_2 = L1_2.fD4E64AB7
+  L5_2 = A0_2
+  L3_2 = L3_2(L4_2, L5_2)
+  L4_2 = nil
+  L5_2 = c016374C1
+  L5_2 = L5_2.f4555D276
+  L6_2 = L3_2
+  L7_2 = L4_2
+  L5_2 = L5_2(L6_2, L7_2)
+  if L5_2 then
+    L5_2 = nil
+    return L5_2
+  end
+  return L3_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["SD2547BD57E08FF34"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.SBCFE4ECF7149C757
+  L0_2 = L0_2()
+  L0_2 = L0_2.sceneName
+  L1_2 = c682D8E4F
+  L1_2 = L1_2.fEF94D11D
+  L2_2 = L0_2
+  L1_2 = L1_2(L2_2)
+  L2_2 = nil
+  L3_2 = cA042DA13
+  L3_2 = L3_2.f25C936C9
+  L4_2 = L1_2
+  L5_2 = L2_2
+  L3_2 = L3_2(L4_2, L5_2)
+  if L3_2 then
+    L3_2 = CC6FE82819C6E1D55
+    L3_2 = L3_2.SF8D8FFC774DA1818
+    L4_2 = L1_2
+    L3_2(L4_2)
+  end
+  L3_2 = c682D8E4F
+  L3_2 = L3_2.fEF94D11D
+  L4_2 = L0_2
+  L3_2 = L3_2(L4_2)
+  L4_2 = nil
+  L5_2 = cA042DA13
+  L5_2 = L5_2.fB1E655AE
+  L6_2 = L3_2
+  L7_2 = L4_2
+  L5_2(L6_2, L7_2)
+  L5_2 = CC6FE82819C6E1D55
+  L5_2 = L5_2.SC22C2773A68837D3
+  L6_2 = L3_2
+  L5_2(L6_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SEF96E5FA660B1A4F"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2
+  L0_2 = c682D8E4F
+  L0_2 = L0_2.fEF94D11D
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.SBCFE4ECF7149C757
+  L1_2 = L1_2()
+  L1_2 = L1_2.sceneName
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = cA042DA13
+  L2_2 = L2_2.f25C936C9
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2 = L2_2(L3_2, L4_2)
+  if L2_2 then
+    L2_2 = CC6FE82819C6E1D55
+    L2_2 = L2_2.SF8D8FFC774DA1818
+    L3_2 = L0_2
+    L2_2(L3_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S80C7A941DD5C8B35"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S5FBD4D6E70D27CA4
+  L1_2 = "gym_koori_course_start"
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = c016374C1
+  L2_2 = L2_2.f4555D276
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2(L3_2, L4_2)
+  L2_2 = CA705BDBE7ADE7BAC
+  L2_2 = L2_2.SCA7329942774246E
+  L2_2 = L2_2.length
+  L2_2 = L2_2 > 0
+  if L2_2 then
+    L3_2 = C9F6C325569B7E07F
+    L3_2 = L3_2.SAB50B037AF2BC20B
+    L4_2 = 0
+    L3_2(L4_2)
+  end
+  L4_2 = L0_2
+  L3_2 = L0_2.f7360ED03
+  L3_2, L4_2, L5_2 = L3_2(L4_2)
+  L6_2 = {}
+  L7_2 = L3_2
+  L8_2 = L4_2
+  L9_2 = L5_2
+  L6_2[1] = L7_2
+  L6_2[2] = L8_2
+  L6_2[3] = L9_2
+  L8_2 = L0_2
+  L7_2 = L0_2.f64857644
+  L7_2 = L7_2(L8_2)
+  L8_2 = CC6FE82819C6E1D55
+  L8_2 = L8_2.SFBF86D7C138AB6C6
+  L9_2 = "map_change_core"
+  L10_2 = nil
+  L11_2 = L16_1
+  L12_2 = {}
+  L13_2 = {}
+  L13_2.mapChangeInfo = true
+  L13_2.forcePosition = true
+  L13_2.forceRotation = true
+  L12_2.__fields__ = L13_2
+  L13_2 = L16_1
+  L14_2 = {}
+  L15_2 = {}
+  L15_2.type = true
+  L15_2.destScene = true
+  L15_2.destLocation = true
+  L15_2.destOffset = true
+  L14_2.__fields__ = L15_2
+  L14_2.type = 3
+  L14_2.destScene = ""
+  L14_2.destLocation = ""
+  L15_2 = {}
+  L16_2 = 0
+  L17_2 = 0
+  L18_2 = 0
+  L15_2[1] = L16_2
+  L15_2[2] = L17_2
+  L15_2[3] = L18_2
+  L14_2.destOffset = L15_2
+  L13_2 = L13_2(L14_2)
+  L12_2.mapChangeInfo = L13_2
+  L12_2.forcePosition = L6_2
+  L12_2.forceRotation = L7_2
+  L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2 = L11_2(L12_2)
+  L8_2(L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2)
+  L8_2 = CCD22EFED4E9E5F89
+  L8_2 = L8_2.SA10AE4787B2E55A3
+  L8_2()
+  L8_2 = CCD22EFED4E9E5F89
+  L8_2 = L8_2.S11084CFB16A1F50A
+  L9_2 = true
+  L8_2(L9_2)
+  L8_2 = CFC8F368D91411014
+  L8_2 = L8_2.SA92CAF490088B894
+  L8_2 = L8_2()
+  L10_2 = L0_2
+  L9_2 = L0_2.f64857644
+  L9_2 = L9_2(L10_2)
+  L10_2 = L9_2
+  L9_2 = L9_2.fCA247E7A
+  L11_2 = 0
+  L12_2 = 0
+  L13_2 = 1
+  L9_2, L10_2, L11_2 = L9_2(L10_2, L11_2, L12_2, L13_2)
+  L12_2 = L8_2[25]
+  L12_2 = L12_2[1]
+  L12_2 = L12_2[3]
+  L13_2 = L12_2
+  L12_2 = L12_2.FB0E319FDADB5BBDD
+  L14_2 = CFDE5B8FCCB68CEF2
+  L14_2 = L14_2.new
+  L15_2 = {}
+  L16_2 = L9_2
+  L17_2 = L10_2
+  L18_2 = L11_2
+  L15_2[1] = L16_2
+  L15_2[2] = L17_2
+  L15_2[3] = L18_2
+  L16_2 = 1
+  L14_2 = L14_2(L15_2, L16_2)
+  L15_2 = false
+  L12_2(L13_2, L14_2, L15_2)
+  L12_2 = CCD22EFED4E9E5F89
+  L12_2 = L12_2.SA10AE4787B2E55A3
+  L12_2()
+  if L2_2 then
+    L12_2 = C9F6C325569B7E07F
+    L12_2 = L12_2.S78BBE9C0C6452E1E
+    L12_2()
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S3583DF1B473351C2"] = function()
+
+  local L0_2, L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2
+  L0_2 = C5648AAEE3425CE6C
+  L0_2 = L0_2.S5FBD4D6E70D27CA4
+  L1_2 = "gym_koori_course_start"
+  L0_2 = L0_2(L1_2)
+  L1_2 = nil
+  L2_2 = c016374C1
+  L2_2 = L2_2.f4555D276
+  L3_2 = L0_2
+  L4_2 = L1_2
+  L2_2(L3_2, L4_2)
+  L3_2 = L0_2
+  L2_2 = L0_2.f7360ED03
+  L2_2, L3_2, L4_2 = L2_2(L3_2)
+  L5_2 = L2_2
+  L6_2 = L3_2
+  L7_2 = L4_2
+  L9_2 = L0_2
+  L8_2 = L0_2.f64857644
+  L8_2 = L8_2(L9_2)
+  L9_2 = L8_2
+  L8_2 = L8_2.fCA247E7A
+  L10_2 = 0
+  L11_2 = 4
+  L12_2 = -6
+  L8_2, L9_2, L10_2 = L8_2(L9_2, L10_2, L11_2, L12_2)
+  L11_2 = {}
+  L12_2 = L5_2 + L8_2
+  L13_2 = L6_2 + L9_2
+  L14_2 = L7_2 + L10_2
+  L11_2[1] = L12_2
+  L11_2[2] = L13_2
+  L11_2[3] = L14_2
+  L13_2 = L0_2
+  L12_2 = L0_2.f7360ED03
+  L12_2, L13_2, L14_2 = L12_2(L13_2)
+  L15_2 = L12_2
+  L16_2 = L13_2
+  L17_2 = L14_2
+  L19_2 = L0_2
+  L18_2 = L0_2.f64857644
+  L18_2 = L18_2(L19_2)
+  L19_2 = L18_2
+  L18_2 = L18_2.fCA247E7A
+  L20_2 = 0
+  L21_2 = 1.5
+  L22_2 = 0
+  L18_2, L19_2, L20_2 = L18_2(L19_2, L20_2, L21_2, L22_2)
+  L21_2 = C9F6C325569B7E07F
+  L21_2 = L21_2.SE29389D94D7EC89E
+  L22_2 = 0.0
+  L23_2 = L11_2
+  L24_2 = {}
+  L25_2 = L15_2 + L18_2
+  L26_2 = L16_2 + L19_2
+  L27_2 = L17_2 + L20_2
+  L24_2[1] = L25_2
+  L24_2[2] = L26_2
+  L24_2[3] = L27_2
+  L21_2(L22_2, L23_2, L24_2)
+  L21_2 = C9F6C325569B7E07F
+  L21_2 = L21_2.SD6A4A7158737A563
+  L21_2()
+  L22_2 = L0_2
+  L21_2 = L0_2.f7360ED03
+  L21_2, L22_2, L23_2 = L21_2(L22_2)
+  L24_2 = {}
+  L25_2 = L21_2
+  L26_2 = L22_2
+  L27_2 = L23_2
+  L24_2[1] = L25_2
+  L24_2[2] = L26_2
+  L24_2[3] = L27_2
+  L26_2 = L0_2
+  L25_2 = L0_2.f64857644
+  L25_2 = L25_2(L26_2)
+  L26_2 = CC6FE82819C6E1D55
+  L26_2 = L26_2.SFBF86D7C138AB6C6
+  L27_2 = "map_change_core"
+  L28_2 = nil
+  L29_2 = L16_1
+  L30_2 = {}
+  L31_2 = {}
+  L31_2.mapChangeInfo = true
+  L31_2.forcePosition = true
+  L31_2.forceRotation = true
+  L30_2.__fields__ = L31_2
+  L31_2 = L16_1
+  L32_2 = {}
+  L33_2 = {}
+  L33_2.type = true
+  L33_2.destScene = true
+  L33_2.destLocation = true
+  L33_2.destOffset = true
+  L32_2.__fields__ = L33_2
+  L32_2.type = 3
+  L32_2.destScene = ""
+  L32_2.destLocation = ""
+  L33_2 = {}
+  L34_2 = 0
+  L35_2 = 0
+  L36_2 = 0
+  L33_2[1] = L34_2
+  L33_2[2] = L35_2
+  L33_2[3] = L36_2
+  L32_2.destOffset = L33_2
+  L31_2 = L31_2(L32_2)
+  L30_2.mapChangeInfo = L31_2
+  L30_2.forcePosition = L24_2
+  L30_2.forceRotation = L25_2
+  L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2 = L29_2(L30_2)
+  L26_2 = L26_2(L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2)
+  while true do
+    L28_2 = L26_2
+    L27_2 = L26_2.FD079E1CF944CF798
+    L27_2 = L27_2(L28_2)
+    L28_2 = E5918BECABEC63037
+    L28_2 = L28_2.Finished
+    if L27_2 == L28_2 then
+      break
+    end
+    L27_2 = CC6FE82819C6E1D55
+    L27_2 = L27_2.S12F63EE47FFCB183
+    L27_2()
+  end
+  L27_2 = CFC8F368D91411014
+  L27_2 = L27_2.SA92CAF490088B894
+  L27_2 = L27_2()
+  L28_2 = L27_2[25]
+  L28_2 = L28_2[1]
+  L28_2 = L28_2[3]
+  L29_2 = L28_2
+  L28_2 = L28_2.FB0E319FDADB5BBDD
+  L30_2 = CAF0F7EA44334A8D5
+  L30_2 = L30_2.new
+  L31_2 = 1
+  L30_2 = L30_2(L31_2)
+  L31_2 = true
+  L28_2(L29_2, L30_2, L31_2)
+  L28_2 = L27_2[25]
+  L28_2 = L28_2[1]
+  L28_2 = L28_2[3]
+  L29_2 = L28_2
+  L28_2 = L28_2.FB0E319FDADB5BBDD
+  L30_2 = C1AED195D7D8D6504
+  L30_2 = L30_2.new
+  L30_2 = L30_2()
+  L31_2 = true
+  L28_2(L29_2, L30_2, L31_2)
+  L28_2 = L27_2[25]
+  L28_2 = L28_2[1]
+  L28_2 = L28_2[3]
+  L29_2 = L28_2
+  L28_2 = L28_2.FB0E319FDADB5BBDD
+  L30_2 = C5CC8AA9FEBDAA7BE
+  L30_2 = L30_2.new
+  L30_2 = L30_2()
+  L31_2 = true
+  L28_2(L29_2, L30_2, L31_2)
+  L28_2 = CFC8F368D91411014
+  L28_2 = L28_2.SA92CAF490088B894
+  L28_2 = L28_2()
+  L28_2 = L28_2[25]
+  L28_2 = L28_2[1]
+  L28_2 = L28_2[3]
+  L29_2 = L28_2
+  L28_2 = L28_2.FB0E319FDADB5BBDD
+  L30_2 = C06900E436E3C4633
+  L30_2 = L30_2.new
+  L31_2 = 0
+  L32_2 = 0
+  L30_2 = L30_2(L31_2, L32_2)
+  L31_2 = true
+  L28_2(L29_2, L30_2, L31_2)
+  L28_2 = CFC8F368D91411014
+  L28_2 = L28_2.S12AB211B0A58477E
+  L28_2 = L28_2()
+  if nil ~= L28_2 then
+    L30_2 = L28_2
+    L29_2 = L28_2.F9105A2D51E329C40
+    L29_2(L30_2)
+  end
+  L29_2 = CFC8F368D91411014
+  L29_2 = L29_2.SA92CAF490088B894
+  L29_2 = L29_2()
+  L31_2 = L0_2
+  L30_2 = L0_2.f64857644
+  L30_2 = L30_2(L31_2)
+  L31_2 = L30_2
+  L30_2 = L30_2.fCA247E7A
+  L32_2 = 0
+  L33_2 = 0
+  L34_2 = 1
+  L30_2, L31_2, L32_2 = L30_2(L31_2, L32_2, L33_2, L34_2)
+  L33_2 = L29_2[25]
+  L33_2 = L33_2[1]
+  L33_2 = L33_2[3]
+  L34_2 = L33_2
+  L33_2 = L33_2.FB0E319FDADB5BBDD
+  L35_2 = CFDE5B8FCCB68CEF2
+  L35_2 = L35_2.new
+  L36_2 = {}
+  L37_2 = L30_2
+  L38_2 = L31_2
+  L39_2 = L32_2
+  L36_2[1] = L37_2
+  L36_2[2] = L38_2
+  L36_2[3] = L39_2
+  L37_2 = 1
+  L35_2 = L35_2(L36_2, L37_2)
+  L36_2 = false
+  L33_2(L34_2, L35_2, L36_2)
+  L33_2 = CCD22EFED4E9E5F89
+  L33_2 = L33_2.SA10AE4787B2E55A3
+  L33_2()
+end
+
+_ENV["C5648AAEE3425CE6C"]["S1F9EC60D43F4A9DB"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2
+  L1_2 = A0_2[1]
+  L2_2 = A0_2[2]
+  L2_2 = L2_2 + 20.0
+  L3_2 = A0_2[3]
+  L4_2 = A0_2[1]
+  L5_2 = A0_2[2]
+  L5_2 = L5_2 - 20.0
+  L6_2 = A0_2[3]
+  L7_2 = c95DC25DB
+  L7_2 = L7_2.f544F902B
+  L7_2 = L7_2()
+  L8_2 = L7_2
+  L7_2 = L7_2.f5E1D7445
+  L7_2 = L7_2(L8_2)
+  L8_2 = L7_2
+  L7_2 = L7_2.f8DD3BB9D
+  L9_2 = L1_2
+  L10_2 = L2_2
+  L11_2 = L3_2
+  L12_2 = L4_2
+  L13_2 = L5_2
+  L14_2 = L6_2
+  L15_2 = 1
+  L16_2 = 1
+  L17_2 = 0
+  L7_2 = L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2)
+  L8_2 = nil
+  L9_2 = cD9C7323E
+  L9_2 = L9_2.fB9AF3573
+  L10_2 = L7_2
+  L11_2 = L8_2
+  L9_2 = L9_2(L10_2, L11_2)
+  if L9_2 then
+    L10_2 = L7_2
+    L9_2 = L7_2.f47E8DE1F
+    L9_2 = L9_2(L10_2)
+    if L9_2 then
+      L10_2 = L7_2
+      L9_2 = L7_2.fCB2FEF1E
+      L11_2 = 0
+      L9_2 = L9_2(L10_2, L11_2)
+      L10_2 = L9_2
+      L9_2 = L9_2.f1B877572
+      L9_2, L10_2, L11_2 = L9_2(L10_2)
+      L12_2 = {}
+      L13_2 = L9_2
+      L14_2 = L10_2
+      L15_2 = L11_2
+      L12_2[1] = L13_2
+      L12_2[2] = L14_2
+      L12_2[3] = L15_2
+      return L12_2
+    end
+  end
+  return A0_2
+end
+
+_ENV["C5648AAEE3425CE6C"]["SC46F740C849A289F"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
+  L2_2 = C5648AAEE3425CE6C
+  L2_2 = L2_2.S1F9EC60D43F4A9DB
+  L3_2 = A0_2
+  L2_2 = L2_2(L3_2)
+  L3_2 = CC6FE82819C6E1D55
+  L3_2 = L3_2.SFBF86D7C138AB6C6
+  L4_2 = "map_change_core"
+  L5_2 = nil
+  L6_2 = L16_1
+  L7_2 = {}
+  L8_2 = {}
+  L8_2.mapChangeInfo = true
+  L8_2.forcePosition = true
+  L8_2.forceRotation = true
+  L7_2.__fields__ = L8_2
+  L8_2 = L16_1
+  L9_2 = {}
+  L10_2 = {}
+  L10_2.type = true
+  L10_2.destScene = true
+  L10_2.destLocation = true
+  L10_2.destOffset = true
+  L9_2.__fields__ = L10_2
+  L9_2.type = 3
+  L9_2.destScene = ""
+  L9_2.destLocation = ""
+  L10_2 = {}
+  L11_2 = 0
+  L12_2 = 0
+  L13_2 = 0
+  L10_2[1] = L11_2
+  L10_2[2] = L12_2
+  L10_2[3] = L13_2
+  L9_2.destOffset = L10_2
+  L8_2 = L8_2(L9_2)
+  L7_2.mapChangeInfo = L8_2
+  L8_2 = {}
+  L9_2 = L2_2[1]
+  L10_2 = L2_2[2]
+  L10_2 = L10_2 + 5.0
+  L11_2 = L2_2[3]
+  L8_2[1] = L9_2
+  L8_2[2] = L10_2
+  L8_2[3] = L11_2
+  L7_2.forcePosition = L8_2
+  L7_2.forceRotation = A1_2
+  L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2 = L6_2(L7_2)
+  L3_2 = L3_2(L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2)
+  while true do
+    L5_2 = L3_2
+    L4_2 = L3_2.FD079E1CF944CF798
+    L4_2 = L4_2(L5_2)
+    L5_2 = E5918BECABEC63037
+    L5_2 = L5_2.Finished
+    if L4_2 == L5_2 then
+      break
+    end
+    L4_2 = CC6FE82819C6E1D55
+    L4_2 = L4_2.S12F63EE47FFCB183
+    L4_2()
+  end
+  L4_2 = CFC8F368D91411014
+  L4_2 = L4_2.SA92CAF490088B894
+  L4_2 = L4_2()
+  L5_2 = L4_2[25]
+  L5_2 = L5_2[1]
+  L5_2 = L5_2[3]
+  L6_2 = L5_2
+  L5_2 = L5_2.FB0E319FDADB5BBDD
+  L7_2 = CAF0F7EA44334A8D5
+  L7_2 = L7_2.new
+  L8_2 = 1
+  L7_2 = L7_2(L8_2)
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L4_2[25]
+  L5_2 = L5_2[1]
+  L5_2 = L5_2[3]
+  L6_2 = L5_2
+  L5_2 = L5_2.FB0E319FDADB5BBDD
+  L7_2 = C1AED195D7D8D6504
+  L7_2 = L7_2.new
+  L7_2 = L7_2()
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = L4_2[25]
+  L5_2 = L5_2[1]
+  L5_2 = L5_2[3]
+  L6_2 = L5_2
+  L5_2 = L5_2.FB0E319FDADB5BBDD
+  L7_2 = C5CC8AA9FEBDAA7BE
+  L7_2 = L7_2.new
+  L7_2 = L7_2()
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = CFC8F368D91411014
+  L5_2 = L5_2.SA92CAF490088B894
+  L5_2 = L5_2()
+  L5_2 = L5_2[25]
+  L5_2 = L5_2[1]
+  L5_2 = L5_2[3]
+  L6_2 = L5_2
+  L5_2 = L5_2.FB0E319FDADB5BBDD
+  L7_2 = C06900E436E3C4633
+  L7_2 = L7_2.new
+  L8_2 = 0
+  L9_2 = 0
+  L7_2 = L7_2(L8_2, L9_2)
+  L8_2 = true
+  L5_2(L6_2, L7_2, L8_2)
+  L5_2 = CFC8F368D91411014
+  L5_2 = L5_2.S12AB211B0A58477E
+  L5_2 = L5_2()
+  if nil ~= L5_2 then
+    L7_2 = L5_2
+    L6_2 = L5_2.F9105A2D51E329C40
+    L6_2(L7_2)
+  end
+  L6_2 = CFC8F368D91411014
+  L6_2 = L6_2.SA92CAF490088B894
+  L6_2 = L6_2()
+  L8_2 = A1_2
+  L7_2 = A1_2.fCA247E7A
+  L9_2 = 0
+  L10_2 = 0
+  L11_2 = 1
+  L7_2, L8_2, L9_2 = L7_2(L8_2, L9_2, L10_2, L11_2)
+  L10_2 = L6_2[25]
+  L10_2 = L10_2[1]
+  L10_2 = L10_2[3]
+  L11_2 = L10_2
+  L10_2 = L10_2.FB0E319FDADB5BBDD
+  L12_2 = CFDE5B8FCCB68CEF2
+  L12_2 = L12_2.new
+  L13_2 = {}
+  L14_2 = L7_2
+  L15_2 = L8_2
+  L16_2 = L9_2
+  L13_2[1] = L14_2
+  L13_2[2] = L15_2
+  L13_2[3] = L16_2
+  L14_2 = 1
+  L12_2 = L12_2(L13_2, L14_2)
+  L13_2 = false
+  L10_2(L11_2, L12_2, L13_2)
+  L10_2 = CCD22EFED4E9E5F89
+  L10_2 = L10_2.SA10AE4787B2E55A3
+  L10_2()
+  L11_2 = A1_2
+  L10_2 = A1_2.fCA247E7A
+  L12_2 = 0
+  L13_2 = 4
+  L14_2 = -6
+  L10_2, L11_2, L12_2 = L10_2(L11_2, L12_2, L13_2, L14_2)
+  L13_2 = {}
+  L14_2 = A0_2[1]
+  L14_2 = L14_2 + L10_2
+  L15_2 = A0_2[2]
+  L15_2 = L15_2 + L11_2
+  L16_2 = A0_2[3]
+  L16_2 = L16_2 + L12_2
+  L13_2[1] = L14_2
+  L13_2[2] = L15_2
+  L13_2[3] = L16_2
+  L15_2 = A1_2
+  L14_2 = A1_2.fCA247E7A
+  L16_2 = 0
+  L17_2 = 1.5
+  L18_2 = 0
+  L14_2, L15_2, L16_2 = L14_2(L15_2, L16_2, L17_2, L18_2)
+  L17_2 = C9F6C325569B7E07F
+  L17_2 = L17_2.SE29389D94D7EC89E
+  L18_2 = 0.0
+  L19_2 = L13_2
+  L20_2 = {}
+  L21_2 = A0_2[1]
+  L21_2 = L21_2 + L14_2
+  L22_2 = A0_2[2]
+  L22_2 = L22_2 + L15_2
+  L23_2 = A0_2[3]
+  L23_2 = L23_2 + L16_2
+  L20_2[1] = L21_2
+  L20_2[2] = L22_2
+  L20_2[3] = L23_2
+  L17_2(L18_2, L19_2, L20_2)
+  L17_2 = C9F6C325569B7E07F
+  L17_2 = L17_2.SD6A4A7158737A563
+  L17_2()
+  L17_2 = CC6FE82819C6E1D55
+  L17_2 = L17_2.S12F63EE47FFCB183
+  L17_2()
+end
+
+_ENV["C5648AAEE3425CE6C"]["SE580A5FD30B6FF27"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S71E762328637BB53
+  L1_2 = L1_2.h
+  while nil ~= L1_2 do
+    L2_2 = L1_2.item
+    L1_2 = L1_2.next
+    L3_2 = L2_2
+    L4_2 = A0_2
+    L3_2(L4_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["S52F8C5FE7D42842F"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S71E762328637BB53
+  L2_2 = L1_2
+  L1_2 = L1_2.push
+  L3_2 = A0_2
+  L1_2(L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["S461190B926E7FAAC"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.S71E762328637BB53
+  L2_2 = L1_2
+  L1_2 = L1_2.remove
+  L3_2 = A0_2
+  L1_2(L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SD1CFE0C1F71BA5B0"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.SE849D39A2D8C3E5A
+  L1_2 = L1_2.h
+  while nil ~= L1_2 do
+    L2_2 = L1_2.item
+    L1_2 = L1_2.next
+    L3_2 = L2_2
+    L4_2 = A0_2
+    L3_2(L4_2)
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["SE8B55B638982DB06"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.SE849D39A2D8C3E5A
+  L2_2 = L1_2
+  L1_2 = L1_2.push
+  L3_2 = A0_2
+  L1_2(L2_2, L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["SEF2ADD9338FE2377"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2
+  L1_2 = C5648AAEE3425CE6C
+  L1_2 = L1_2.SE849D39A2D8C3E5A
+  L2_2 = L1_2
+  L1_2 = L1_2.remove
+  L3_2 = A0_2
+  L1_2(L2_2, L3_2)
+end
+
+L68_1 = _ENV["C5648AAEE3425CE6C"]
+L69_1 = "prototype"
+L70_1 = _hx_e
+L70_1 = L70_1()
+L68_1[L69_1] = L70_1
+_ENV["C5648AAEE3425CE6C"]["prototype"]["F7C68FEDB79AB6396"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2
+  L2_2 = CDC3F92928A2194E6
+  L2_2 = L2_2.prototype
+  L2_2 = L2_2.F7C68FEDB79AB6396
+  L3_2 = A0_2
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+  L3_2 = A0_2
+  L2_2 = A0_2.FC0345553D75921A3
+  L2_2(L3_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["prototype"]["F1C2AA00ADAC52EC5"] = function(A0_2)
+
+  local L1_2, L2_2
+  L1_2 = CDC3F92928A2194E6
+  L1_2 = L1_2.prototype
+  L1_2 = L1_2.F1C2AA00ADAC52EC5
+  L2_2 = A0_2
+  L1_2(L2_2)
+end
+
+_ENV["C5648AAEE3425CE6C"]["prototype"]["FC0345553D75921A3"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = cF52F390B
+  L1_2 = L1_2.fB41FD22F
+  L2_2 = A0_2[1]
+  L1_2 = L1_2(L2_2)
+  L2_2 = nil
+  L3_2 = cF52F390B
+  L3_2 = L3_2.fF7BFEF10
+  L4_2 = L1_2
+  L5_2 = L2_2
+  L3_2 = L3_2(L4_2, L5_2)
+  if L3_2 then
+    L3_2 = C5648AAEE3425CE6C
+    L5_2 = A0_2
+    L4_2 = A0_2.FCFDBD30961031E48
+    L6_2 = L1_2
+    L4_2 = L4_2(L5_2, L6_2)
+    L3_2.S38219578837B5DAF = L4_2
+  end
+end
+
+_ENV["C5648AAEE3425CE6C"]["prototype"]["FCFDBD30961031E48"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
+  L2_2 = _hx_tab_array
+  L3_2 = {}
+  L3_2.length = 0
+  L4_2 = 0
+  L2_2 = L2_2(L3_2, L4_2)
+  L4_2 = A1_2
+  L3_2 = A1_2.f287946D6
+  L3_2 = L3_2(L4_2)
+  L4_2 = 0
+  L6_2 = L3_2
+  L5_2 = L3_2.fE6B52E00
+  L5_2 = L5_2(L6_2)
+  while L4_2 < L5_2 do
+    L4_2 = L4_2 + 1
+    L7_2 = L3_2
+    L6_2 = L3_2.f51241DA2
+    L8_2 = L4_2 - 1
+    L6_2 = L6_2(L7_2, L8_2)
+    L8_2 = L2_2
+    L7_2 = L2_2.push
+    L9_2 = L16_1
+    L10_2 = {}
+    L11_2 = {}
+    L11_2.courseId = true
+    L11_2.sceneName = true
+    L11_2.clearTimeMinutes = true
+    L11_2.clearTimeSeconds = true
+    L11_2.clearTimeMillisecond = true
+    L11_2.penaltyTimeMinutes = true
+    L11_2.penaltyTimeSeconds = true
+    L11_2.penaltyTimeMillisecond = true
+    L11_2.timeupTimeMinutes = true
+    L11_2.timeupTimeSeconds = true
+    L11_2.timeupTimeMillisecond = true
+    L11_2.bestRecordTimeName = true
+    L11_2.showNewRecord = true
+    L11_2.showClearTime = true
+    L11_2.prizeItemId = true
+    L11_2.prizeItemNum = true
+    L11_2.isClearName = true
+    L11_2.firstPrizeItemId = true
+    L11_2.firstPrizeItemNum = true
+    L10_2.__fields__ = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "CourseId"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.courseId = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.f3D9D438D
+    L13_2 = "SceneName"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.sceneName = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "ClearTimeMinutes"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.clearTimeMinutes = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "ClearTimeSeconds"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.clearTimeSeconds = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "ClearTimeMillisecond"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.clearTimeMillisecond = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "PenaltyTimeMinutes"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.penaltyTimeMinutes = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "PenaltyTimeSeconds"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.penaltyTimeSeconds = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "PenaltyTimeMillisecond"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.penaltyTimeMillisecond = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "TimeupTimeMinutes"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.timeupTimeMinutes = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "TimeupTimeSeconds"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.timeupTimeSeconds = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "TimeupTimeMillisecond"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.timeupTimeMillisecond = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.f3D9D438D
+    L13_2 = "BestRecordTimeName"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.bestRecordTimeName = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.f6DAE9B28
+    L13_2 = "ShowNewRecord"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.showNewRecord = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.f6DAE9B28
+    L13_2 = "ShowClearTime"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.showClearTime = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "PrizeItemId"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.prizeItemId = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "PrizeItemNum"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.prizeItemNum = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.f3D9D438D
+    L13_2 = "IsClearName"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.isClearName = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "FirstPrizeItemId"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.firstPrizeItemId = L11_2
+    L12_2 = L6_2
+    L11_2 = L6_2.fCD31E312
+    L13_2 = "FirstPrizeItemNum"
+    L11_2 = L11_2(L12_2, L13_2)
+    L10_2.firstPrizeItemNum = L11_2
+    L9_2, L10_2, L11_2, L12_2, L13_2 = L9_2(L10_2)
+    L7_2(L8_2, L9_2, L10_2, L11_2, L12_2, L13_2)
+  end
+  return L2_2
+end
+
+L68_1 = _ENV["C5648AAEE3425CE6C"]["prototype"]
+L69_1 = _ENV["C5648AAEE3425CE6C"]
+L68_1.__class__ = L69_1
+L68_1 = _ENV["C5648AAEE3425CE6C"]
+L69_1 = "__super__"
+L69_1 = _ENV["C5648AAEE3425CE6C"]["prototype"]
+L70_1 = {}
+L71_1 = "__index"

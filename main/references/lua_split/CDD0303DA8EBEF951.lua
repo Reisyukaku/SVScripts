@@ -1,0 +1,33 @@
+L55_1 = _ENV
+L56_1 = "CDD0303DA8EBEF951"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L68_1 = _ENV["CDD0303DA8EBEF951"]
+L69_1 = "new"
+L70_1 = {}
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["CDD0303DA8EBEF951"]
+L69_1 = "__name__"
+L70_1 = "CDD0303DA8EBEF951"
+L68_1[L69_1] = L70_1
+_ENV["CDD0303DA8EBEF951"]["SF8F2D826E2B641F8"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
+  L1_2 = L16_1
+  L2_2 = {}
+  L3_2 = {}
+  L3_2.RimLight = true
+  L2_2.__fields__ = L3_2
+  L3_2 = CC140C21DBB79A852
+  L3_2 = L3_2.SF8F2D826E2B641F8
+  L4_2 = C7F881F5D9B6F6009
+  L4_2 = L4_2.S4EAF82A0C1965109
+  L5_2 = A0_2
+  L6_2 = "rim_light"
+  L4_2, L5_2, L6_2 = L4_2(L5_2, L6_2)
+  L3_2 = L3_2(L4_2, L5_2, L6_2)
+  L2_2.RimLight = L3_2
+  return L1_2(L2_2)
+end
+

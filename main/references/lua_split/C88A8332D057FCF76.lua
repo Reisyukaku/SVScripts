@@ -1,0 +1,108 @@
+L55_1 = _ENV
+L56_1 = "C88A8332D057FCF76"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+_ENV["C88A8332D057FCF76"]["new"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = lua_helper_new
+  L3_2 = C88A8332D057FCF76
+  L3_2 = L3_2.prototype
+  L4_2 = 11
+  L5_2 = 29
+  L2_2 = L2_2(L3_2, L4_2, L5_2)
+  L3_2 = C88A8332D057FCF76
+  L3_2 = L3_2.super
+  L4_2 = L2_2
+  L5_2 = A0_2
+  L6_2 = A1_2
+  L3_2(L4_2, L5_2, L6_2)
+  return L2_2
+end
+
+_ENV["C88A8332D057FCF76"]["super"] = function(A0_2, A1_2, A2_2)
+
+  local L3_2, L4_2
+  L3_2 = C8937517D6B25B7C0
+  L3_2 = L3_2.super
+  L4_2 = A0_2
+  L3_2(L4_2)
+  A0_2[11] = A1_2
+  L3_2 = L58_1
+  L4_2 = A2_2
+  L3_2 = L3_2(L4_2)
+  A0_2.F321B0F927A3DE755 = L3_2
+end
+
+L68_1 = _ENV["C88A8332D057FCF76"]
+L69_1 = "__name__"
+L70_1 = "C88A8332D057FCF76"
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C88A8332D057FCF76"]
+L69_1 = "prototype"
+L70_1 = _hx_e
+L70_1 = L70_1()
+L68_1[L69_1] = L70_1
+_ENV["C88A8332D057FCF76"]["prototype"]["F5BE3D38738EE3C24"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["C88A8332D057FCF76"]["prototype"]["FE1B998C2DEC49E51"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2, L5_2, L6_2
+  L2_2 = 4
+  L3_2 = C0841C92D10956D35
+  L3_2 = L3_2.S7D05D34C291DA69E
+  L4_2 = CD950F4AD2C2702A1
+  L4_2 = L4_2.SE398A17349A210B2
+  L4_2 = L4_2[L2_2]
+  L4_2 = L4_2.txlabel
+  L5_2 = CD950F4AD2C2702A1
+  L5_2 = L5_2.SE398A17349A210B2
+  L5_2 = L5_2[L2_2]
+  L5_2 = L5_2.label
+  L6_2 = CD950F4AD2C2702A1
+  L6_2 = L6_2.SE398A17349A210B2
+  L6_2 = L6_2[L2_2]
+  L6_2 = L6_2.type
+  L3_2(L4_2, L5_2, L6_2)
+  while true do
+    L3_2 = CD950F4AD2C2702A1
+    L3_2 = L3_2.SA64ABBE5B55E89E0
+    L3_2 = L3_2()
+    if not L3_2 then
+      break
+    end
+    L3_2 = C1DB14DCC9D7634FA
+    L3_2 = L3_2.S760DAE4C5371A78E
+    L4_2 = nil
+    L3_2(L4_2)
+  end
+  L3_2 = C0841C92D10956D35
+  L3_2 = L3_2.S84E00A89DFBC380C
+  L3_2()
+  L3_2 = A0_2.F321B0F927A3DE755
+  if nil ~= L3_2 then
+    L4_2 = A0_2
+    L3_2 = A0_2.F321B0F927A3DE755
+    L3_2(L4_2)
+  else
+    L4_2 = A0_2
+    L3_2 = A0_2.FD8ABEE5C76044721
+    L3_2 = L3_2(L4_2)
+    L4_2 = L3_2
+    L3_2 = L3_2.F2C02645014D5A2A5
+    L3_2(L4_2)
+  end
+end
+
+L68_1 = _ENV["C88A8332D057FCF76"]["prototype"]
+L69_1 = _ENV["C88A8332D057FCF76"]
+L68_1.__class__ = L69_1
+L68_1 = _ENV["C88A8332D057FCF76"]
+L69_1 = "__super__"
+L69_1 = _ENV["C88A8332D057FCF76"]["prototype"]
+L70_1 = {}
+L71_1 = "__index"

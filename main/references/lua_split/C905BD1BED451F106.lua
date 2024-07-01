@@ -1,0 +1,175 @@
+_ENV["C905BD1BED451F106"]["super"] = function(A0_2, A1_2, A2_2, A3_2, A4_2)
+
+  local L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
+  L5_2 = C2C51A2FB219477E8
+  L5_2 = L5_2.super
+  L6_2 = A0_2
+  L7_2 = A1_2
+  L8_2 = A2_2
+  L9_2 = A3_2
+  L10_2 = A4_2
+  L5_2(L6_2, L7_2, L8_2, L9_2, L10_2)
+end
+
+L68_1 = _ENV["C905BD1BED451F106"]
+L69_1 = "__name__"
+L70_1 = "C905BD1BED451F106"
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C905BD1BED451F106"]
+L69_1 = "prototype"
+L70_1 = _hx_e
+L70_1 = L70_1()
+L68_1[L69_1] = L70_1
+_ENV["C905BD1BED451F106"]["prototype"]["FC87C731D11C58354"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["C905BD1BED451F106"]["prototype"]["F92BA869F22AE5BC6"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["C905BD1BED451F106"]["prototype"]["F2E6C9E25867BCE8D"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["C905BD1BED451F106"]["prototype"]["FD8D5F3745B4B5174"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
+  L1_2 = CBBA8BC6DEECCDCB4
+  L1_2 = L1_2.SE868EE80CBC5C603
+  L2_2 = "Player"
+  L1_2(L2_2)
+  L1_2 = CFC8F368D91411014
+  L1_2 = L1_2.S5F0710AB3300886D
+  L1_2 = L1_2()
+  if nil ~= L1_2 then
+    L2_2 = C9F6C325569B7E07F
+    L2_2 = L2_2.S15F1FE666677756A
+    L3_2 = 0.0
+    L5_2 = A0_2
+    L4_2 = A0_2.F0A528C2F9F2670CD
+    L6_2 = -0.43
+    L7_2 = 1.21
+    L8_2 = 1.15
+    L4_2 = L4_2(L5_2, L6_2, L7_2, L8_2)
+    L6_2 = A0_2
+    L5_2 = A0_2.F0A528C2F9F2670CD
+    L7_2 = -9.73
+    L8_2 = -29.76
+    L9_2 = -8.0
+    L5_2 = L5_2(L6_2, L7_2, L8_2, L9_2)
+    L6_2 = 38.0
+    L7_2 = 0
+    L8_2 = L1_2
+    L9_2 = 2
+    L2_2(L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2)
+    L2_2 = C9F6C325569B7E07F
+    L2_2 = L2_2.SD6A4A7158737A563
+    L2_2()
+  end
+  L2_2 = CC6FE82819C6E1D55
+  L2_2 = L2_2.S32FAD7D4DF3ACA95
+  L3_2 = 0.5
+  L2_2(L3_2)
+  L2_2 = C3A36506FBC96ACBD
+  L2_2 = L2_2.SC6181320B46854EE
+  L3_2 = "PLAY_UI_COMMUNICATION_INCOMING_CALL"
+  L2_2(L3_2)
+  L2_2 = C9B54BC04DD492B6D
+  L2_2 = L2_2.S3EDC50DEB344C642
+  L3_2 = ""
+  L4_2 = "msg_btl_talk_nushi_jimen_01_01"
+  L5_2 = nil
+  L6_2 = 3
+  L2_2(L3_2, L4_2, L5_2, L6_2)
+  L2_2 = CBBA8BC6DEECCDCB4
+  L2_2 = L2_2.SEE6738E890EC4A8F
+  L3_2 = "Player"
+  L4_2 = 7
+  L5_2 = 7
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = CBBA8BC6DEECCDCB4
+  L2_2 = L2_2.S87C57D2B466CE242
+  L3_2 = "Player"
+  L4_2 = "savedata"
+  L2_2(L3_2, L4_2)
+  L2_2 = CBBA8BC6DEECCDCB4
+  L2_2 = L2_2.S11524313EC3F9FE9
+  L3_2 = "Player"
+  L2_2(L3_2)
+  L2_2 = CBBA8BC6DEECCDCB4
+  L2_2 = L2_2.SEE6738E890EC4A8F
+  L3_2 = "Player"
+  L4_2 = 20
+  L5_2 = 20
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = C9B54BC04DD492B6D
+  L2_2 = L2_2.SBAC833E5E04206C0
+  L3_2 = CA4C5F9FA83D2AF80
+  L3_2 = L3_2.S0F389050EBDB9BB0
+  L3_2 = L3_2()
+  L4_2 = "msg_btl_talk_nushi_jimen_01_02b"
+  L5_2 = "btl_talk"
+  L6_2 = true
+  L7_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = C9B54BC04DD492B6D
+  L2_2 = L2_2.SBAC833E5E04206C0
+  L3_2 = CA4C5F9FA83D2AF80
+  L3_2 = L3_2.S0F389050EBDB9BB0
+  L3_2 = L3_2()
+  L4_2 = "msg_btl_talk_nushi_jimen_01_03b"
+  L5_2 = "btl_talk"
+  L6_2 = true
+  L7_2 = false
+  L2_2(L3_2, L4_2, L5_2, L6_2, L7_2)
+  L2_2 = C9B54BC04DD492B6D
+  L2_2 = L2_2.SBAC833E5E04206C0
+  L3_2 = CA4C5F9FA83D2AF80
+  L3_2 = L3_2.S0F389050EBDB9BB0
+  L3_2 = L3_2()
+  L4_2 = "msg_btl_talk_nushi_jimen_01_04b"
+  L5_2 = "btl_talk"
+  L2_2(L3_2, L4_2, L5_2)
+  L2_2 = CBBA8BC6DEECCDCB4
+  L2_2 = L2_2.S43C4B2BD08C5F367
+  L3_2 = "Player"
+  L2_2(L3_2)
+  L2_2 = CC6FE82819C6E1D55
+  L2_2 = L2_2.S32FAD7D4DF3ACA95
+  L3_2 = 1.5
+  L2_2(L3_2)
+  L2_2 = CBBA8BC6DEECCDCB4
+  L2_2 = L2_2.SEE6738E890EC4A8F
+  L3_2 = "Player"
+  L4_2 = 1
+  L5_2 = 1
+  L2_2(L3_2, L4_2, L5_2)
+end
+
+_ENV["C905BD1BED451F106"]["prototype"]["F84C84FA1590CD2A3"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["C905BD1BED451F106"]["prototype"]["F740FB4E96926D103"] = function(A0_2)
+
+  local L1_2
+end
+
+_ENV["C905BD1BED451F106"]["prototype"]["F3E13E4094D09A594"] = function(A0_2)
+
+  local L1_2
+end
+
+L68_1 = _ENV["C905BD1BED451F106"]["prototype"]
+L69_1 = _ENV["C905BD1BED451F106"]
+L68_1.__class__ = L69_1
+L68_1 = _ENV["C905BD1BED451F106"]
+L69_1 = "__super__"
+L69_1 = _ENV["C905BD1BED451F106"]["prototype"]
+L70_1 = {}
+L71_1 = "__index"

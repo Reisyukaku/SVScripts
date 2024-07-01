@@ -1,0 +1,133 @@
+L55_1 = _ENV
+L56_1 = "C3DC904811DECA844"
+L57_1 = _hx_e
+L57_1 = L57_1()
+L55_1[L56_1] = L57_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+C9F018D934786A68E = L55_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+C9D96138EAA13A5D9 = L55_1
+L55_1 = _hx_e
+L55_1 = L55_1()
+C79A8A2641CC135A3 = L55_1
+_ENV["C3DC904811DECA844"]["new"] = function(A0_2)
+
+  local L1_2, L2_2, L3_2, L4_2
+  L1_2 = lua_helper_new
+  L2_2 = C3DC904811DECA844
+  L2_2 = L2_2.prototype
+  L3_2 = 2
+  L4_2 = 7
+  L1_2 = L1_2(L2_2, L3_2, L4_2)
+  L2_2 = C3DC904811DECA844
+  L2_2 = L2_2.super
+  L3_2 = L1_2
+  L4_2 = A0_2
+  L2_2(L3_2, L4_2)
+  return L1_2
+end
+
+_ENV["C3DC904811DECA844"]["super"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2
+  A0_2[2] = nil
+  L2_2 = CDC3F92928A2194E6
+  L2_2 = L2_2.super
+  L3_2 = A0_2
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+
+L68_1 = "C3DC904811DECA844"
+L69_1 = _ENV["C3DC904811DECA844"]
+L25_1[L68_1] = L69_1
+L68_1 = _ENV["C3DC904811DECA844"]
+L69_1 = "__name__"
+L70_1 = "C3DC904811DECA844"
+L68_1[L69_1] = L70_1
+L68_1 = _ENV["C3DC904811DECA844"]
+L69_1 = "prototype"
+L70_1 = _hx_e
+L70_1 = L70_1()
+L68_1[L69_1] = L70_1
+_ENV["C3DC904811DECA844"]["prototype"]["F7C68FEDB79AB6396"] = function(A0_2, A1_2)
+
+  local L2_2, L3_2, L4_2
+  L2_2 = CDC3F92928A2194E6
+  L2_2 = L2_2.prototype
+  L2_2 = L2_2.F7C68FEDB79AB6396
+  L3_2 = A0_2
+  L4_2 = A1_2
+  L2_2(L3_2, L4_2)
+end
+
+_ENV["C3DC904811DECA844"]["prototype"]["FE94F3E13286232CF"] = function(A0_2, A1_2)
+
+end
+
+_ENV["C3DC904811DECA844"]["prototype"]["F1C2AA00ADAC52EC5"] = function(A0_2)
+
+  local L1_2, L2_2
+  L1_2 = CDC3F92928A2194E6
+  L1_2 = L1_2.prototype
+  L1_2 = L1_2.F1C2AA00ADAC52EC5
+  L2_2 = A0_2
+  L1_2(L2_2)
+end
+
+L68_1 = _ENV["C3DC904811DECA844"]["prototype"]
+L69_1 = _ENV["C3DC904811DECA844"]
+L68_1.__class__ = L69_1
+L68_1 = _ENV["C3DC904811DECA844"]
+L69_1 = "__super__"
+L69_1 = _ENV["C3DC904811DECA844"]["prototype"]
+L70_1 = {}
+L71_1 = "__index"
+L70_1 = _ENV["C3DC904811DECA844"]
+L68_1[L69_1] = L70_1
+L72_1 = _ENV["C3DC904811DECA844"]["prototype"]
+L70_1[L71_1] = L72_1
+L68_1(L69_1, L70_1)
+L70_1 = _ENV["C3DC904811DECA844"]
+L68_1[L69_1] = L70_1
+L72_1 = _ENV["C3DC904811DECA844"]["prototype"]
+L70_1[L71_1] = L72_1
+L68_1(L69_1, L70_1)
+L70_1 = _ENV["C3DC904811DECA844"]
+L68_1[L69_1] = L70_1
+L72_1 = _ENV["C3DC904811DECA844"]["prototype"]
+L70_1[L71_1] = L72_1
+L68_1(L69_1, L70_1)
+L68_1 = "EC4D8B6F820665C19"
+L69_1 = {}
+L70_1 = "__ename__"
+L69_1[L70_1] = true
+L70_1 = "__constructs__"
+L71_1 = _hx_tab_array
+L72_1 = {}
+L73_1 = "length"
+L74_1 = 0
+L72_1[L73_1] = L74_1
+L73_1 = "None"
+L72_1[0] = L73_1
+L73_1 = "Waiting"
+L74_1 = "Departure"
+L75_1 = "LeaveWait"
+L76_1 = "GameEventWait"
+L77_1 = "Exit"
+L72_1[1] = L73_1
+L72_1[2] = L74_1
+L72_1[3] = L75_1
+L72_1[4] = L76_1
+L72_1[5] = L77_1
+L73_1 = 6
+L71_1 = L71_1(L72_1, L73_1)
+L69_1[L70_1] = L71_1
+L18_1[L68_1] = L69_1
+L70_1 = _ENV["C3DC904811DECA844"]
+L68_1[L69_1] = L70_1
+L72_1 = _ENV["C3DC904811DECA844"]["prototype"]
+L70_1[L71_1] = L72_1
+L68_1(L69_1, L70_1)
