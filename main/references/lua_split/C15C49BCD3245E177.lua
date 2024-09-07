@@ -474,6 +474,7 @@ _ENV["C15C49BCD3245E177"]["prototype"]["F488341F45CE0FCE2"] = function(A0_2, A1_
   end
 end
 
+-- StartPokemonObjCreate
 _ENV["C15C49BCD3245E177"]["prototype"]["F009AB62A7DE96F51"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2

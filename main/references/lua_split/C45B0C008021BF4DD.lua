@@ -1122,6 +1122,7 @@ _ENV["C45B0C008021BF4DD"]["prototype"]["F4D67EEC9E329A2E7"] = function(A0_2)
   return L1_2
 end
 
+--CreatePokemonModel
 _ENV["C45B0C008021BF4DD"]["prototype"]["F870A977921B91883"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2

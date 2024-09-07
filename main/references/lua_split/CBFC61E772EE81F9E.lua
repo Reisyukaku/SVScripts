@@ -1755,27 +1755,17 @@ _ENV["CBFC61E772EE81F9E"]["prototype"]["FCC92BE3CA3585EDD"] = function(A0_2, A1_
   L4_2(L5_2, L6_2, L7_2, L8_2)
 end
 
+--CFuncCreatePokeModel
 _ENV["CBFC61E772EE81F9E"]["prototype"]["FDFD77FADC2CBB4EA"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2
   L2_2 = A0_2[8]
   if nil ~= L2_2 then
-    L2_2 = c113335A8
-    L2_2 = L2_2.f7AC1FE6B
-    L3_2 = cC99399C3
-    L3_2 = L3_2.f101D811F
-    L3_2, L4_2, L5_2, L6_2 = L3_2()
-    L2_2 = L2_2(L3_2, L4_2, L5_2, L6_2)
-    L4_2 = L2_2
-    L3_2 = L2_2.fEFB3ECFD
-    L5_2 = A1_2
-    L3_2(L4_2, L5_2)
+    L3_2, L4_2, L5_2, L6_2 = cC99399C3.f101D811F()
+    L2_2 = c113335A8.f7AC1FE6B(L3_2, L4_2, L5_2, L6_2)
+    L2_2.fEFB3ECFD(L2_2, A1_2)
     L3_2 = A0_2[8]
-    L4_2 = L3_2
-    L3_2 = L3_2.F008D22D135293C69
-    L5_2 = L2_2
-    L6_2 = false
-    L3_2(L4_2, L5_2, L6_2)
+    L3_2.F008D22D135293C69(L3_2, L2_2, false) --CreatePokeObj
   end
 end
 

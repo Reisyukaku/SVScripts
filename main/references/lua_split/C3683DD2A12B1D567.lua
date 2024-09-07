@@ -102,6 +102,7 @@ _ENV["C3683DD2A12B1D567"]["prototype"]["FD3DFF8E7C8649F1A"] = function(A0_2)
   return L1_2
 end
 
+-- CreatePokeObj
 _ENV["C3683DD2A12B1D567"]["prototype"]["F008D22D135293C69"] = function(A0_2, A1_2, A2_2, A3_2)
 
   local L4_2, L5_2, L6_2, L7_2, L8_2
@@ -111,49 +112,29 @@ _ENV["C3683DD2A12B1D567"]["prototype"]["F008D22D135293C69"] = function(A0_2, A1_
   if nil == A2_2 then
     A2_2 = true
   end
-  L4_2 = nil
-  L5_2 = cA042DA13
-  L5_2 = L5_2.fB1E655AE
-  L6_2 = A0_2[1]
-  L7_2 = L4_2
-  L5_2 = L5_2(L6_2, L7_2)
+  L5_2 = cA042DA13.fB1E655AE(A0_2[1], nil)
   if L5_2 then
     return
   end
-  L5_2 = CF9F6B18306776AFB
-  L5_2 = L5_2.S7D1E199BBD384D72
+  L5_2 = CF9F6B18306776AFB.S7D1E199BBD384D72 --instance
   if nil ~= L5_2 then
-    L6_2 = A1_2
-    L5_2 = A1_2.f64B2F13C
-    L5_2 = L5_2(L6_2)
-    A0_2[23] = L5_2
-    L6_2 = A1_2
-    L5_2 = A1_2.f0BD5134F
-    L5_2 = L5_2(L6_2)
-    L7_2 = A1_2
-    L6_2 = A1_2.f5D94E897
-    L6_2 = L6_2(L7_2)
-    L8_2 = A1_2
-    L7_2 = A1_2.fB31DF589
-    L7_2 = L7_2(L8_2)
+    A0_2[23] = A1_2.f64B2F13C(A1_2)
+    L5_2 = A1_2.f0BD5134F(A1_2)
+    L6_2 = A1_2.f5D94E897(A1_2)
+    L7_2 = A1_2.fB31DF589(A1_2)
     function L8_2()
       local L0_3, L1_3, L2_3, L3_3, L4_3, L5_3, L6_3, L7_3
       L0_3 = nil
       L1_3 = L5_2
       if 0 ~= L1_3 then
-        L1_3 = CF9F6B18306776AFB
-        L1_3 = L1_3.S7D1E199BBD384D72
+        L1_3 = CF9F6B18306776AFB.S7D1E199BBD384D72 --instance
         L2_3 = L1_3
-        L1_3 = L1_3.FB0D455C8F4BBAF3D
         L3_3 = A0_2
         L3_3 = L3_3[23]
         L4_3 = L5_2
-        L5_3 = lua.Boot.__cast
-        L6_3 = L7_2
-        L7_3 = L19_1
-        L5_3 = L5_3(L6_3, L7_3)
+        L5_3 = lua.Boot.__cast(L7_2, L19_1)
         L6_3 = L6_2
-        L1_3 = L1_3(L2_3, L3_3, L4_3, L5_3, L6_3)
+        L1_3 = L1_3.FB0D455C8F4BBAF3D(L2_3, L3_3, L4_3, L5_3, L6_3)
         L0_3 = L1_3
       else
         L0_3 = nil
@@ -477,6 +458,7 @@ _ENV["C3683DD2A12B1D567"]["prototype"]["F1B84429742B3778E"] = function(A0_2)
   return L1_2(L2_2)
 end
 
+--InitPokemonObj
 _ENV["C3683DD2A12B1D567"]["prototype"]["FFB5BED933247C195"] = function(A0_2)
 
   local L1_2

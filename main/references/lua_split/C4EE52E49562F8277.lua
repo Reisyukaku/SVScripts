@@ -1360,6 +1360,8 @@ L68_1 = L25_1[L68_1]
 L69_1 = "SD63DA178A252C3A0"
 L70_1 = _ENV["C4EE52E49562F8277"]["SD63DA178A252C3A0"]
 L68_1[L69_1] = L70_1
+
+-- CFunc_AddLeaguePay
 _ENV["C4EE52E49562F8277"]["S5A9D3A8E2584B861"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2
@@ -1626,11 +1628,13 @@ _ENV["C4EE52E49562F8277"]["prototype"]["F7C68FEDB79AB6396"] = function(A0_2, A1_
   L12_2(L13_2, L14_2, L15_2)
 end
 
+-- Destroy
 _ENV["C4EE52E49562F8277"]["prototype"]["F1C2AA00ADAC52EC5"] = function(A0_2)
 
   local L1_2
 end
 
+-- PreUpdate
 _ENV["C4EE52E49562F8277"]["prototype"]["FE94F3E13286232CF"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2
@@ -1679,6 +1683,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["FC53C66A4C7FB3ADB"] = function(A0_2, A1_
 
 end
 
+-- CreatePicnicPokemonCore
 _ENV["C4EE52E49562F8277"]["prototype"]["F71A61170646F68AF"] = function(A0_2, A1_2, A2_2)
 
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2
@@ -1791,6 +1796,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["F71A61170646F68AF"] = function(A0_2, A1_
   return L14_2(L15_2)
 end
 
+-- CreatePokeVoiceInfo
 _ENV["C4EE52E49562F8277"]["prototype"]["F3F322B3899E7B0CE"] = function(A0_2, A1_2, A2_2, A3_2)
 
   local L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
@@ -1861,6 +1867,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["F3F322B3899E7B0CE"] = function(A0_2, A1_
   return L8_2(L9_2)
 end
 
+-- GetLotterySystem
 _ENV["C4EE52E49562F8277"]["prototype"]["F3A696F8948953E85"] = function(A0_2)
 
   local L1_2
@@ -1868,6 +1875,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["F3A696F8948953E85"] = function(A0_2)
   return L1_2
 end
 
+-- UpdateSpawn
 _ENV["C4EE52E49562F8277"]["prototype"]["F648B6B775BCC730B"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2
@@ -2329,6 +2337,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["F648B6B775BCC730B"] = function(A0_2, A1_
   ::lbl_438::
 end
 
+-- UpdateSaveList
 _ENV["C4EE52E49562F8277"]["prototype"]["FBFC3D5CF767BB47D"] = function(A0_2)
 
   local L1_2, L2_2, L3_2
@@ -2364,6 +2373,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["FBFC3D5CF767BB47D"] = function(A0_2)
   L2_2(L3_2)
 end
 
+-- UpdateNetworkSpawn
 _ENV["C4EE52E49562F8277"]["prototype"]["FACD32B6F06B461B1"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2, L33_2, L34_2, L35_2, L36_2, L37_2, L38_2, L39_2, L40_2, L41_2, L42_2, L43_2, L44_2
@@ -2969,6 +2979,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["FACD32B6F06B461B1"] = function(A0_2)
   return L15_2
 end
 
+-- TrySpawnFixed
 _ENV["C4EE52E49562F8277"]["prototype"]["FADA19688B3D89F11"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2
@@ -5186,6 +5197,7 @@ _ENV["C4EE52E49562F8277"]["prototype"]["F7CD78AFE95859652"] = function(A0_2, A1_
   return L6_2
 end
 
+-- SpawnFunc
 _ENV["C4EE52E49562F8277"]["prototype"]["F9B7FBB66FA56765E"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2

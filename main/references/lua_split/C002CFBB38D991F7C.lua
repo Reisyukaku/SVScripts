@@ -73,6 +73,8 @@ L69_1 = "prototype"
 L70_1 = _hx_e
 L70_1 = L70_1()
 L68_1[L69_1] = L70_1
+
+-- get_nowFormNo
 _ENV["C002CFBB38D991F7C"]["prototype"]["F153449ECC82AE875"] = function(A0_2)
 
   local L1_2, L2_2
@@ -90,6 +92,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F153449ECC82AE875"] = function(A0_2)
   return L1_2
 end
 
+-- get_nowRare
 _ENV["C002CFBB38D991F7C"]["prototype"]["FBEC8E47AF257A880"] = function(A0_2)
 
   local L1_2, L2_2
@@ -107,6 +110,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FBEC8E47AF257A880"] = function(A0_2)
   return L1_2
 end
 
+-- get_currentLanguage
 _ENV["C002CFBB38D991F7C"]["prototype"]["FA3C976095D3DA473"] = function(A0_2)
 
   local L1_2, L2_2
@@ -121,6 +125,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FA3C976095D3DA473"] = function(A0_2)
   return L1_2
 end
 
+-- get_preLanguage
 _ENV["C002CFBB38D991F7C"]["prototype"]["FF21FD1A2ED333797"] = function(A0_2)
 
   local L1_2, L2_2
@@ -135,6 +140,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FF21FD1A2ED333797"] = function(A0_2)
   return L1_2
 end
 
+-- Setup
 _ENV["C002CFBB38D991F7C"]["prototype"]["F7C68FEDB79AB6396"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2
@@ -192,6 +198,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F7C68FEDB79AB6396"] = function(A0_2, A1_
   L2_2(L3_2)
 end
 
+-- SetupShortcutInput
 _ENV["C002CFBB38D991F7C"]["prototype"]["FE07948BEB30B3094"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2
@@ -317,6 +324,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FE07948BEB30B3094"] = function(A0_2)
   end
 end
 
+-- ViewStart
 _ENV["C002CFBB38D991F7C"]["prototype"]["FE2823709CB81AA04"] = function(A0_2)
 
   local L1_2, L2_2, L3_2
@@ -345,6 +353,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FE2823709CB81AA04"] = function(A0_2)
   A0_2[4] = 10
 end
 
+-- ViewUpdate
 _ENV["C002CFBB38D991F7C"]["prototype"]["F473B660093398659"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
@@ -710,6 +719,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F473B660093398659"] = function(A0_2)
   end
 end
 
+-- ViewEnd
 _ENV["C002CFBB38D991F7C"]["prototype"]["FB2651C2F0ACEEDFD"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2
@@ -725,6 +735,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FB2651C2F0ACEEDFD"] = function(A0_2, A1_
   L2_2(L3_2)
 end
 
+-- SetEndCallBack
 _ENV["C002CFBB38D991F7C"]["prototype"]["F608F2DF2042214CB"] = function(A0_2, A1_2)
 
   local L2_2, L3_2
@@ -734,6 +745,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F608F2DF2042214CB"] = function(A0_2, A1_
   A0_2.F3566027557FB6C36 = L2_2
 end
 
+-- OnDecideButton
 _ENV["C002CFBB38D991F7C"]["prototype"]["FA27DDDB196FD8024"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2
@@ -860,6 +872,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FA27DDDB196FD8024"] = function(A0_2)
   end
 end
 
+-- OnCancelButton
 _ENV["C002CFBB38D991F7C"]["prototype"]["FC2168F2796A05732"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2
@@ -987,6 +1000,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FC2168F2796A05732"] = function(A0_2)
   end
 end
 
+-- ChangePokedexDetail
 _ENV["C002CFBB38D991F7C"]["prototype"]["F0176AC9EB7DE7144"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
@@ -1038,6 +1052,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F0176AC9EB7DE7144"] = function(A0_2, A1_
   L5_2(L6_2)
 end
 
+-- GetPropertyIndex
 _ENV["C002CFBB38D991F7C"]["prototype"]["F826C6EF8CDF6CD4A"] = function(A0_2, A1_2, A2_2, A3_2)
 
   local L4_2, L5_2, L6_2
@@ -1055,6 +1070,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F826C6EF8CDF6CD4A"] = function(A0_2, A1_
   return L4_2
 end
 
+--ChangeForm
 _ENV["C002CFBB38D991F7C"]["prototype"]["F31CFE3B36D36D95F"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
@@ -1128,6 +1144,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FDA4C3D8E639AB341"] = function(A0_2, A1_
   return A1_2
 end
 
+-- SetPokeInfo
 _ENV["C002CFBB38D991F7C"]["prototype"]["FDD760E46C468BCC2"] = function(A0_2, A1_2, A2_2)
 
   local L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2
@@ -1392,6 +1409,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FDD760E46C468BCC2"] = function(A0_2, A1_
   A0_2[22] = L9_2
 end
 
+-- DataUpdate
 _ENV["C002CFBB38D991F7C"]["prototype"]["F4978C9CA3CF43B94"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2
@@ -1677,6 +1695,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F4978C9CA3CF43B94"] = function(A0_2, A1_
   L6_2(L7_2, L8_2)
 end
 
+-- GetFormPatternIndex
 _ENV["C002CFBB38D991F7C"]["prototype"]["FDC6F90DCC3CC7677"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2
@@ -1722,6 +1741,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FDC6F90DCC3CC7677"] = function(A0_2, A1_
   return L3_2
 end
 
+--DetailView
 _ENV["C002CFBB38D991F7C"]["prototype"]["F178E9393F3CF962D"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
@@ -2015,6 +2035,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F178E9393F3CF962D"] = function(A0_2, A1_
   L6_2(L7_2, L8_2, L9_2)
 end
 
+-- 
 _ENV["C002CFBB38D991F7C"]["prototype"]["F4F8D2B2F5E91844D"] = function(A0_2)
 
   local L1_2, L2_2, L3_2
@@ -2051,6 +2072,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F4F8D2B2F5E91844D"] = function(A0_2)
   L1_2(L2_2, L3_2)
 end
 
+-- SetupText
 _ENV["C002CFBB38D991F7C"]["prototype"]["FE93BB4B92826B005"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
@@ -2114,6 +2136,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["FE93BB4B92826B005"] = function(A0_2)
   L6_2(L7_2, L8_2, L9_2, L10_2)
 end
 
+-- SetupDetailPatternAnime
 _ENV["C002CFBB38D991F7C"]["prototype"]["F5C9AA7F254AE0691"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2
@@ -2157,6 +2180,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F5C9AA7F254AE0691"] = function(A0_2, A1_
   end
 end
 
+-- SetDetailPatternAnime
 _ENV["C002CFBB38D991F7C"]["prototype"]["F5BFF60ED3544AE58"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2
@@ -2168,6 +2192,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F5BFF60ED3544AE58"] = function(A0_2, A1_
   L2_2(L3_2, L4_2, L5_2)
 end
 
+-- PokeInfo
 _ENV["C002CFBB38D991F7C"]["prototype"]["F79A7090BBD9EDA80"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2, L11_2, L12_2, L13_2, L14_2, L15_2, L16_2, L17_2, L18_2, L19_2, L20_2, L21_2, L22_2, L23_2, L24_2, L25_2, L26_2, L27_2, L28_2, L29_2, L30_2, L31_2, L32_2
@@ -2947,6 +2972,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F79A7090BBD9EDA80"] = function(A0_2, A1_
   L26_2(L27_2, L28_2, L29_2)
 end
 
+-- ChangeLanguage
 _ENV["C002CFBB38D991F7C"]["prototype"]["F72033A9576D39CF3"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2
@@ -3067,6 +3093,7 @@ _ENV["C002CFBB38D991F7C"]["prototype"]["F72033A9576D39CF3"] = function(A0_2)
   A0_2[37] = L2_2
 end
 
+-- ResetLanguage
 _ENV["C002CFBB38D991F7C"]["prototype"]["F26735384749E63EA"] = function(A0_2)
 
   local L1_2, L2_2, L3_2, L4_2, L5_2, L6_2

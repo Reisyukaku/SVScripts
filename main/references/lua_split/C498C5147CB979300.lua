@@ -240,6 +240,7 @@ _ENV["C498C5147CB979300"]["prototype"]["F9227891966E6AFED"] = function(A0_2)
   L1_2(L2_2, L3_2)
 end
 
+--ShowPokeModel
 _ENV["C498C5147CB979300"]["prototype"]["F0BAFD1C59344E986"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2, L5_2, L6_2

@@ -241,6 +241,7 @@ _ENV["CE87854361B053ABE"]["prototype"]["F1C2AA00ADAC52EC5"] = function(A0_2)
   end
 end
 
+--CreatePokeModel
 _ENV["CE87854361B053ABE"]["prototype"]["F7E161B53E5FDBD61"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2
@@ -249,14 +250,9 @@ _ENV["CE87854361B053ABE"]["prototype"]["F7E161B53E5FDBD61"] = function(A0_2, A1_
     return
   end
   L2_2 = A0_2[10]
-  L3_2 = L2_2
-  L2_2 = L2_2.FFB5BED933247C195
-  L2_2(L3_2)
+  L2_2.FFB5BED933247C195(L2_2) --InitPokemonObj
   L2_2 = A0_2[10]
-  L3_2 = L2_2
-  L2_2 = L2_2.F008D22D135293C69
-  L4_2 = A1_2
-  L2_2(L3_2, L4_2)
+  L2_2.F008D22D135293C69(L2_2, A1_2) --CreatePokeObj
 end
 
 _ENV["CE87854361B053ABE"]["prototype"]["F87F3593AA5CC175F"] = function(A0_2)
