@@ -713,7 +713,6 @@ _ENV["CAA65E782763AD2EF"]["prototype"]["F08631D47EC5C540A"] = function(A0_2, A1_
 end
 
 _ENV["CAA65E782763AD2EF"]["prototype"]["FD1A8FF919DD11371"] = function(A0_2, A1_2)
-
   local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2, L8_2, L9_2, L10_2
   L2_2 = A1_2.units
   L2_2 = L2_2.h
@@ -844,55 +843,55 @@ _ENV["CAA65E782763AD2EF"]["prototype"]["FD1A8FF919DD11371"] = function(A0_2, A1_
         L5_2 = L5_2.remove
         L7_2 = L4_2
         L5_2(L6_2, L7_2)
+        goto lbl_164
+      end
     end
     ::lbl_127::
-    else
-      L5_2 = A0_2[5]
-      L6_2 = L5_2
-      L5_2 = L5_2.F9A748DD08AB05A5E
-      L7_2 = L4_2
-      L5_2 = L5_2(L6_2, L7_2)
-      if L5_2 then
+    L5_2 = A0_2[5]
+    L6_2 = L5_2
+    L5_2 = L5_2.F9A748DD08AB05A5E
+    L7_2 = L4_2
+    L5_2 = L5_2(L6_2, L7_2)
+    if L5_2 then
+      L5_2 = L4_2[3]
+      L5_2 = L5_2.primary
+      L5_2 = L5_2.module
+      if nil ~= L5_2 then
         L5_2 = L4_2[3]
         L5_2 = L5_2.primary
-        L5_2 = L5_2.module
-        if nil ~= L5_2 then
-          L5_2 = L4_2[3]
-          L5_2 = L5_2.primary
-          L5_2 = L5_2.module
-          L6_2 = L5_2
-          L5_2 = L5_2.F1F1E2C2E65471013
-          L7_2 = 1
-          L5_2 = L5_2(L6_2, L7_2)
-          L5_2 = L5_2[14]
-          if L5_2 then
-            goto lbl_161
-          end
-        end
-        L5_2 = L4_2[3]
-        L5_2 = L5_2.secondary
-        L5_2 = L5_2.module
-        if nil == L5_2 then
-          goto lbl_164
-        end
-        L5_2 = L4_2[3]
-        L5_2 = L5_2.secondary
         L5_2 = L5_2.module
         L6_2 = L5_2
         L5_2 = L5_2.F1F1E2C2E65471013
         L7_2 = 1
         L5_2 = L5_2(L6_2, L7_2)
         L5_2 = L5_2[14]
-        if not L5_2 then
-          goto lbl_164
+        if L5_2 then
+          goto lbl_161
         end
       end
-      ::lbl_161::
-      L6_2 = L4_2
-      L5_2 = L4_2.F6F628BDE3059BC8D
-      L7_2 = false
-      L5_2(L6_2, L7_2)
+      L5_2 = L4_2[3]
+      L5_2 = L5_2.secondary
+      L5_2 = L5_2.module
+      if nil == L5_2 then
+        goto lbl_164
+      end
+      L5_2 = L4_2[3]
+      L5_2 = L5_2.secondary
+      L5_2 = L5_2.module
+      L6_2 = L5_2
+      L5_2 = L5_2.F1F1E2C2E65471013
+      L7_2 = 1
+      L5_2 = L5_2(L6_2, L7_2)
+      L5_2 = L5_2[14]
+      if not L5_2 then
+        goto lbl_164
+      end
     end
+    ::lbl_161::
+    L6_2 = L4_2
+    L5_2 = L4_2.F6F628BDE3059BC8D
+    L7_2 = false
+    L5_2(L6_2, L7_2)
     ::lbl_164::
     if L3_2 then
       L3_2 = false

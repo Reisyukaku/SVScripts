@@ -68,102 +68,54 @@ L70_1 = _hx_e
 L70_1 = L70_1()
 L68_1[L69_1] = L70_1
 _ENV["CD84E9011D70FB8CE"]["prototype"]["FEB6685558281F194"] = function(A0_2, A1_2)
+  local timeLeft, currentState, enterTime, holdTime, leaveTime, updateFunc
 
-  local L2_2, L3_2, L4_2, L5_2, L6_2, L7_2
-  L2_2 = A0_2[6]
-  L2_2 = L2_2 + A1_2
-  A0_2[6] = L2_2
-  L2_2 = false
+  timeLeft = A0_2[6] + A1_2
+  A0_2[6] = timeLeft
+
   while true do
-    L3_2 = A0_2[5]
-    if 0 == L3_2 then
-      L4_2 = A0_2[6]
-      L5_2 = A0_2[3]
-      L5_2 = L5_2.time
-      L5_2 = L5_2.enter
-      if L4_2 >= L5_2 then
+    currentState = A0_2[5]
+
+    if currentState == 0 then
+      enterTime = A0_2[3].time.enter
+
+      if timeLeft >= enterTime then
         A0_2[5] = 1
-        L4_2 = A0_2[6]
-        L5_2 = A0_2[3]
-        L5_2 = L5_2.time
-        L5_2 = L5_2.enter
-        L4_2 = L4_2 - L5_2
-        A0_2[6] = L4_2
+        A0_2[6] = timeLeft - enterTime
       else
-        L5_2 = A0_2
-        L4_2 = A0_2.FBE2B3A5AB99069F5
-        L6_2 = A0_2[6]
-        L7_2 = A0_2[3]
-        L7_2 = L7_2.time
-        L7_2 = L7_2.enter
-        L6_2 = L6_2 / L7_2
-        L4_2(L5_2, L6_2)
-        else
-          if 1 == L3_2 then
-            L4_2 = A0_2[3]
-            L4_2 = L4_2.time
-            L4_2 = L4_2.hold
-            if nil ~= L4_2 then
-              L4_2 = A0_2[6]
-              L5_2 = A0_2[3]
-              L5_2 = L5_2.time
-              L5_2 = L5_2.hold
-              if L4_2 >= L5_2 then
-                A0_2[5] = 2
-                L4_2 = A0_2[6]
-                L5_2 = A0_2[3]
-                L5_2 = L5_2.time
-                L5_2 = L5_2.hold
-                L4_2 = L4_2 - L5_2
-                A0_2[6] = L4_2
-            end
-            else
-              L5_2 = A0_2
-              L4_2 = A0_2.FBE2B3A5AB99069F5
-              L6_2 = 0.5
-              L4_2(L5_2, L6_2)
-              else
-                if 2 == L3_2 then
-                  L4_2 = A0_2[6]
-                  L5_2 = A0_2[3]
-                  L5_2 = L5_2.time
-                  L5_2 = L5_2.leave
-                  if L4_2 >= L5_2 then
-                    A0_2[5] = 3
-                    L4_2 = A0_2[6]
-                    L5_2 = A0_2[3]
-                    L5_2 = L5_2.time
-                    L5_2 = L5_2.leave
-                    L4_2 = L4_2 - L5_2
-                    A0_2[6] = L4_2
-                  else
-                    L5_2 = A0_2
-                    L4_2 = A0_2.FBE2B3A5AB99069F5
-                    L6_2 = A0_2[6]
-                    L7_2 = A0_2[3]
-                    L7_2 = L7_2.time
-                    L7_2 = L7_2.leave
-                    L6_2 = L6_2 / L7_2
-                    L7_2 = 1
-                    L6_2 = L7_2 - L6_2
-                    L4_2(L5_2, L6_2)
-                    elseif 3 == L3_2 then
-                      L4_2 = true
-                      return L4_2
-                    end
-                    L4_2 = false
-                    return L4_2
-                  end
-              end
-            end
+        updateFunc = A0_2.FBE2B3A5AB99069F5
+        updateFunc(A0_2, timeLeft / enterTime)
+
+        if currentState == 1 then
+          holdTime = A0_2[3].time.hold
+
+          if holdTime and timeLeft >= holdTime then
+            A0_2[5] = 2
+            A0_2[6] = timeLeft - holdTime
+            break
+          end
+
+          updateFunc(A0_2, 0.5)
+        elseif currentState == 2 then
+          leaveTime = A0_2[3].time.leave
+
+          if timeLeft >= leaveTime then
+            A0_2[5] = 3
+            A0_2[6] = timeLeft - leaveTime
+            break
+          end
+
+          updateFunc(A0_2, 1 - (timeLeft / leaveTime))
+        elseif currentState == 3 then
+          return true
         end
+
+        return false
       end
-    if L2_2 then
-      L2_2 = false
-      break
     end
   end
 end
+
 
 _ENV["CD84E9011D70FB8CE"]["prototype"]["FBE2B3A5AB99069F5"] = function(A0_2, A1_2)
 
