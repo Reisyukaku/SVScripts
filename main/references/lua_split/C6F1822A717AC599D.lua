@@ -11,7 +11,7 @@ end
 _ENV["C6F1822A717AC599D"]["super"] = function(A0_2, A1_2)
 
   local L2_2, L3_2, L4_2
-  A0_2[6] = _hx_tab_array({ length = 0 }), 0)
+  A0_2[6] = _hx_tab_array({ length = 0 })
   A0_2[5] = nil
   A0_2[4] = nil
   A0_2[3] = nil

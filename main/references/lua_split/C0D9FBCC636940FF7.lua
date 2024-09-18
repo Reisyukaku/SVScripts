@@ -3480,7 +3480,6 @@ _ENV["C0D9FBCC636940FF7"]["prototype"]["FD4AB797B5A987437"] = function(A0_2)
       L3_2 = L3_2(L4_2)
       A0_2[13] = L3_2
       return
-    ::lbl_95::
     else
       L1_2 = A0_2[10]
       if L1_2 then

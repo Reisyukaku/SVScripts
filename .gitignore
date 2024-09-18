@@ -11,3 +11,4 @@ main/*.blua
 main_dynamic/build/*
 main_dynamic/*.blua
 *.blua
+.vscode/*

@@ -122,52 +122,28 @@ _ENV["C0A14AC45C4A30062"]["prototype"]["FE94F3E13286232CF"] = function(A0_2, A1_
 
   local L2_2, L3_2, L4_2, L5_2
   L2_2 = A0_2[8]
-  if nil ~= L2_2 then
-    L2_2 = L10_1.coroutine
-    L2_2 = L2_2.status
-    L3_2 = A0_2[8]
-    L3_2 = L3_2[1]
-    L2_2 = L2_2(L3_2)
-    if "dead" ~= L2_2 then
-      L2_2 = nil
-      L3_2 = L10_1.coroutine
-      L3_2 = L3_2.resume
-      L4_2 = A0_2[8]
-      L4_2 = L4_2[1]
-      L5_2 = L2_2
-      L3_2(L4_2, L5_2)
+  if L2_2 ~= nil then
+    L2_2 = L10_1.coroutine.status(A0_2[8][1])
+    if L2_2 ~= "dead" then
+      L3_2 = L10_1.coroutine.resume(A0_2[8][1], nil)
     end
   end
+
   L2_2 = A0_2[9]
-  if nil ~= L2_2 then
-    L2_2 = L10_1.coroutine
-    L2_2 = L2_2.status
-    L3_2 = A0_2[9]
-    L3_2 = L3_2[1]
-    L2_2 = L2_2(L3_2)
-    if "dead" ~= L2_2 then
-      L2_2 = nil
-      L3_2 = L10_1.coroutine
-      L3_2 = L3_2.resume
-      L4_2 = A0_2[9]
-      L4_2 = L4_2[1]
-      L5_2 = L2_2
-      L3_2(L4_2, L5_2)
+  if L2_2 ~= nil then
+    L2_2 = L10_1.coroutine.status(A0_2[9][1])
+    if L2_2 ~= "dead" then
+      L3_2 = L10_1.coroutine.resume(A0_2[9][1], nil)
     end
   end
+
   L2_2 = A0_2[4]
-  if nil ~= L2_2 then
-    L2_2 = A0_2[7]
-    if nil ~= L2_2 then
-      goto lbl_42
-    end
+  if L2_2 ~= nil and A0_2[7] ~= nil then
+    L2_2 = A0_2[4]
+    L2_2:FBDF46C200B8C60D8()
+  else
+    return
   end
-  do return end
-  ::lbl_42::
-  L2_2 = A0_2[4]
-  L3_2 = L2_2
-  L2_2 = L2_2.FBDF46C200B8C60D8
-  L2_2(L3_2)
 end
 
 _ENV["C0A14AC45C4A30062"]["prototype"]["F8ECAA28B9538110D"] = function(A0_2, A1_2)
@@ -196,7 +172,7 @@ _ENV["C0A14AC45C4A30062"]["prototype"]["F9DC0BD22BBB1DDF1"] = function(A0_2, A1_
   L6_2 = false
   while true do
     L7_2 = A1_2.length
-    if not (L5_2 < L7_2) then
+    if (L5_2 >= L7_2) then
       break
     end
     L7_2 = A1_2[L5_2]
@@ -204,7 +180,7 @@ _ENV["C0A14AC45C4A30062"]["prototype"]["F9DC0BD22BBB1DDF1"] = function(A0_2, A1_
     L9_2 = L7_2
     L8_2 = L7_2.F307BD8092CABDC3D
     L8_2 = L8_2(L9_2)
-    if not (L8_2 <= 0) then
+    if (L8_2 > 0) then
       L8_2 = A0_2[7]
       L9_2 = L8_2
       L8_2 = L8_2.push
