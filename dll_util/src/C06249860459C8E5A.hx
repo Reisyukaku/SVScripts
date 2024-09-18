@@ -14,7 +14,7 @@ class C06249860459C8E5A {
     @:native("S469DB55DA92DD3BC") static var rayOpt:CE19B10CC = CE19B10CC.f101D811F();
     
     @:native("S37EC4DF80C23CC2A")
-    public static function SetShapeRotation(A0_2:C85FE83D4, A1_2:Dynamic):Dynamic {
+    public static function SetShapeRotation(A0_2:C85FE83D4, A1_2:Quaternion):Dynamic {
         var L3_2;
         var L4_2;
         switch(A0_2.f53D9EAAE()) {

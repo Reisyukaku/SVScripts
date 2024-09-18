@@ -12,9 +12,9 @@ class C83B8A16667A05285 {
             0,                   0,                      1,        0, 
             screenSize[0] / 2.0, screenSize[1] / 2.0,    0,        1
         );
-        var vec1 = mat1.f47BEA911(pos.x, pos.y, pos.z, 1.0);
-        var vec2 = mat2.f47BEA911(vec1.x, vec1.y, vec1.z, vec1.w);
-        var vec3 = matrix.f47BEA911(vec2.x, vec2.y, vec2.z, vec2.w);
+        var vec1:Vec4 = mat1.f47BEA911(pos.x, pos.y, pos.z, 1.0);
+        var vec2:Vec4 = mat2.f47BEA911(vec1.x, vec1.y, vec1.z, vec1.w);
+        var vec3:Vec4 = matrix.f47BEA911(vec2.x, vec2.y, vec2.z, vec2.w);
         var screen = [vec3.x / vec3.w, vec3.y / vec3.w];
         return screen;
     }
@@ -41,16 +41,16 @@ class C83B8A16667A05285 {
         mat.f56310C93(A2[0] / 2.0, 0, 0, 0, 0, -A2[1] / 2.0, 0, 0, 0, 0, 1, 0, A2[0] / 2.0, A2[1] / 2.0, 0, 1);
         mat = CCE8E2D0A.f7AC1FE6B(mat);
         mat.f51C23F19();
-        var L9_2:Array<Float> = mat.f47BEA911(A0[0], A0[1], A1, 1);
+        var L9_2:Vec4 = mat.f47BEA911(A0[0], A0[1], A1, 1);
         
         var L17_2 = CCE8E2D0A.f7AC1FE6B(A4);
         L17_2.f51C23F19();
-        var L18_2:Array<Float> = L17_2.f47BEA911(L9_2[0], L9_2[1], L9_2[2], L9_2[3]);
+        var L18_2:Vec4 = L17_2.f47BEA911(L9_2.x, L9_2.y, L9_2.z, L9_2.w);
         
         var L26_2 = CCE8E2D0A.f7AC1FE6B(A3);
         L26_2.f51C23F19();
         
-        var L27_2:Array<Float> = L26_2.f47BEA911(L18_2[0], L18_2[1], L18_2[2], L18_2[3]);
+        var L27_2:Vec4 = L26_2.f47BEA911(L18_2.x, L18_2.y, L18_2.z, L18_2.w);
         return [L27_2[0] / L27_2[3], L27_2[1] / L27_2[3], L27_2[2] / L27_2[3]];
     }
 }

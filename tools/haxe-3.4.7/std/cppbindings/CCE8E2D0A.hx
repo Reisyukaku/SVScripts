@@ -21,7 +21,7 @@ extern class CCE8E2D0A { //Matrix?
 	function fB372E29C():Any;
 	function f1BECE3E7():Any;
 	function f643B5D6F():Vec3;
-	function f51C23F19():Void;
+	function f51C23F19():Bool;
 	function f4999A377():Any;
 	function f07015581():Any;
 	function f9CA05BEE():Any;
