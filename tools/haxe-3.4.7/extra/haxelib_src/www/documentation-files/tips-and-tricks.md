@@ -1,3 +1,0 @@
-# Tips and Tricks when using Haxelib
-
-More information to go here...

@@ -1,4 +1,0 @@
-compile-each.hxml
--main unit.TestMain
--php bin/php
--lib record-macros

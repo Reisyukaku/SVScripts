@@ -1,5 +1,5 @@
-import lua.Bit;
 import cppbindings.*;
+import lua.Bit;
 
 @:expose
 class C06249860459C8E5A {
@@ -8,8 +8,8 @@ class C06249860459C8E5A {
     @:native("S93E1062E6DDDB25E") static var NPC_LAYER = 4;
     @:native("S42DCF09450C02265") static var m_messageCloseCoroutine = 6;
     @:native("SC8BF65C975FB4CF0") static var SCROLL_INDEX_TAIL = 12;
-    @:native("S96314C522A76154A") static var GROUND_BITFIELD = Bit.lshift(1, (GROUND_LAYER - 1));
-    @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = Bit.lshift(1, (WATER_LAYER - 1));
+    @:native("S96314C522A76154A") static var GROUND_BITFIELD = lua.Bit.lshift(1, (GROUND_LAYER - 1));
+    @:native("SCB8D721D47E94D84") static var WATER_BITFIELD = lua.Bit.lshift(1, (WATER_LAYER - 1));
     @:native("S5323CBCB07E5B8A8") static var S5323CBCB07E5B8A8 = 0.05;
     @:native("S469DB55DA92DD3BC") static var rayOpt:CE19B10CC = CE19B10CC.f101D811F();
     

@@ -1,4 +1,0 @@
---macro addMetadata('@:test', 'A')
---macro Main.test()
--neko n
---no-output

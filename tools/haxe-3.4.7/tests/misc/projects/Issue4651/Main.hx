@@ -1,4 +1,0 @@
-some
-    invalid
-    crap
-        :-)

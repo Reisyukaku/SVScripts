@@ -1,5 +1,4 @@
 -cp src
--lib hxbit
 
 C60B2EB370A8B68F0
 C97B74412253C3332
@@ -12,5 +11,5 @@ CAAC30701973E8223
 C06249860459C8E5A
 CED59418C4CAB0EC4
 
-lua build/haxe.lua
+-lua build/haxe.lua
 

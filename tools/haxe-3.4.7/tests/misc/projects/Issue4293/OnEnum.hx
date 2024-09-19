@@ -1,3 +1,0 @@
-enum OnEnum<T, T> {
-
-}

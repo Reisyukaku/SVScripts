@@ -53,18 +53,6 @@ static const luaL_Reg loadedlibs[] = {
   {NULL, NULL}
 };
 
-static void lua_loadLuaHelper (lua_State *L) {
-  luaL_requiref(L, LUA_HELPERNAME, luaopen_helper, 1);
-  lua_pop(L, 1);
-}
-
-LUALIB_API void lua_LoadEnv (lua_State *L) {
-  //FUN_71012955c0();
-  //lua_loadAllClasses_0(L);
-  //lua_loadAllClasses_1(L);
-  lua_loadLuaHelper(L);
-}
-
 
 LUALIB_API void luaL_openlibs (lua_State *L) {
   const luaL_Reg *lib;

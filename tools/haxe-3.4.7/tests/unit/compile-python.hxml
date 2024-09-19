@@ -1,3 +1,0 @@
-compile-each.hxml
--main unit.TestMain
--python bin/unit.py

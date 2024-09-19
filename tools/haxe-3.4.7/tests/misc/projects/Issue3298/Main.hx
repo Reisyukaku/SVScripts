@@ -1,1 +1,0 @@
-class Main { static function main() { h } }

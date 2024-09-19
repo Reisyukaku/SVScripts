@@ -1,4 +1,0 @@
-# --run CompServer
--main CompServer
--neko CompServer.n
--cmd neko CompServer.n

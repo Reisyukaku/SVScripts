@@ -1,2 +1,0 @@
-class SomeType {}
-enum OtherType {}

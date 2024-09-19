@@ -706,6 +706,7 @@ static const luaL_Reg ll_funcs[] = {
   {NULL, NULL}
 };
 
+
 static void createsearcherstable (lua_State *L) {
   static const lua_CFunction searchers[] =
     {searcher_preload, searcher_Lua, searcher_C, searcher_Croot, NULL};
@@ -733,6 +734,7 @@ static void createclibstable (lua_State *L) {
   lua_setfield(L, -2, "__gc");  /* set finalizer for CLIBS table */
   lua_setmetatable(L, -2);
 }
+
 
 LUAMOD_API int luaopen_package (lua_State *L) {
   createclibstable(L);
