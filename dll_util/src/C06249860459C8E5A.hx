@@ -87,7 +87,7 @@ class C06249860459C8E5A {
     }
     
     @:native("S2B5898695BCB23F4")
-    public static function LandCapsuleCast(A0_2:Dynamic, A1_2:Array<Float>, A2_2:Array<Float>, ?A3_2:Int = 1):Array<C60B2EB370A8B68F0> {
+    public static function LandCapsuleCast(A0_2:Dynamic, A1_2:Vec3, A2_2:Vec3, ?A3_2:Int = 1):Array<C60B2EB370A8B68F0> {
         var flags = 0;
         flags = Bit.bor(flags, Bit.lshift(1, 1));
         flags = Bit.bor(flags, Bit.lshift(1, 6));
@@ -178,18 +178,18 @@ class C06249860459C8E5A {
     }
     
     @:native("S9E7F9F1C6EB5BBB9")
-    public static function LayeredCapsuleCast(A0_2:Dynamic, A1_2:Array<Float>, A2_2:Array<Float>, A3_2:Int, A4_2:Int, ?A5_2:Int = 0):Array<C60B2EB370A8B68F0> {
+    public static function LayeredCapsuleCast(A0_2:Dynamic, A1_2:Vec3, A2_2:Vec3, A3_2:Int, A4_2:Int, ?A5_2:Int = 0):Array<C60B2EB370A8B68F0> {
         var L6_2 = 1;
         if (Bit.band(A5_2, 8) != 0){
             L6_2 = 0;
         }
         var arr = [];
-        var L11_2:Array<Float> = C7A48E3FC.fD9D3C136(A2_2[0] - A1_2[0], A2_2[1] - A1_2[1], A2_2[2] - A1_2[2]);
+        var L11_2:Vec3 = C7A48E3FC.fD9D3C136(A2_2.x - A1_2.x, A2_2.y - A1_2.y, A2_2.z - A1_2.z);
 
-        C7A48E3FC.fBD92E0EC(L11_2[0], L11_2[1], L11_2[2]);
+        C7A48E3FC.fBD92E0EC(L11_2.x, L11_2.y, L11_2.z);
         var L17_2:C95DC25DB = C95DC25DB.f544F902B();
-        var unk = L17_2.f5E1D7445();
-        var unk2 = unk.f7CB96C6D(A0_2, A1_2[0], A1_2[1], A1_2[2], A2_2[0], A2_2[1], A2_2[2], A3_2, A4_2, L6_2);
+        var unk:C182945F8 = L17_2.f5E1D7445();
+        var unk2 = unk.f7CB96C6D(A0_2, A1_2.x, A1_2.y, A1_2.z, A2_2.x, A2_2.y, A2_2.z, A3_2, A4_2, L6_2);
         var i = 0;
         while (i < unk2.fD5B33F22()){
             i = i + 1;
@@ -220,8 +220,8 @@ class C06249860459C8E5A {
         var L8_2 = A2_2[0] - A1_2[0];
         var L9_2 = A2_2[1] - A1_2[1];
         var L10_2 = A2_2[2] - A1_2[2];
-        var L11_2 = C7A48E3FC.fD9D3C136(L8_2, L9_2, L10_2);
-        C7A48E3FC.fBD92E0EC(L11_2[0], L11_2[1], L11_2[2]);
+        var L11_2:Vec3 = C7A48E3FC.fD9D3C136(L8_2, L9_2, L10_2);
+        C7A48E3FC.fBD92E0EC(L11_2.x, L11_2.y, L11_2.z);
         
         var L17_2 = C95DC25DB.f544F902B().f5E1D7445().fBB974055(A0_2, A1_2[0], A1_2[1], A1_2[2], A2_2[0], A2_2[1], A2_2[2], A3_2, A4_2, L6_2);
         

@@ -49,7 +49,7 @@ class CED59418C4CAB0EC4 {
         dotProduct = Math.max(-1, Math.min(dotProduct, 1));
 
         var crossProduct = C7A48E3FC.f3D88C322(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
-        var length = C7A48E3FC.fBD92E0EC(crossProduct[0], crossProduct[1], crossProduct[2]);
+        var length = C7A48E3FC.fBD92E0EC(crossProduct.x, crossProduct.y, crossProduct.z);
 
         var angle = 0.0;
         if (length < 1.0E-4) {
@@ -57,8 +57,8 @@ class CED59418C4CAB0EC4 {
                 angle = Math.PI;
             }
         } else {
-            crossProduct = C7A48E3FC.fD9D3C136(crossProduct[0], crossProduct[1], crossProduct[2]);
-            length = C7A48E3FC.fBD92E0EC(crossProduct[0], crossProduct[1], crossProduct[2]);
+            crossProduct = C7A48E3FC.fD9D3C136(crossProduct.x, crossProduct.y, crossProduct.z);
+            length = C7A48E3FC.fBD92E0EC(crossProduct.x, crossProduct.y, crossProduct.z);
             angle = Math.acos(dotProduct);
         }
 
@@ -219,13 +219,17 @@ class CED59418C4CAB0EC4 {
     }
 
     @:native("S60329B020EE3A79A")
-    public static function ClampMagnitude(A0_2:Array<Float>, A1_2):Array<Float>{
-        var L3_2 = C7A48E3FC.f92852F73(A0_2[0], A0_2[1], A0_2[2]);
-        var L2_2 = []; //Vec3
+    public static function ClampMagnitude(A0_2:Vec3, A1_2):Vec3{
+        var L2_2:Vec3 = {x: A0_2.x, y: A0_2.y, z: A0_2.z};
+        var L3_2 = C7A48E3FC.f92852F73(A0_2.x, A0_2.y, A0_2.z);
         if (A1_2 < L3_2) {
-            L2_2 = C7A48E3FC.fD9D3C136(A0_2[0], A0_2[1], A0_2[2]);
-            C7A48E3FC.fBD92E0EC(L2_2[0], L2_2[1], L2_2[2]);
-            return [L2_2[0] * A1_2, L2_2[1] * A1_2, L2_2[2] * A1_2];
+            L2_2 = C7A48E3FC.fD9D3C136(A0_2.x, A0_2.y, A0_2.z);
+            C7A48E3FC.fBD92E0EC(L2_2.x, L2_2.y, L2_2.z);
+            var val:Vec3;
+            val.x = L2_2.x * A1_2;
+            val.y = L2_2.y * A1_2;
+            val.z = L2_2.z * A1_2;
+            return val;
         }
         return L2_2;
     }
