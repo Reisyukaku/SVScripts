@@ -1,7 +1,8 @@
 import cppbindings.*;
 
 @:expose
-class CED59418C4CAB0EC4 {
+@:native("CED59418C4CAB0EC4")
+class dll_util.MathUtil {
     @:native("SFB8A67CFE7F5605D") public static var EPSILON:Float = 1.0E-8;
 
     @:native("05B90B9B5A6DE6BC")
