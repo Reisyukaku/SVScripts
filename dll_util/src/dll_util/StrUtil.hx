@@ -1,8 +1,11 @@
+package dll_util;
+
 import lua.NativeStringTools;
 import cppbindings.*;
 
 @:expose
-class CB87925D1C1B918F9 {
+@:native("CB87925D1C1B918F9")
+class StrUtil {
 
     @:native("S042B860498E558B2")
     public static function Format(fmt:String, val1:Float, ?val2:Float, ?val3:Float, ?val4:Float):String {

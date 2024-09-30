@@ -1,8 +1,10 @@
+package dll_util;
+
 import cppbindings.*;
 
 @:expose
 @:native("CED59418C4CAB0EC4")
-class dll_util.MathUtil {
+class MathUtil {
     @:native("SFB8A67CFE7F5605D") public static var EPSILON:Float = 1.0E-8;
 
     @:native("05B90B9B5A6DE6BC")
@@ -220,16 +222,13 @@ class dll_util.MathUtil {
     }
 
     @:native("S60329B020EE3A79A")
-    public static function ClampMagnitude(A0_2:Vec3, A1_2):Vec3{
-        var L2_2:Vec3 = {x: A0_2.x, y: A0_2.y, z: A0_2.z};
+    public static function ClampMagnitude(A0_2:Vec3, A1_2) : Vec3{
+        var L2_2:Vec3 = new Vec3(A0_2.x, A0_2.y, A0_2.z);
         var L3_2 = C7A48E3FC.f92852F73(A0_2.x, A0_2.y, A0_2.z);
         if (A1_2 < L3_2) {
             L2_2 = C7A48E3FC.fD9D3C136(A0_2.x, A0_2.y, A0_2.z);
             C7A48E3FC.fBD92E0EC(L2_2.x, L2_2.y, L2_2.z);
-            var val:Vec3;
-            val.x = L2_2.x * A1_2;
-            val.y = L2_2.y * A1_2;
-            val.z = L2_2.z * A1_2;
+            var val:Vec3 = new Vec3(L2_2.x * A1_2, L2_2.y * A1_2, L2_2.z * A1_2);
             return val;
         }
         return L2_2;

@@ -1,9 +1,11 @@
+package dll_util;
+
 import cppbindings.*;
 
 @:expose
 @:publicFields
 @:native("C60B2EB370A8B68F0")
-class dll_util.CastResult {
+class CastResult {
     var unkBool_0:Bool;
     var unkArray_1:Array<Float>;
     var unkArray_2:Array<Float>;

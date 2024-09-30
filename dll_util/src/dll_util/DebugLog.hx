@@ -1,5 +1,8 @@
+package dll_util;
+
 @:expose
-class CEC576A05F672A661 {
+@:native("SE2B033269A3AEF71")
+class DebugLog {
 
     @:native("SE2B033269A3AEF71")
     public static function Log(str:String = "") {

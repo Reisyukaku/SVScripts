@@ -1,6 +1,9 @@
+package dll_util.miyamoto;
+
 @:expose
 @:publicFields
-class C97B74412253C3332 {
+@:native("C97B74412253C3332")
+class ColorUtil {
     @:native("S002A2C8E8026A246") static var White:Array<Float> = [1., 1., 1., 1.];
     @:native("SD8888156C685F924") static var Black:Array<Float> = [0., 0., 0., 1.];
     @:native("S60B4E9866132718D") static var Blue:Array<Float> = [0.5, 0.625, 1., 1.];

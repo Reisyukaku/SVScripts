@@ -1,7 +1,10 @@
+package dll_util.miyamoto;
+
 import cppbindings.*;
 
 @:expose
-class C722F6EF1C80804DB {
+@:native("C722F6EF1C80804DB")
+class ConvertString {
     
     @:native("S242C3EDD47823714")
     public static function Vector2ToString(vec:Vec3):String {

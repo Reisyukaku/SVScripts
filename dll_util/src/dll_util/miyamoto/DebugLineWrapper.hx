@@ -1,7 +1,10 @@
+package dll_util.miyamoto;
+
 import cppbindings.*;
 
 @:expose
-class CC93E4D9B3BF1544F {
+@:native("CC93E4D9B3BF1544F")
+class DebugLineWrapper {
     @:native("SDA721D99DBE3AB52") public static var IsSkip:Bool = true;
 
     @:native("S0D94913C9502A358")
@@ -20,7 +23,7 @@ class CC93E4D9B3BF1544F {
             return;
         }
         if (A2_2 == null)
-            A2_2 = C97B74412253C3332.Blue;
+            A2_2 = dll_util.miyamoto.ColorUtil.Blue;
 
         CFAFACFDC.f68DE7298(A2_2[0], A2_2[1], A2_2[2], A2_2[3]);
         CFAFACFDC.f1B4F55DF(3);
@@ -43,7 +46,7 @@ class CC93E4D9B3BF1544F {
             return;
         }
         if(A2_2 == null)
-            A2_2 = C97B74412253C3332.Blue;
+            A2_2 = dll_util.miyamoto.ColorUtil.Blue;
 
         CFAFACFDC.f68DE7298(A2_2[0], A2_2[1], A2_2[2], A2_2[3]);
         CFAFACFDC.f1B4F55DF(3);
@@ -72,7 +75,7 @@ class CC93E4D9B3BF1544F {
             return;
         }
         if (A2_2 == null) {
-            A2_2 = C97B74412253C3332.Blue;
+            A2_2 = dll_util.miyamoto.ColorUtil.Blue;
         }
         CFAFACFDC.f68DE7298(A2_2[0], A2_2[1], A2_2[2], A2_2[3]);
         CFAFACFDC.f1B4F55DF(3);

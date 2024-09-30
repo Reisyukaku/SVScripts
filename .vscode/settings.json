@@ -1,5 +1,12 @@
 {
     "files.associations": {
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "string": "cpp",
+        "*.tcc": "cpp",
+        "unordered_map": "cpp",
+        "string_view": "cpp",
+        "compare": "cpp",
+        "cstdint": "cpp",
+        "chrono": "cpp"
     }
 }

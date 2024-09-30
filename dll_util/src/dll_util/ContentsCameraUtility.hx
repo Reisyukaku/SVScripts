@@ -1,8 +1,10 @@
+package dll_util;
+
 import cppbindings.*;
 
 @:expose
 @:native("C83B8A16667A05285")
-class dll_util.ContentsCameraUtility {
+class ContentsCameraUtility {
     
     @:native("SD79F00DEB5032D7D")
     public static function CalcWorldToScreen(pos:Vec4, screenSize:Array<Float>, mat1:CCE8E2D0A, mat2:CCE8E2D0A):Dynamic {

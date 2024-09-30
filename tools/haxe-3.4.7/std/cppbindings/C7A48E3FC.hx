@@ -25,7 +25,7 @@ extern class C7A48E3FC {
 	static function f10299B40(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
 	static function f74C1A5DE(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float, p7:Float):Array<Float>;
 	static function fD9D3C136(p1:Float, p2:Float, p3:Float):Vec3;
-	static function f6ED31C2F(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Array<Float>;
+	static function f6ED31C2F(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Vec3;
 	static function f9F4C3CD9(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Float;
 	static function f38BA082F(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Float;
 	static function fCAD0B5F8(p1:Float, p2:Float, p3:Float, p4:Float, p5:Float, p6:Float):Float;

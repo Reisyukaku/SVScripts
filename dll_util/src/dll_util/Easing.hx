@@ -1,5 +1,8 @@
+package dll_util;
+
 @:expose
-class CAAC30701973E8223 {
+@:native("CAAC30701973E8223")
+class Easing {
     
     @:native("SF84EB735B798FBFB")
     public static function InSine(A0_2:Float):Float {
@@ -96,13 +99,13 @@ class CAAC30701973E8223 {
     
     @:native("S765C5EABFC8E2C1A")
     public static function InExpo(A0_2:Dynamic):Dynamic {
-        return Math.abs(A0_2) < CED59418C4CAB0EC4.EPSILON ? 0 : Math.pow(2, 10 * A0_2 - 10);
+        return Math.abs(A0_2) < dll_util.MathUtil.EPSILON ? 0 : Math.pow(2, 10 * A0_2 - 10);
     }
     
     @:native("S9410CECFDFB4C77B")
     public static function OutExpo(A0_2:Dynamic):Dynamic {
         var L1_2 = Math.abs(A0_2 - 1);
-        if (L1_2 < CED59418C4CAB0EC4.EPSILON) {
+        if (L1_2 < dll_util.MathUtil.EPSILON) {
             return 1;
         } else {
             return 1 - Math.pow(2, -10 * A0_2);
@@ -112,11 +115,11 @@ class CAAC30701973E8223 {
     @:native("S672C6D8AC8A8EF2E")
     public static function InOutExpo(A0_2:Dynamic):Dynamic {
         var L1_2 = Math.abs(A0_2);
-        if (L1_2 < CED59418C4CAB0EC4.EPSILON) {
+        if (L1_2 < dll_util.MathUtil.EPSILON) {
             return 0;
         } else {
             L1_2 = Math.abs(A0_2 - 1);
-            if (L1_2 < CED59418C4CAB0EC4.EPSILON) {
+            if (L1_2 < dll_util.MathUtil.EPSILON) {
                 return 1;
             } else {
                 if (A0_2 < 0.5) {
@@ -168,10 +171,10 @@ class CAAC30701973E8223 {
     
     @:native("SFD9B49BA630EAC55")
     public static function InElastic(A0_2) {
-        if (Math.abs(A0_2) < CED59418C4CAB0EC4.EPSILON) {
+        if (Math.abs(A0_2) < dll_util.MathUtil.EPSILON) {
             return 0;
         } else {
-            if (Math.abs(A0_2 - 1) < CED59418C4CAB0EC4.EPSILON) {
+            if (Math.abs(A0_2 - 1) < dll_util.MathUtil.EPSILON) {
                 return 1;
             } else {
                 return Std.int((-Math.pow(2, 10 * A0_2 - 10)) * Math.sin((A0_2 * 10 - 10.75) * ((2 * Math.PI) / 3)));
@@ -181,10 +184,10 @@ class CAAC30701973E8223 {
     
     @:native("S31AAE71FD25D5136")
     public static function OutElastic(A0_2) {
-        if (Math.abs(A0_2) < CED59418C4CAB0EC4.EPSILON) {
+        if (Math.abs(A0_2) < dll_util.MathUtil.EPSILON) {
             return 0;
         } else {
-            if (Math.abs(A0_2 - 1) < CED59418C4CAB0EC4.EPSILON) {
+            if (Math.abs(A0_2 - 1) < dll_util.MathUtil.EPSILON) {
                 return 1;
             } else {
                 return Std.int(Math.pow(2, -10 * A0_2) * Math.sin(A0_2 * 10 - 0.75 * (2 * Math.PI / 3)) + 1);
@@ -196,10 +199,10 @@ class CAAC30701973E8223 {
     public static function InOutElastic(A0_2) {
         var L1_2 = 2 * Math.PI / 4.5;
         
-        if (Math.abs(A0_2) < CED59418C4CAB0EC4.EPSILON) {
+        if (Math.abs(A0_2) < dll_util.MathUtil.EPSILON) {
             return 0;
         } else {
-            if (Math.abs(A0_2 - 1) < CED59418C4CAB0EC4.EPSILON) {
+            if (Math.abs(A0_2 - 1) < dll_util.MathUtil.EPSILON) {
                 return 1;
             } else {
                 if (A0_2 < 0.5) {
