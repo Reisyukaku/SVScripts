@@ -1,9 +1,18 @@
-all: util
+TARGET=dll_util
 
-util: dll_util
-	cd $< && $(MAKE)
-	mv $</$<.blua ./
+HAXE=tools/haxe-3.4.7/haxe
+LUAC=tools/lua-5.4.3/src/luac
+BUILD_DIR=build
+SRC_DIR=src
+
+export HAXE_STD_PATH=tools/haxe-3.4.7/std
+
+all: compile
+
+compile:
+	@mkdir -p $(BUILD_DIR)
+	$(HAXE) dll_util.hxml
+	$(LUAC) -s -o $(TARGET).blua $(BUILD_DIR)/*.lua
 
 clean:
-	cd dll_util && $(MAKE) clean
-	rm *.blua
+	rm -rf $(BUILD_DIR) $(TARGET).blua

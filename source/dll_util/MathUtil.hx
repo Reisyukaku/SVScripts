@@ -8,14 +8,14 @@ class MathUtil {
     @:native("SFB8A67CFE7F5605D") public static var EPSILON:Float = 1.0E-8;
 
     @:native("05B90B9B5A6DE6BC")
-  public static function Clamp(value:Float, min:Float, max:Float):Float {
-      if (value < min) {
-          value = min;
-      }
-      if (max < value) {
-          value = max;
-      }
-      return value;
+    public static function Clamp(value:Float, min:Float, max:Float):Float {
+        if (value < min) {
+            value = min;
+        }
+        if (max < value) {
+            value = max;
+        }
+        return value;
     }
     
     @:native("SF5188CAE4725F031")
