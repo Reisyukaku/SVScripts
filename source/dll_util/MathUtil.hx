@@ -47,11 +47,11 @@ class MathUtil {
     }
     
     @:native("S83677FF4EE3F1CBF")
-    public static function GetVectorAngle(v1, v2):Float {
-        var dotProduct = C7A48E3FC.f04EE1F22(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
+    public static function GetVectorAngle(v1:Vec3, v2:Vec3):Float {
+        var dotProduct = C7A48E3FC.f04EE1F22(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
         dotProduct = Math.max(-1, Math.min(dotProduct, 1));
 
-        var crossProduct = C7A48E3FC.f3D88C322(v1[0], v1[1], v1[2], v2[0], v2[1], v2[2]);
+        var crossProduct = C7A48E3FC.f3D88C322(v1.x, v1.y, v1.z, v2.x, v2.y, v2.z);
         var length = C7A48E3FC.fBD92E0EC(crossProduct.x, crossProduct.y, crossProduct.z);
 
         var angle = 0.0;
@@ -69,11 +69,11 @@ class MathUtil {
     }
     
     @:native("S27BA7C7323C27960")
-    public static function FromVectorRotation(v1:Array<Float>, v2:Array<Float>, ?v3:Array<Float>):Any {
+    public static function FromVectorRotation(v1:Vec3, v2:Vec3, ?v3:Vec3):Vec3 {
         if(v3 == null)
-            v3 = [1, 0, 0];
+            v3 = new Vec3(1, 0, 0);
         var angle = GetVectorAngle(v1, v2);
-        return CD5675BA5.fC1785368(v3[0], v3[1], v3[2], angle); 
+        return CD5675BA5.fC1785368(v3.x, v3.y, v3.z, angle); 
     }
     
     @:native("SC734992E23457948")
@@ -122,19 +122,20 @@ class MathUtil {
     }
 
     @:native("S9487238A2BCBB744")
-    public static function SlerpVector(A0_2, A1_2, A2_2):Any {
-        var L3_2 = FromVectorRotation(A0_2, A1_2, [0,1,0]);
+    public static function SlerpVector(v1:Vec3, v2:Vec3, val):Any {
+        var v = new Vec3(0,1,0);
+        var L3_2:Vec3 = FromVectorRotation(v1, v2, v);
         var L5_2 = CD5675BA5.f0151A26E();
-        var L4_2 = CD5675BA5.fBE61A5F8(L5_2, L3_2, A2_2);
-        return L4_2.fCA247E7A(A0_2[0], A0_2[1], A0_2[2]); //array of 3
+        var L4_2 = CD5675BA5.fBE61A5F8(L5_2, L3_2, val);
+        return L4_2.fCA247E7A(v1.x, v1.y, v1.z);
     }
 
     @:native("SCAD25230630F7BCB")
     public static function SCAD25230630F7BCB(A0_2, A1_2, A2_2, A3_2){
         var i = 0;
         while(i < A3_2) {
-        i++;
-        A0_2 = SlerpVector(A0_2, A1_2, A2_2);
+            i++;
+            A0_2 = SlerpVector(A0_2, A1_2, A2_2);
         }
         return A0_2;
     }
@@ -301,7 +302,7 @@ class MathUtil {
     }
 
     @:native("SF4E70B1E503D8CB2")
-    public static function SF4E70B1E503D8CB2(A0_2, A1_2, len){
+    public static function IterativeScale(A0_2:Float, A1_2, len):Float{
         var i = 0;
         while (i++ < len){
             A0_2 *= A1_2;
@@ -310,40 +311,40 @@ class MathUtil {
     }
 
     @:native("S947EBF49836B643E")
-    public static function S947EBF49836B643E(A0_2:Array<Float>, A1_2, len){
+    public static function IterativeScaleVec2(A0_2:Vec2, A1_2, len):Vec2{
         var i = 0;
         while (i++ < len){
-            A0_2[0] *= A1_2;
-            A0_2[1] *= A1_2;
+            A0_2.x *= A1_2;
+            A0_2.y *= A1_2;
         }
         return A0_2;
     }
 
     @:native("S947EC049836B65F1")
-    public static function S947EC049836B65F1(A0_2, A1_2, len){
+    public static function IterativeScaleVec3(A0_2:Vec3, A1_2, len):Vec3{
         var i = 0;
         while (i++ < len){
-            A0_2[0] *= A1_2;
-            A0_2[1] *= A1_2;
-            A0_2[2] *= A1_2;
+            A0_2.x *= A1_2;
+            A0_2.y *= A1_2;
+            A0_2.z *= A1_2;
         }
         return A0_2;
     }
 
     @:native("S947EC149836B67A4")
-    public static function S947EC149836B67A4(A0_2, A1_2, len){
+    public static function IterativeScaleVec4(A0_2:Vec4, A1_2, len):Vec4{
         var i = 0;
         while (i++ < len){
-            A0_2[0] *= A1_2;
-            A0_2[1] *= A1_2;
-            A0_2[2] *= A1_2;
-            A0_2[3] *= A1_2;
+            A0_2.x *= A1_2;
+            A0_2.y *= A1_2;
+            A0_2.z *= A1_2;
+            A0_2.w *= A1_2;
         }
         return A0_2;
     }
 
     @:native("SF6B1543657D10AD3")
-    public static function SF6B1543657D10AD3(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Array<Float>, A3_2, A4_2, A5_2):Array<Float> {
+    public static function SmoothDampVector3(A0_2:Array<Float>, A1_2:Array<Float>, A2_2:Array<Float>, A3_2, A4_2, A5_2):Array<Float> {
         A3_2 = Math.max(1.0E-4, A3_2); 
 
         var L6_2:Array<Float> = [0, 0, 0];

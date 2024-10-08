@@ -18,14 +18,14 @@ class DebugLineWrapper {
     }
     
     @:native("S5A33BC9807A42447")
-    public static function Line(A0_2:Array<Int>, A1_2:Array<Int>, A2_2:Array<Float>) {
+    public static function Line(A0_2:Array<Int>, A1_2:Array<Int>, col:Array<Float>) {
         if (IsSkip) {
             return;
         }
-        if (A2_2 == null)
-            A2_2 = dll_util.miyamoto.ColorUtil.Blue;
+        if (col == null)
+            col = dll_util.miyamoto.ColorUtil.Blue;
 
-        CFAFACFDC.f68DE7298(A2_2[0], A2_2[1], A2_2[2], A2_2[3]);
+        CFAFACFDC.f68DE7298(col[0], col[1], col[2], col[3]);
         CFAFACFDC.f1B4F55DF(3);
         var L3_2 = CCE8E2D0A.f0151A26E();
         CFAFACFDC.fD2DD8DB9(A0_2[0], A0_2[1], A0_2[2], A1_2[0], A1_2[1], A1_2[2], L3_2);
@@ -106,8 +106,8 @@ class DebugLineWrapper {
     }
     
     @:native("SAA02E02602AD9CE2")
-    public static function SetColor(col:Array<Float>) {
-        CFAFACFDC.f68DE7298(col[0], col[1], col[2], col[3]);
+    public static function SetColor(col:Vec4) {
+        CFAFACFDC.f68DE7298(col.x, col.y, col.z, col.w);
         CFAFACFDC.f1B4F55DF(3);
     }
 }
